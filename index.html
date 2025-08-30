@@ -4,29 +4,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="/assets/css/main.css">
     <title>Landding Page</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
         integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-
 </head>
 
 <body>
-    <header class="relative py-5  z-10 bg-[url('../images/landing-page-hero.png')] bg-cover  bg-center min-h-screen">
-        <!-- navbar -->
-        <nav class="container mx-auto flex justify-between items-center ">
-            <div class=" text-center ">
-                <img src="assets/images/logo.png" alt="" class="w-40 h-14">
-                <span class="text-font-22px font-bebas text-white ">FORE MOBILITY</span>
+    <header class="relative py-5 z-10 bg-[url('../images/landing-page-hero.png')] bg-cover bg-center min-h-screen">
+        <nav class="container mx-auto px-4 md:px-0 flex flex-col md:flex-row justify-between items-center ">
+            <div class="text-center mb-4 md:mb-0">
+                <img src="assets/images/logo.png" alt="" class="w-40 h-14 mx-auto">
+                <span class="text-font-22px font-bebas text-white">FORE MOBILITY</span>
             </div>
 
-            <div class="flex space-x-6 items-center">
-                <div class="relative group" x-data="{ open: false }" @click.away="open = false">
+            <div class="flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 items-center">
+                <div class="relative group w-full text-center" x-data="{ open: false }" @click.away="open = false">
                     <button @click="open = !open"
-                        class="flex items-center space-x-1 text-lg font-medium text-white focus:outline-none">
+                        class="flex items-center space-x-1 text-lg font-medium text-white focus:outline-none w-full justify-center">
                         <span>Public</span>
                         <svg class="h-4 w-4 transform transition-transform" :class="{'rotate-180': open}" fill="none"
                             stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -40,7 +37,7 @@
                         x-transition:leave="transition ease-in duration-150"
                         x-transition:leave-start="opacity-100 transform scale-100"
                         x-transition:leave-end="opacity-0 transform scale-95"
-                        class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-20">
+                        class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-20">
                         <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                 role="menuitem">Option 1</a>
@@ -52,9 +49,9 @@
                     </div>
                 </div>
 
-                <div class="relative group" x-data="{ open: false }" @click.away="open = false">
+                <div class="relative group w-full text-center" x-data="{ open: false }" @click.away="open = false">
                     <button @click="open = !open"
-                        class="flex items-center space-x-1 text-lg font-medium text-white focus:outline-none">
+                        class="flex items-center space-x-1 text-lg font-medium text-white focus:outline-none w-full justify-center">
                         <span>Private</span>
                         <svg class="h-4 w-4 transform transition-transform" :class="{'rotate-180': open}" fill="none"
                             stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -68,8 +65,7 @@
                         x-transition:leave="transition ease-in duration-150"
                         x-transition:leave-start="opacity-100 transform scale-100"
                         x-transition:leave-end="opacity-0 transform scale-95"
-                        :class="{ 'block': open, 'hidden': !open }"
-                        class="absolute left-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-20 hidden ">
+                        class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-20">
                         <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                 role="menuitem">Option A</a>
@@ -81,7 +77,7 @@
                     </div>
                 </div>
             </div>
-            <div>
+            <div class="mt-4 md:mt-0">
                 <a href="#"
                     class="inline-flex items-center px-6 py-3 bg-primary text-white rounded-md font-medium font-inter hover:bg-blue-700 transition duration-300">
                     <span>Find out more</span>
@@ -93,29 +89,29 @@
                 </a>
             </div>
         </nav>
-        <!-- inner banner  -->
-        <div class="container mx-auto md:mt-18">
-            <div class=" justify-start items-center w-[900px] ">
-                <div class="text-start pr-48">
-                    <h1 class="text-6xl font-inter! font-medium text-white mb-4 leading-tight">
+        <div class="container mx-auto px-4 md:px-0 md:mt-18">
+            <div class="justify-start items-center max-w-full lg:max-w-[900px] ">
+                <div class="text-start pr-0 lg:pr-48">
+                    <h1 class="text-4xl md:text-6xl font-inter! font-medium text-white mb-4 leading-tight">
                         Drive Your Way — No <br> Loans, No Hassle
                     </h1>
-                    <p class="text-2xl text-white font-light leading-tight font-inter">Cars for personal use, gig work,
+                    <p class="text-lg md:text-2xl text-white font-light leading-tight font-inter">Cars for personal use,
+                        gig work,
                         small business, and multifamily communities — with insurance & maintenance included.</p>
                 </div>
                 <div
-                    class="flex items-center p-0.5  mt-8 rounded-full shadow-lg bg-white/15 bg-opacity-70 backdrop-blur-lg border border-white border-opacity-20 max-w-[500px] min-h-[40]">
+                    class="flex flex-col sm:flex-row items-center p-0.5 mt-8 rounded-full shadow-lg bg-white/15 bg-opacity-70 backdrop-blur-lg border border-white border-opacity-20 max-w-full sm:max-w-[500px] min-h-[40]">
                     <input type="text" placeholder="Check cars near you"
-                        class="flex-grow bg-transparent text-white placeholder-white px-4  rounded-full focus:outline-none text-font-14px">
+                        class="flex-grow bg-transparent text-white placeholder-white px-4 py-2 rounded-full focus:outline-none text-font-14px w-full sm:w-auto mb-2 sm:mb-0">
                     <button
-                        class="bg-primary text-white text-font-14px rounded-full px-6 py-2 font-normal font-inter hover:bg-blue-700 transition duration-300">
+                        class="bg-primary text-white text-font-14px rounded-full px-6 py-2 font-normal font-inter hover:bg-blue-700 transition duration-300 w-full sm:w-auto">
                         Check
                     </button>
                 </div>
 
-                <div class="grid grid-cols-2 lg:grid-cols-4 gap-6  w-full mt-14">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full mt-14">
                     <div
-                        class="bg-primary bg-opacity-80 text-white p-3  px-6 rounded-xl flex flex-col justify-between items-start text-left">
+                        class="bg-primary bg-opacity-80 text-white p-3 px-6 rounded-xl flex flex-col justify-between items-start text-left">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mb-3">
                             <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
@@ -126,7 +122,7 @@
                     </div>
 
                     <div
-                        class="bg-primary bg-opacity-80 text-white p-3  px-6 rounded-xl flex flex-col justify-between items-start text-left">
+                        class="bg-primary bg-opacity-80 text-white p-3 px-6 rounded-xl flex flex-col justify-between items-start text-left">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mb-3">
                             <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
@@ -137,7 +133,7 @@
                     </div>
 
                     <div
-                        class="bg-primary bg-opacity-80 text-white p-3  px-6 rounded-xl flex flex-col justify-between items-start text-left">
+                        class="bg-primary bg-opacity-80 text-white p-3 px-6 rounded-xl flex flex-col justify-between items-start text-left">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mb-3">
                             <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
@@ -148,7 +144,7 @@
                     </div>
 
                     <div
-                        class="bg-primary bg-opacity-80 text-white p-3  px-6 rounded-xl flex flex-col justify-between items-start text-left">
+                        class="bg-primary bg-opacity-80 text-white p-3 px-6 rounded-xl flex flex-col justify-between items-start text-left">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
                             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mb-3">
                             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
@@ -160,12 +156,10 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col md:flex-row  items-start mt-12 gap-12">
+                <div class="flex flex-col md:flex-row items-start mt-12 gap-6 md:gap-12">
 
-                    <!-- Feature Item -->
-                    <div class=" flex items-center space-x-2">
+                    <div class="flex items-center space-x-2">
                         <div class="w-12 h-12 flex items-center justify-center text-white flex-shrink-0">
-                            <!-- Shield Check Icon -->
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                 class="w-6 h-6">
@@ -176,10 +170,8 @@
                         <span class="text-white font-medium text-base font-helvetica">Safety Inspected</span>
                     </div>
 
-                    <!-- Feature Item -->
-                    <div class=" flex items-center space-x-2">
+                    <div class="flex items-center space-x-2">
                         <div class="w-12 h-12 flex items-center justify-center text-white flex-shrink-0">
-                            <!-- Settings Icon -->
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                 class="w-6 h-6">
@@ -192,10 +184,8 @@
                         <span class="text-white font-medium text-base font-helvetica">Regularly Maintained</span>
                     </div>
 
-                    <!-- Feature Item -->
-                    <div class=" flex items-center space-x-2">
+                    <div class="flex items-center space-x-2">
                         <div class="w-12 h-12 flex items-center justify-center text-white flex-shrink-0">
-                            <!-- Headset Icon -->
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                 fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
                                 stroke-linejoin="round" class="lucide lucide-headset-icon lucide-headset">
@@ -206,90 +196,81 @@
                         </div>
                         <span class="text-white font-medium text-base font-helvetica">24/7 Roadside Assistance</span>
                     </div>
-
-
                 </div>
-
-
-
             </div>
         </div>
     </header>
 
     <main>
-        <!-- mobility app -->
-        <section class="bg-white mt-32 relative z-10 container mx-auto">
-            <div class="flex items-center justify-between gap-7 w-full">
-                <div class="left_side w-1/2 ">
-                    <h2 class="font-poppins font-medium text-5xl">Get the Fore Mobility App</h2>
-                    <p class="font-inter font-normal text-base mt-5">
+        <section class="bg-white mt-32 relative z-10 container mx-auto px-4 md:px-0">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-7 w-full">
+                <div class="left_side w-full lg:w-1/2 ">
+                    <h2 class="font-poppins font-medium text-3xl md:text-5xl">Get the Fore Mobility App</h2>
+                    <p class="font-inter font-normal text-sm md:text-base mt-5">
                         Experience the easiest way to rent a car with Fore
-                        Mobility. Search, compare, <br> and book vehicles right from your phone.
-                        Download the app today and enjoy <br> faster booking, flexible rentals, and
+                        Mobility. Search, compare, <br class="hidden md:block"> and book vehicles right from your phone.
+                        Download the app today and enjoy <br class="hidden md:block"> faster booking, flexible rentals,
+                        and
                         24/7 support — wherever you are.
                     </p>
 
                     <div class="mt-6">
-                        <h3 class="font-inter font-normal text-base">Download App From</h3>
+                        <h3 class="font-inter font-normal text-sm md:text-base">Download App From</h3>
                         <div class="flex items-center gap-4 mt-2">
                             <a href="#">
                                 <img src="assets/images/app_store.png" alt="Download on the App Store"
-                                    class="h-10 w-auto">
+                                    class="h-8 md:h-10 w-auto">
                             </a>
                             <a href="#">
                                 <img src="assets/images/google_play.png" alt="Get it on Google Play"
-                                    class="h-10 w-auto">
+                                    class="h-8 md:h-10 w-auto">
                             </a>
                         </div>
                     </div>
                 </div>
 
-                <div class="right_side w-1/2 relative z-20">
+                <div class="right_side w-full lg:w-1/2 relative z-20 mt-8 lg:mt-0">
                     <img src="assets/images/Group_3.png" alt="App Preview" class="w-full">
                 </div>
             </div>
         </section>
 
-        <!-- love fore section -->
-        <section class="py-18 -mt-22 relative z-50 bg-secondary">
+        <section class="py-12 md:py-18 -mt-16 md:-mt-22 relative z-50 bg-secondary px-4 md:px-0">
             <div class="max-w-full md:w-[1150px] mx-auto">
-                <h2 class="font-inter font-medium text-4xl text-center">Why You’ll Love Fore</h2>
-                <p class="font-inter font-normal text-font-20px mt-4 text-center">
+                <h2 class="font-inter font-medium text-3xl md:text-4xl text-center">Why You’ll Love Fore</h2>
+                <p class="font-inter font-normal text-base md:text-font-20px mt-4 text-center">
                     All essentials, one price — no surprise fees, no import duties.
                 </p>
 
-                <div class="flex justify-between gap-7 w-full mt-12">
-                    <!-- Feature 1 -->
+                <div class="flex flex-col md:flex-row justify-between gap-8 md:gap-7 w-full mt-12">
                     <div class="flex-1 text-center px-4">
                         <div class="w-10 h-10 mx-auto bg-blue-500 rounded-lg flex items-center justify-center">
                             <img src="assets/images/love_for_icon(3).png" alt="All-Inclusive" class="w-6 h-6">
                         </div>
-                        <h3 class="font-inter font-medium text-4xl mt-4">All-Inclusive</h3>
-                        <p class="font-inter text-font-18px mt-2">
+                        <h3 class="font-inter font-medium text-2xl md:text-4xl mt-4">All-Inclusive</h3>
+                        <p class="font-inter text-sm md:text-font-18px mt-2">
                             One Price, Zero Surprises — Insurance, maintenance & roadside included.
                             No extra bills, ever.
                         </p>
                     </div>
 
-                    <!-- Feature 2 -->
                     <div class="flex-1 text-center px-4">
                         <div class="w-10 h-10 mx-auto bg-blue-500 rounded-lg flex items-center justify-center">
                             <img src="assets/images/love_pore_icon (2).png" alt="Pay-As-You-Drive" class="w-5 h-5">
                         </div>
-                        <h3 class="font-inter font-medium text-4xl mt-4">Pay-As-You-Drive</h3>
-                        <p class="font-inter text-font-18px mt-2">
+                        <h3 class="font-inter font-medium text-2xl md:text-4xl mt-4">Pay-As-You-Drive</h3>
+                        <p class="font-inter text-sm md:text-font-18px mt-2">
                             Only Pay for the Miles You Use — Why pay for a car sitting in your driveway?
                             Drive more, pay more. Drive less, save more. Avoid high tariffs on buying.
                         </p>
                     </div>
 
-                    <!-- Feature 3 -->
                     <div class="flex-1 text-center px-4">
                         <div class="w-10 h-10 mx-auto bg-blue-500 rounded-lg flex items-center justify-center">
                             <img src="assets/images/love_pore_icon (1).png" alt="Total Flexibility" class="w-5 h-5">
                         </div>
-                        <h3 class="font-inter font-medium text-4xl mt-4">Total Flexibility</h3>
-                        <p class="font-inter text-font-18px mt-2">
+                        <h3 class="font-inter font-medium text-2xl md:text-4xl mt-4">Total Flexibility</h3>
+                        <p class="font-inter text-sm md:text-font-18px mt-2">
                             Change Your Car Anytime — Swap rides, pause your plan, or adjust terms
                             without penalties or long contracts.
                         </p>
@@ -297,12 +278,120 @@
                 </div>
             </div>
         </section>
+        <!-- Plans section -->
+        <section class="container mx-auto py-24 px-10 rounded-2xl bg-white ">
+            <div class="text-center mb-12">
+                <h2 class="font-inter font-semibold text-4xl text-gray-800 mb-2">Find the Plan That Fits You</h2>
+                <p class="text-black text-font-20px">Solutions for every driver — from personal trips to <br> business fleets</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Personal Use Card -->
+                <div
+                    class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                      <img src="assets/images/plan_icon (3).png" alt=" Personal Use">
+                    </div>
+                    <h3 class="font-inter font-medium text-2xl text-black mb-2">Personal Use</h3>
+                    <p class="text-black text-base">
+                        Affordable, all-inclusive cars for your personal travel needs — insurance and maintenance
+                        included.
+                    </p>
+                    <ul class="text-balck text-base mt-4 font-inter space-y-1">
+                        <li>No long-term contracts</li>
+                    </ul>
+                    <a href="#" class="text-primary flex items-center hover:underline duration-300 mt-6 text-base font-medium">
+                        See Cars Near You
+                        <span class="ml-4 font-bold text-lg mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                height="14" viewBox="0 0 14 14" fill="none">
+                                <path
+                                    d="M0.833496 6.99996H12.5002M12.5002 6.99996L6.66683 1.16663M12.5002 6.99996L6.66683 12.8333"
+                                    stroke="#1487FC" stroke-width="1.66667" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></span>
+                    </a>
+                </div>
+
+                <!-- Gig Driver Card -->
+                <div
+                    class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                      <img src="assets/images/plan_icon (4).png" alt=" Gig Driver">
+                    </div>
+                    <h3 class="font-inter font-medium text-2xl text-black mb-2">Gig Driver</h3>
+                    <p class="text-black text-base">
+                        Flexible car plans for rideshare and delivery drivers — pay based on usage, keep more of your
+                        earnings.
+                    </p>
+                    <ul class="text-balck text-base mt-4 font-inter space-y-1">
+                        <li>No long-term contracts</li>
+                    </ul>
+                    <a href="#" class="text-primary flex items-center hover:underline duration-300 mt-6 text-base font-medium">
+                        Start Driving Today
+                        <span class="ml-4 font-bold text-lg mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                height="14" viewBox="0 0 14 14" fill="none">
+                                <path
+                                    d="M0.833496 6.99996H12.5002M12.5002 6.99996L6.66683 1.16663M12.5002 6.99996L6.66683 12.8333"
+                                    stroke="#1487FC" stroke-width="1.66667" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></span>
+                    </a>
+                </div>
+
+                <!-- Real Estate Card -->
+                <div
+                    class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                     <img src="assets/images/plan_icon (1).png" alt=" Real Estate">
+                    </div>
+                    <h3 class="font-inter font-medium text-2xl text-black mb-2">Real Estate</h3>
+                    <p class="text-black text-base">
+                        Offer residents or tenants convenient mobility solutions as part of your property’s amenities.
+                    </p>
+                    <ul class="text-balck text-base mt-4 font-inter space-y-1">
+                        <li>Earn more per mile</li>
+                    </ul>
+                    <a href="#" class="text-primary flex items-center hover:underline duration-300 mt-6 text-base font-medium">
+                        Explore Property Plans
+                        <span class="ml-4 font-bold text-lg mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                height="14" viewBox="0 0 14 14" fill="none">
+                                <path
+                                    d="M0.833496 6.99996H12.5002M12.5002 6.99996L6.66683 1.16663M12.5002 6.99996L6.66683 12.8333"
+                                    stroke="#1487FC" stroke-width="1.66667" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></span>
+                    </a>
+                </div>
+
+                <!-- Business Fleet Card -->
+                <div
+                    class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
+                     <img src="assets/images/plan_icon (2).png" alt=" Business Fleet">
+                    </div>
+                    <h3 class="font-inter font-medium text-2xl text-black mb-2">Business Fleet</h3>
+                    <p class="text-black text-base">
+                        Hassle-free fleet management with all-inclusive pricing, perfect for growing businesses.
+                    </p>
+                    <ul class="text-balck text-base mt-4 font-inter space-y-1">
+                        <li>Earn more per mile</li>
+                    </ul>
+                    <a href="#" class="text-primary flex items-center hover:underline duration-300 mt-6 text-base font-medium">
+                        Get Fleet Pricing
+                        <span class="ml-4 font-bold text-lg mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="14"
+                                height="14" viewBox="0 0 14 14" fill="none">
+                                <path
+                                    d="M0.833496 6.99996H12.5002M12.5002 6.99996L6.66683 1.16663M12.5002 6.99996L6.66683 12.8333"
+                                    stroke="#1487FC" stroke-width="1.66667" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg></span>
+                    </a>
+                </div>
+            </div>
+        </section>
     </main>
 
 
-    <!-- coustom css -->
     <script src="/assets/js/app.js"></script>
-    <!-- alpine link -->
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
 </body>
