@@ -162,7 +162,7 @@
                         <div class="w-12 h-12 flex items-center justify-center text-white flex-shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="w-6 h-6">
+                            >
                                 <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
                                 <polyline points="9 12 12 15 15 9"></polyline>
                             </svg>
@@ -174,7 +174,7 @@
                         <div class="w-12 h-12 flex items-center justify-center text-white flex-shrink-0">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                class="w-6 h-6">
+                            >
                                 <circle cx="12" cy="12" r="3"></circle>
                                 <path
                                     d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33H15.8a1.65 1.65 0 0 0-1.51 1v.09a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09a1.65 1.65 0 0 0-1.51-1H4.2a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82V9a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09a1.65 1.65 0 0 0 1.51-1V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1.51 1H12.2a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V15a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
@@ -245,7 +245,7 @@
                 <div class="flex flex-col md:flex-row justify-between gap-8 md:gap-7 w-full mt-12">
                     <div class="flex-1 text-center px-4">
                         <div class="w-10 h-10 mx-auto bg-blue-500 rounded-lg flex items-center justify-center">
-                            <img src="assets/images/love_for_icon(3).png" alt="All-Inclusive" class="w-6 h-6">
+                            <img src="assets/images/love_for_icon(3).png" alt="All-Inclusive">
                         </div>
                         <h3 class="font-inter font-medium text-2xl md:text-4xl mt-4">All-Inclusive</h3>
                         <p class="font-inter text-sm md:text-font-18px mt-2">
@@ -279,115 +279,137 @@
             </div>
         </section>
         <!-- Plans section -->
-        <section class="container mx-auto py-24 px-10 rounded-2xl bg-white ">
+        <section class="container mx-auto py-16 px-6 sm:px-8 lg:px-12 rounded-2xl bg-white">
+            <!-- Header -->
             <div class="text-center mb-12">
-                <h2 class="font-inter font-semibold text-4xl text-gray-800 mb-2">Find the Plan That Fits You</h2>
-                <p class="text-black text-font-20px">Solutions for every driver — from personal trips to <br> business fleets</p>
+                <h2 class="font-inter font-semibold text-3xl sm:text-4xl lg:text-5xl text-gray-800 mb-3">
+                    Find the Plan That Fits You
+                </h2>
+                <p class="text-black text-base sm:text-lg lg:text-xl leading-relaxed">
+                    Solutions for every driver — from personal trips to <br class="hidden sm:block">
+                    business fleets
+                </p>
             </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-                <!-- Personal Use Card -->
+
+            <!-- Cards -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+                <!-- Card -->
                 <div
-                    class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    class="bg-white border border-gray-200 rounded-xl p-6 sm:p-8 shadow-sm hover:shadow-lg transition duration-300 flex flex-col">
                     <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                      <img src="assets/images/plan_icon (3).png" alt=" Personal Use">
+                        <img src="assets/images/plan_icon (3).png" alt="Personal Use">
                     </div>
-                    <h3 class="font-inter font-medium text-2xl text-black mb-2">Personal Use</h3>
-                    <p class="text-black text-base">
+                    <h3 class="font-inter font-medium text-xl sm:text-2xl text-black mb-2">Personal Use</h3>
+                    <p class="text-black text-sm sm:text-base flex-1">
                         Affordable, all-inclusive cars for your personal travel needs — insurance and maintenance
                         included.
                     </p>
-                    <ul class="text-balck text-base mt-4 font-inter space-y-1">
+                    <ul class="text-black text-sm sm:text-base mt-4 font-inter space-y-1">
                         <li>No long-term contracts</li>
                     </ul>
-                    <a href="#" class="text-primary flex items-center hover:underline duration-300 mt-6 text-base font-medium">
+                    <a href="#"
+                        class="text-primary flex items-center hover:underline duration-300 mt-6 text-sm sm:text-base font-medium">
                         See Cars Near You
-                        <span class="ml-4 font-bold text-lg mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="14"
-                                height="14" viewBox="0 0 14 14" fill="none">
+                        <span class="ml-2 sm:ml-4 font-bold text-lg mt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                fill="none">
                                 <path
                                     d="M0.833496 6.99996H12.5002M12.5002 6.99996L6.66683 1.16663M12.5002 6.99996L6.66683 12.8333"
                                     stroke="#1487FC" stroke-width="1.66667" stroke-linecap="round"
                                     stroke-linejoin="round" />
-                            </svg></span>
+                            </svg>
+                        </span>
                     </a>
                 </div>
 
-                <!-- Gig Driver Card -->
+                <!-- Repeat the same structure for Gig Driver, Real Estate, Business Fleet -->
+                <!-- Gig Driver -->
                 <div
-                    class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    class="bg-white border border-gray-200 rounded-xl p-6 sm:p-8 shadow-sm hover:shadow-lg transition duration-300 flex flex-col">
                     <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                      <img src="assets/images/plan_icon (4).png" alt=" Gig Driver">
+                        <img src="assets/images/plan_icon (4).png" alt="Gig Driver">
                     </div>
-                    <h3 class="font-inter font-medium text-2xl text-black mb-2">Gig Driver</h3>
-                    <p class="text-black text-base">
+                    <h3 class="font-inter font-medium text-xl sm:text-2xl text-black mb-2">Gig Driver</h3>
+                    <p class="text-black text-sm sm:text-base flex-1">
                         Flexible car plans for rideshare and delivery drivers — pay based on usage, keep more of your
                         earnings.
                     </p>
-                    <ul class="text-balck text-base mt-4 font-inter space-y-1">
+                    <ul class="text-black text-sm sm:text-base mt-4 font-inter space-y-1">
                         <li>No long-term contracts</li>
                     </ul>
-                    <a href="#" class="text-primary flex items-center hover:underline duration-300 mt-6 text-base font-medium">
+                    <a href="#"
+                        class="text-primary flex items-center hover:underline duration-300 mt-6 text-sm sm:text-base font-medium">
                         Start Driving Today
-                        <span class="ml-4 font-bold text-lg mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="14"
-                                height="14" viewBox="0 0 14 14" fill="none">
+                        <span class="ml-2 sm:ml-4 font-bold text-lg mt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                fill="none">
                                 <path
                                     d="M0.833496 6.99996H12.5002M12.5002 6.99996L6.66683 1.16663M12.5002 6.99996L6.66683 12.8333"
                                     stroke="#1487FC" stroke-width="1.66667" stroke-linecap="round"
                                     stroke-linejoin="round" />
-                            </svg></span>
+                            </svg>
+                        </span>
                     </a>
                 </div>
 
-                <!-- Real Estate Card -->
+                <!-- Real Estate -->
                 <div
-                    class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    class="bg-white border border-gray-200 rounded-xl p-6 sm:p-8 shadow-sm hover:shadow-lg transition duration-300 flex flex-col">
                     <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                     <img src="assets/images/plan_icon (1).png" alt=" Real Estate">
+                        <img src="assets/images/plan_icon (1).png" alt="Real Estate">
                     </div>
-                    <h3 class="font-inter font-medium text-2xl text-black mb-2">Real Estate</h3>
-                    <p class="text-black text-base">
+                    <h3 class="font-inter font-medium text-xl sm:text-2xl text-black mb-2">Real Estate</h3>
+                    <p class="text-black text-sm sm:text-base flex-1">
                         Offer residents or tenants convenient mobility solutions as part of your property’s amenities.
                     </p>
-                    <ul class="text-balck text-base mt-4 font-inter space-y-1">
+                    <ul class="text-black text-sm sm:text-base mt-4 font-inter space-y-1">
                         <li>Earn more per mile</li>
                     </ul>
-                    <a href="#" class="text-primary flex items-center hover:underline duration-300 mt-6 text-base font-medium">
+                    <a href="#"
+                        class="text-primary flex items-center hover:underline duration-300 mt-6 text-sm sm:text-base font-medium">
                         Explore Property Plans
-                        <span class="ml-4 font-bold text-lg mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="14"
-                                height="14" viewBox="0 0 14 14" fill="none">
+                        <span class="ml-2 sm:ml-4 font-bold text-lg mt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                fill="none">
                                 <path
                                     d="M0.833496 6.99996H12.5002M12.5002 6.99996L6.66683 1.16663M12.5002 6.99996L6.66683 12.8333"
                                     stroke="#1487FC" stroke-width="1.66667" stroke-linecap="round"
                                     stroke-linejoin="round" />
-                            </svg></span>
+                            </svg>
+                        </span>
                     </a>
                 </div>
 
-                <!-- Business Fleet Card -->
+                <!-- Business Fleet -->
                 <div
-                    class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm hover:shadow-lg transition-shadow duration-300">
+                    class="bg-white border border-gray-200 rounded-xl p-6 sm:p-8 shadow-sm hover:shadow-lg transition duration-300 flex flex-col">
                     <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mb-4">
-                     <img src="assets/images/plan_icon (2).png" alt=" Business Fleet">
+                        <img src="assets/images/plan_icon (2).png" alt="Business Fleet">
                     </div>
-                    <h3 class="font-inter font-medium text-2xl text-black mb-2">Business Fleet</h3>
-                    <p class="text-black text-base">
+                    <h3 class="font-inter font-medium text-xl sm:text-2xl text-black mb-2">Business Fleet</h3>
+                    <p class="text-black text-sm sm:text-base flex-1">
                         Hassle-free fleet management with all-inclusive pricing, perfect for growing businesses.
                     </p>
-                    <ul class="text-balck text-base mt-4 font-inter space-y-1">
+                    <ul class="text-black text-sm sm:text-base mt-4 font-inter space-y-1">
                         <li>Earn more per mile</li>
                     </ul>
-                    <a href="#" class="text-primary flex items-center hover:underline duration-300 mt-6 text-base font-medium">
+                    <a href="#"
+                        class="text-primary flex items-center hover:underline duration-300 mt-6 text-sm sm:text-base font-medium">
                         Get Fleet Pricing
-                        <span class="ml-4 font-bold text-lg mt-1"><svg xmlns="http://www.w3.org/2000/svg" width="14"
-                                height="14" viewBox="0 0 14 14" fill="none">
+                        <span class="ml-2 sm:ml-4 font-bold text-lg mt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 14 14"
+                                fill="none">
                                 <path
                                     d="M0.833496 6.99996H12.5002M12.5002 6.99996L6.66683 1.16663M12.5002 6.99996L6.66683 12.8333"
                                     stroke="#1487FC" stroke-width="1.66667" stroke-linecap="round"
                                     stroke-linejoin="round" />
-                            </svg></span>
+                            </svg>
+                        </span>
                     </a>
                 </div>
             </div>
         </section>
+
     </main>
 
 
