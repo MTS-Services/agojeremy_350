@@ -16,7 +16,7 @@
             display: none !important;
         }
     </style>
-  <link rel="stylesheet" crossorigin href="/assets/index-iLJX1BKz.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-Ufe8KAF1.css">
 </head>
 
 <body>
@@ -1176,7 +1176,7 @@
 
     <footer>
         <!-- faq section -->
-        <section class=" py-10 sm:py-14 lg:py-20 px-4 lg:px-0">
+        <section class=" py-10 sm:py-14 lg:py-10 px-4 lg:px-0">
             <!-- Header -->
             <div class="px-6 pb-8 text-center">
                 <h2 class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-medium font-inter text-gray-900">Frequently
@@ -1330,7 +1330,7 @@
         <!--  -->
         <section class="relative lg:z-30! ">
             <div class="bg-primary py-16 px-4 md:px-8 lg:px-16 mb-20 lg:p-24! text-white text-center bg-cover bg-center"
-                style="background-image: url('/assets/images/boy.jpg');">
+                style="background-image: url('/assets/footer-BssEIvSZ.jpg');">
 
                 <div class="absolute inset-0 bg-[#0C5197] opacity-75"></div>
 
@@ -1562,84 +1562,9 @@
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
-    <script>
-        // Initialize Swiper
-        const swiper = new Swiper('.testimonial-swiper', {
-            spaceBetween: 24,
-            slidesPerView: 1,
-            loop: true,
-            navigation: false, // Disable default navigation
-            breakpoints: {
-                640: {
-                    slidesPerView: 2,
-                },
-                1024: {
-                    slidesPerView: 3,
-                }
-            }
-        });
+    <script src="assets/js/home_slider.js"> </script>
 
-        // Custom navigation buttons
-        document.getElementById('prevBtn').addEventListener('click', () => {
-            swiper.slidePrev();
-        });
-
-        document.getElementById('nextBtn').addEventListener('click', () => {
-            swiper.slideNext();
-        });
-
-        // Tab functionality
-        const tabButtons = document.querySelectorAll('.tab-button');
-        let activeTab = 'personal';
-
-        tabButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                const tabId = button.getAttribute('data-tab');
-
-                // Update active tab
-                activeTab = tabId;
-
-                // Update button styles
-                tabButtons.forEach(btn => {
-                    if (btn.getAttribute('data-tab') === tabId) {
-                        btn.className = 'tab-button sm:px-6 px-3 py-2 rounded-full text-sm font-normal font-poppins transition-all duration-200 bg-gray-100 text-gray-900 shadow-sm whitespace-nowrap';
-                    } else {
-                        btn.className = 'tab-button sm:px-6 px-3 py-2 rounded-full text-sm font-normal font-poppins transition-all duration-200 text-gray-600 hover:text-gray-900 whitespace-nowrap';
-                    }
-                });
-
-                console.log('Active tab:', tabId);
-            });
-        });
-
-        // Button click handlers
-        document.querySelectorAll('button[class*="bg-blue-500"]').forEach(button => {
-            button.addEventListener('click', () => {
-                console.log(button.textContent + ' clicked');
-            });
-        });
-    </script>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            const menuToggle = document.getElementById('menu-toggle');
-            const mainMenu = document.getElementById('main-menu');
-            const findOutMore = document.querySelector('.mt-4.md\\:mt-0');
-            const menuIcon = document.getElementById('menu-icon');
-
-            menuToggle.addEventListener('click', function () {
-                const isMenuOpen = mainMenu.classList.toggle('hidden');
-                findOutMore.classList.toggle('hidden', isMenuOpen);
-
-                // Toggle the hamburger and close icon paths
-                if (isMenuOpen) {
-                    menuIcon.setAttribute('d', 'M4 6h16M4 12h16m-7 6h7'); // Hamburger icon
-                } else {
-                    menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12'); // Close icon
-                }
-            });
-        });
-    </script>
+   
 </body>
 
 </html>
