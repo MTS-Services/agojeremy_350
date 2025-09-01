@@ -4,27 +4,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonial Slider</title>
+    <title>Landing Page</title>
 
-    
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <style>
         .testimonial-swiper .swiper-button-next,
         .testimonial-swiper .swiper-button-prev {
             display: none !important;
         }
     </style>
-  <link rel="stylesheet" crossorigin href="/assets/index-DlFLYn6O.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-iLJX1BKz.css">
 </head>
 
 <body>
-    <header class="relative py-5 z-10 bg-[url('../images/landing-page-hero.png')] bg-cover bg-center min-h-[80vh] md:min-h-[90vh] lg:min-h-screen">
-        <nav class="container mx-auto px-4 lg:px-0 py-6 sm:py-0 flex flex-col md:flex-row justify-between items-center ">
+    <header
+        class="relative py-5 z-10 bg-[url('../images/landing-page-hero.png')] bg-cover bg-center min-h-[80vh] md:min-h-[90vh] lg:min-h-screen">
+        <nav
+            class="container mx-auto px-4 lg:px-0 py-6 sm:py-0 flex flex-col md:flex-row justify-between items-center ">
             <div class="flex justify-between items-center w-full md:w-auto">
                 <div class="text-center mb-4 md:mb-0">
-                    <img src="/assets/logo-BdrInYLs.png" alt="FORE MOBILITY Logo" class="sm:w-40 sm:h-14 w-28 h-10 mx-auto">
+                    <img src="/assets/logo-BdrInYLs.png" alt="FORE MOBILITY Logo"
+                        class="sm:w-40 sm:h-14 w-28 h-10 mx-auto">
                     <span class="sm:text-font-22px text-font-16px font-bebas text-white">FORE MOBILITY</span>
                 </div>
                 <button id="menu-toggle" class="md:hidden text-white focus:outline-none">
@@ -114,7 +117,8 @@
                     <h1 class="sm:text-4xl text-xl md:text-6xl font-inter! font-medium text-white mb-4 leading-tight">
                         Drive Your Way — No <br> Loans, No Hassle
                     </h1>
-                    <p class="sm:text-lg text-base md:text-2xl text-white font-light leading-relaxed font-inter">Cars for personal
+                    <p class="sm:text-lg text-base md:text-2xl text-white font-light leading-relaxed font-inter">Cars
+                        for personal
                         use,
                         gig work,
                         small business, and multifamily communities — with insurance & maintenance included.</p>
@@ -176,7 +180,8 @@
                     </div>
                 </div>
 
-                <div class="flex flex-col md:flex-row md:px-4 lg:px-0 items-center sm:items-start mt-12 gap-6 md:gap-12">
+                <div
+                    class="flex flex-col md:flex-row md:px-4 lg:px-0 items-center sm:items-start mt-12 gap-6 md:gap-12">
 
                     <div class="flex items-center space-x-2">
                         <div class="w-6 h-6 flex items-center justify-center text-white flex-shrink-0">
@@ -1168,6 +1173,390 @@
         </section>
 
     </main>
+
+    <footer>
+        <!-- faq section -->
+        <section class=" py-10 sm:py-14 lg:py-20 px-4 lg:px-0">
+            <!-- Header -->
+            <div class="px-6 pb-8 text-center">
+                <h2 class="text-xl sm:text-2xl lg:text-3xl xl:text-4xl font-medium font-inter text-gray-900">Frequently
+                    Asking Questions</h2>
+            </div>
+            <div class="container mx-auto rounded-lg shadow-sm ">
+
+                <!-- FAQ Items -->
+                <div class="bg-gray-50">
+                    <!-- FAQ Item 1 -->
+                    <div x-data="{ open: false }" class=" mb-4 bg-white shadow-md ">
+                        <button @click="open = !open"
+                            class="w-full px-6 py-6 text-left flex justify-between items-center hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition-colors duration-200">
+                            <span class="text-gray-700 font-medium text-2xl font-helvetica">What if I cancel?</span>
+                            <svg :class="open ? 'rotate-180' : ''"
+                                class="w-5 h-5 text-gray-500 transform transition-transform duration-200"
+                                xmlns="http://www.w3.org/2000/svg" width="29" height="24" viewBox="0 0 29 24"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.29736 8L14.6521 17L25.0068 8H4.29736Z" fill="#898B8E" />
+                            </svg>
+                        </button>
+                        <div x-show="open" x-transition:enter="transition ease-out duration-200"
+                            x-transition:enter-start="opacity-0 transform -translate-y-2"
+                            x-transition:enter-end="opacity-100 transform translate-y-0"
+                            x-transition:leave="transition ease-in duration-150"
+                            x-transition:leave-start="opacity-100 transform translate-y-0"
+                            x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 py-4">
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                You can cancel your subscription at any time. Your access will continue until the end of
+                                your current billing period.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 2 -->
+                    <div x-data="{ open: false }" class=" mb-4 bg-white shadow-md ">
+                        <button @click="open = !open"
+                            class="w-full px-6 py-6 text-left flex justify-between items-center hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition-colors duration-200">
+                            <span class="text-gray-700 font-medium text-2xl font-helvetica">What's included?</span>
+                            <svg :class="open ? 'rotate-180' : ''"
+                                class="w-5 h-5 text-gray-500 transform transition-transform duration-200"
+                                xmlns="http://www.w3.org/2000/svg" width="29" height="24" viewBox="0 0 29 24"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.29736 8L14.6521 17L25.0068 8H4.29736Z" fill="#898B8E" />
+                            </svg>
+                        </button>
+                        <div x-show="open" x-transition:enter="transition ease-out duration-200"
+                            x-transition:enter-start="opacity-0 transform -translate-y-2"
+                            x-transition:enter-end="opacity-100 transform translate-y-0"
+                            x-transition:leave="transition ease-in duration-150"
+                            x-transition:leave-start="opacity-100 transform translate-y-0"
+                            x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 py-4">
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                All features and premium content are included in your subscription with no additional
+                                fees or hidden costs.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 3 -->
+                    <div x-data="{ open: false }" class=" mb-4 bg-white shadow-md ">
+                        <button @click="open = !open"
+                            class="w-full px-6 py-6 text-left flex justify-between items-center hover:bg-gray-50 focus:outline-none focus:bg-gray-50 transition-colors duration-200">
+                            <span class="text-gray-700 font-medium text-2xl font-helvetica">Is insurance extra?</span>
+                            <svg :class="open ? 'rotate-180' : ''"
+                                class="w-5 h-5 text-gray-500 transform transition-transform duration-200"
+                                xmlns="http://www.w3.org/2000/svg" width="29" height="24" viewBox="0 0 29 24"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.29736 8L14.6521 17L25.0068 8H4.29736Z" fill="#898B8E" />
+                            </svg>
+                        </button>
+                        <div x-show="open" x-transition:enter="transition ease-out duration-200"
+                            x-transition:enter-start="opacity-0 transform -translate-y-2"
+                            x-transition:enter-end="opacity-100 transform translate-y-0"
+                            x-transition:leave="transition ease-in duration-150"
+                            x-transition:leave-start="opacity-100 transform translate-y-0"
+                            x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 py-4">
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Insurance coverage depends on your specific plan. Please check with your provider for
+                                details about coverage.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- FAQ Item 4 - Expanded by default to match the image -->
+                    <div x-data="{ open: true }" class="bg-gray-100">
+                        <button @click="open = !open"
+                            class="w-full px-6 py-6 text-left flex justify-between items-center hover:bg-gray-200 focus:outline-none focus:bg-gray-200 transition-colors duration-200">
+                            <span class="text-gray-700 font-medium text-2xl font-helvetica">What's included?</span>
+                            <svg :class="open ? 'rotate-180' : ''"
+                                class="w-5 h-5 text-gray-500 transform transition-transform duration-200"
+                                xmlns="http://www.w3.org/2000/svg" width="29" height="24" viewBox="0 0 29 24"
+                                fill="none">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M4.29736 8L14.6521 17L25.0068 8H4.29736Z" fill="#898B8E" />
+                            </svg>
+                        </button>
+                        <div x-show="open" x-transition:enter="transition ease-out duration-200"
+                            x-transition:enter-start="opacity-0 transform -translate-y-2"
+                            x-transition:enter-end="opacity-100 transform translate-y-0"
+                            x-transition:leave="transition ease-in duration-150"
+                            x-transition:leave-start="opacity-100 transform translate-y-0"
+                            x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 py-4 bg-gray-100">
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                Our Garns Are Made From Premium-Quality Cotton And Cotton-Blend Fabrics That Are Soft,
+                                Breathable, And Durable. The Material Is Skin-Friendly And Suitable For All Seasons,
+                                Especially For Everyday Comfort.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- mobility app section -->
+        <section class="bg-white relative lg:mt-32 z-10 container mx-auto px-4 py-16 sm:py-20 lg:pb-20  ">
+            <div class="flex flex-col lg:flex-row items-center justify-between gap-7 w-full">
+                <div class="left_side w-full lg:w-1/2">
+                    <h2 class="font-poppins font-medium text-3xl md:text-5xl">Get the Fore Mobility App</h2>
+                    <p class="font-inter font-normal text-sm md:text-base mt-5">
+                        Experience the easiest way to rent a car with Fore
+                        Mobility. Search, compare, <br class="hidden md:block"> and book vehicles right from your phone.
+                        Download the app today and enjoy <br class="hidden md:block"> faster booking, flexible rentals,
+                        and
+                        24/7 support — wherever you are.
+                    </p>
+
+                    <div class="mt-6">
+                        <h3 class="font-inter font-normal text-sm md:text-base">Download App From</h3>
+                        <div class="flex items-center gap-4 mt-2">
+                            <a href="#">
+                                <img src="data:image/png;base64,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" alt="Download on the App Store"
+                                    class="h-10 md:h-12 w-auto">
+                            </a>
+                            <a href="#">
+                                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAHgAAAAoCAYAAAA16j4lAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAhVSURBVHgB7ZxLTFxVGMe/oRUUo6XValPTdqo2ypi+tF246YD1VV0U2m7amkKjm5ooEB8r7SPVRE0MYKM7U7ChdWGFJm40JpQ2ujIC0YCJRoYuTDSx0BcppHA9vyvf5MzlzlxmGGCGzD/5uPee9z3/e77vPD4mJJM4efJkWXFxcV0oFKowjxVSQN7BcZwec2nev39/i4aF+GPIDZeUlHT29/eHz549K7FYTEZGRqSA/EIkEpFt27YhsdHR0cqDBw/GXIJPnz49YIh1yS0g/7F7924Ekjcvamtrq7148WLtqVOnpICFAaOJpby8vGzFihWjRcbm1l24cEEKWFhAGxtuo0XmflNfX58UsLAwODjIpaJICliQ0EnyYslRlJWVSUVFhQwPD7uzekTDERuk8QtDNI9dbrJ0fnWfP39+Sl47fTgcjrctJ2Fm0I65JJXi5Xc6jxze5mz5crez/sTzzj3RNSnTZ0OqqqqcgYEBp6WlxWlqanLv6+vr3TjT8c7Q0JBjOt4V0pCe++7u7nicptc8ZimYkI4yua+trU2o+8iRI24ZlNvR0eGm27RpkxtHWmBIjafv7OxMeM4lcbkNIvjhN590ybUlfOgJQ3zprDSKzqJT7U4zIyf+rGT55YUAvzhvHtIdPXrUNz/kU5+3PYQRD6FIvhAcaIPve+jVKWH3RsOy4cQOWbmnXBaV3ibZhBl50tzcnKD2VE3PNmpqaqShoSFBBVPvuXPnxJDrPnd1dbkTGNqZDwgk+PbL1VI8VOUbt3JPRCIfbhejtiVbwM7ZZJoRImYEuWLUtRtmVG3cLmtYNrB27VrfD4kw23ZDbl1d3RR7nouY1iw6Fckly++UtYe2SOSD7WLUtswUPT09Ymxe/LmystLteEa1wthGd3KDZHMkUTdlekF7vBqF9jQ2NkquY9rLpFQkg9Jwmau2Vx3YMCOizeRGdu7cmUAync6IyeZo9QPlG1udQDKz6Wg06rbLm5Z0djtzEWktkyAZjC3tSJrm/hfWSdnWlfLXV/3yb9egpAtGR3V1tauaVTUi2Eae6VRUNB0PCGOUZwMsiajHrvvKlStJyzeb+a7pyGWEmGnt27cvaYKn3r8+JezmsvaUJIN37uqWx4YG5ek3xmXwb8kISu58rDN1FOf0GjcAhtvMNjqCRjLkvlhySWRFSP5oWyyt307I8S8m0ibabxNirpDPxNrIeKsymU2Ok2uh5rki+f7jRXLg2ZAUMLeY0V60l2Q/chVhM5o/f3uRvLarsP09l5hxbyvJqci1cfhAgeC5RFYOG1766ao8c9NMxtZL1sDkiqURO0g64WGW29raOmXJMpswe9PxWfx0wRJqyZIl8Wdm4rSd9TtgFcBS0LtrNhuYMcF7/myVPbEWuRH7fzereP3llOlPfD0hQYBQlipce3t7XVLp5I0bN8bXqWYvWeYCLMeoLx2CIRCCIRasWbMmvo6nHNbOfLjHjh3LbYKVXMWNb5KTPHxD5HjrhHwSQLCSC6GsM72jlZ0rHQm5DD5MXasDyKXt7GXPJTI2iF5yFZA89suyhLDW7xxZt388kFzA1w/JfN1+qpiOyscljGocVPNcIiOCk5GrUJK7eh13o+OVj8Zl+Loj0wEnOukeIjBS2tvb3V0lRr+e/ChQiani+aBQ/RpPG3j2O0wgL2nMseKUbc1U0LJUbdvAzlOeXSZt5p4P3gZh6ZintAkOIhdcvTUuDY0hl1xITge82KQ/URx0Dp3qFbVl3EMy6k/J0kMIwuk4bzydCtQk0JHEUxeag3K9BJOHvKFQyG2jflh+wAYTj2gbgffDhSwE4imTdpAW28w9tluhZdkTuEAEHfibrcq4fPbyp84/27emlOPrVjt3L16c8SE13hQcuovHCcCM6riQBnCQz2G8HsjLpHOAenbovdeBwJDi5icezw2vl4bGE8aBvpYP1HGAOM1re48gtNEL2qPeIzgb2HXyHniNcMXrBKhTgr4n6fzaKjM98FcEjdwfh65J9c+/ybu/XzIj+JZkCj2ys0ePHjKo6NEhafRZZ6NcddbNCEdYoth2m3igyxVGrl+8DT01onw9o9bZtd9cgffgkALZvHmzLF261DedqmK0DOWqRqBsRruOZJ4xHZSRzhxkWgSnIhd1/HrfgFQZcn8wJM8UTK4gJ9lZq74oL0knapgfgg7k6TxU43RUnn5AqH49YUJlKgle6NoX0Xb6AXIB5aH6WTnYdeJNwvuqLfb7+FIiSEWnUstvPfjAjNRxMlFVhDpUhzeZVGWoS4AqI4xn1J+qLfWhQmTSZ4p4LQdVa+dRNahqVuP9VDR5bHXPFadAr8pERePQl+z9bBVNmbaPF+8M1GeMd1akKlOSqOhAgjsef3QKsYStuqMk68T6dUIqW4ZAnBKiV5tQJVzj1X5rGTahGq9pbIJJq/bRrstr39MlmA9L22zXbTsF0ga7zekQHHgebIiU99atlh3Ly+TXayOujc2GKp4O9HBf7R+qDhvkVYmk0y1NVLfXThGuM1ryEu9Vm+QnnnykwUTgKqTzAd1cUTchwpK1R9Vpsg0ZnRsQT167bsrjnrK1jbqrR3vSAefBgSN4oQsjnVmz7SqrJiIX2scot01IOgK3OfufDXMFRqJqCSYw7HfzbDv5zSd0UyPj7VlYLi2dHSf2fBFsq1GHcVvo5xQ/H4JWwZZn2h6dZHWWl5fP+8sUJLsCp4bb7iLz0XbxH+EFLCzwUw6G2+aisbGxpkgkEtu1a5cUsDAAl9FoNMaPsbhecGfOnGGq1mm27ML8tz8/AVBAfsHMo1zHArQxA9bsilXu3bs3luDmyO91mEu9idwoBeQjutjwQiubLU93cf4fNV5fLg6KFKIAAAAASUVORK5CYII=" alt="Get it on Google Play"
+                                    class="h-10 md:h-12 w-auto">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div
+                    class="right_side w-full max-w-xl mx-auto lg:max-w-none lg:w-1/2 lg:absolute lg:z-0! lg:-bottom-28 lg:right-0 mt-8 lg:mt-0">
+                    <img src="/assets/Group_3-QChAoARe.png" alt="App Preview" class="w-full h-auto">
+                </div>
+            </div>
+        </section>
+        <!--  -->
+        <section class="relative lg:z-30! ">
+            <div class="bg-primary py-16 px-4 md:px-8 lg:px-16 mb-20 lg:p-24! text-white text-center bg-cover bg-center"
+                style="background-image: url('/assets/images/boy.jpg');">
+
+                <div class="absolute inset-0 bg-[#0C5197] opacity-75"></div>
+
+                <div class="relative z-10 max-w-5xl mx-auto">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4">
+                        Your Car, Your Terms — Start Today
+                    </h2>
+                    <p class="text-base sm:text-lg mb-5">
+                        Join thousands of drivers saving time & money with
+                        Fore
+                        Mobility’s all- <br class="hidden sm:block"> inclusive car subscriptions —
+                        insurance,
+                        maintenance, and roadside <br class="hidden sm:block"> included.
+                    </p>
+                    <p class="text-lg font-semibold mb-8">
+                        Limited cars available in your area — book before
+                        they're
+                        gone!
+                    </p>
+                    <a href="#"
+                        class="inline-block bg-white text-[#106CCA] py-3 px-6 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                        Contact Us
+                    </a>
+                    <p class="text-sm sm:text-base mt-4">
+                        No hidden fees. Cancel anytime
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section
+            class="container  px-4 sm:px-0 bg-[#E8F3FF] rounded-3xl shadow-xl border border-blue-200 mb-20! p-8 sm:p-12 md:p-16">
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 lg:gap-24 pb-8 md:pb-12 ">
+
+                <div class="flex flex-col justify-between items-center md:items-start text-center md:text-left">
+                    <div>
+                        <a href="#" class="inline-block mb-4 cursor-pointer">
+                            <img src="/assets/images/footer_logo.png" alt="Logo" class="h-16 w-auto">
+                        </a>
+                        <p class="text-sm text-[#0021BF] mb-10 max-w-xs font-inter">
+                            Fore Mobility Services — Your Trusted Partner for
+                            All
+                            Your Needs. Contact us today for a consultation.
+                        </p>
+                    </div>
+                    <div class="flex space-x-3">
+                        <a href="#"
+                            class="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full transition-colors duration-200">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.874v-6.985h-2.54V12h2.54V9.79c0-2.508 1.493-3.89 3.778-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33V22H12c5.523 0 10-4.477 10-10z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full transition duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M7 2C4.24 2 2 4.24 2 7v10c0 2.76 2.24 5 5 5h10c2.76 0 5-2.24 5-5V7c0-2.76-2.24-5-5-5H7zm10 2c1.66 0 3 1.34 3 3v10c0 1.66-1.34 3-3 3H7c-1.66 0-3-1.34-3-3V7c0-1.66 1.34-3 3-3h10zm-5 3a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm4.8-.9a1.1 1.1 0 11-2.2 0 1.1 1.1 0 012.2 0z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full transition duration-200">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6" fill="currentColor"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="M22.46 6c-.77.35-1.6.58-2.46.69a4.3 4.3 0 001.88-2.37c-.83.5-1.75.85-2.73 1.05a4.28 4.28 0 00-7.3 3.9A12.14 12.14 0 013 4.79a4.28 4.28 0 001.33 5.7 4.24 4.24 0 01-1.94-.54v.05c0 2.08 1.48 3.82 3.45 4.21a4.3 4.3 0 01-1.93.07 4.28 4.28 0 004 2.97A8.6 8.6 0 012 19.54 12.1 12.1 0 008.29 21c7.55 0 11.68-6.26 11.68-11.68 0-.18 0-.35-.01-.53A8.35 8.35 0 0022.46 6z" />
+                            </svg>
+                        </a>
+                        <a href="#"
+                            class="bg-blue-600 hover:bg-blue-700 text-white p-3 rounded-full transition-colors duration-200">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                                <path fill-rule="evenodd"
+                                    d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.766s.784-1.766 1.75-1.766 1.75.79 1.75 1.766-.783 1.766-1.75 1.766zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.784 7 2.476v6.759z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="md:hidden col-span-1 w-full space-y-2">
+                    <div x-data="{ open: false }" class="w-full border-b border-[#B6DAFE]">
+                        <button @click="open = !open" class="w-full flex justify-between items-center py-3 text-left">
+                            <h3 class="font-semibold text-lg text-[#093D71] font-inter">Quick Links</h3>
+                            <svg class="w-5 h-5 transition-transform duration-300 transform text-[#093D71]"
+                                :class="{ 'rotate-180': open }" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div x-show="open" x-transition class="pb-4">
+                            <ul class="space-y-4 text-sm mt-2">
+                                <li><a href="#"
+                                        class="hover:text-blue-600 text-[#001EAA] transition-colors duration-200 font-inter">Personal</a>
+                                </li>
+                                <li><a href="#"
+                                        class="hover:text-blue-600 text-[#001EAA] transition-colors duration-200 font-inter">Gig
+                                        Drivers</a></li>
+                                <li><a href="#"
+                                        class="hover:text-blue-600 text-[#001EAA] transition-colors duration-200 font-inter">Business
+                                        Fleet</a></li>
+                                <li><a href="#"
+                                        class="hover:text-blue-600 text-[#001EAA] transition-colors duration-200 font-inter">Real
+                                        Estate</a></li>
+                                <li><a href="#"
+                                        class="hover:text-blue-600 text-[#001EAA] transition-colors duration-200 font-inter">About</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div x-data="{ open: false }" class="w-full border-b border-[#B6DAFE]">
+                        <button @click="open = !open" class="w-full flex justify-between items-center py-3 text-left">
+                            <h3 class="font-semibold text-lg text-[#093D71] font-inter">Contact</h3>
+                            <svg class="w-5 h-5 transition-transform duration-300 transform text-[#093D71]"
+                                :class="{ 'rotate-180': open }" fill="currentColor" viewBox="0 0 20 20">
+                                <path fill-rule="evenodd"
+                                    d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                    clip-rule="evenodd" />
+                            </svg>
+                        </button>
+                        <div x-show="open" x-transition class="pb-4">
+                            <ul class="space-y-6 text-sm mt-2">
+                                <li class="flex items-center space-x-2">
+                                    <svg class="h-5 w-5 text-[#106CCA] shrink-0" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path
+                                            d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.74 21 3 13.26 3 3c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.46.57 3.57.12.35.03.75-.24 1.02l-2.2 2.2z" />
+                                    </svg>
+                                    <span class="text-[#001EAA] font-inter">+68133543213</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <svg class="h-5 w-5 text-[#106CCA] shrink-0" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path
+                                            d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z" />
+                                    </svg>
+                                    <span class="text-[#001EAA] font-inter">info@demumail@gmail.com</span>
+                                </li>
+                                <li class="flex items-center space-x-2">
+                                    <svg class="h-5 w-5 text-[#106CCA] shrink-0" viewBox="0 0 24 24"
+                                        fill="currentColor">
+                                        <path
+                                            d="M12 2c-4.42 0-8 3.58-8 8 0 4.86 5.56 11.23 8 13.31 2.44-2.08 8-8.45 8-13.31 0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" />
+                                    </svg>
+                                    <span class="text-[#001EAA] font-inter">180/A, CAD Avenue, Los Angeles</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hidden md:grid md:col-span-2 md:grid-cols-2 md:gap-16 lg:gap-24">
+                    <div>
+                        <h3 class="font-semibold text-lg text-[#093D71] mb-4 font-inter text-center md:text-left">Quick
+                            Links</h3>
+                        <ul class="space-y-4 text-sm text-center md:text-left">
+                            <li><a href="#"
+                                    class="hover:text-blue-600 text-[#001EAA] transition-colors duration-200 font-inter">Personal</a>
+                            </li>
+                            <li><a href="#"
+                                    class="hover:text-blue-600 text-[#001EAA] transition-colors duration-200 font-inter">Gig
+                                    Drivers</a></li>
+                            <li><a href="#"
+                                    class="hover:text-blue-600 text-[#001EAA] transition-colors duration-200 font-inter">Business
+                                    Fleet</a></li>
+                            <li><a href="#"
+                                    class="hover:text-blue-600 text-[#001EAA] transition-colors duration-200 font-inter">Real
+                                    Estate</a></li>
+                            <li><a href="#"
+                                    class="hover:text-blue-600 text-[#001EAA] transition-colors duration-200 font-inter">About</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg text-[#093D71] mb-4 font-inter text-center md:text-left">
+                            Contact</h3>
+                        <ul class="space-y-6 text-sm">
+                            <li class="flex items-center justify-center md:justify-start space-x-2">
+                                <svg class="h-5 w-5 text-[#106CCA] shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1C10.74 21 3 13.26 3 3c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.46.57 3.57.12.35.03.75-.24 1.02l-2.2 2.2z" />
+                                </svg>
+                                <span class="text-[#001EAA] font-inter">+68133543213</span>
+                            </li>
+                            <li class="flex items-center justify-center md:justify-start space-x-2">
+                                <svg class="h-5 w-5 text-[#106CCA] shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M22 6c0-1.1-.9-2-2-2H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6zm-2 0l-8 5-8-5h16zm0 12H4V8l8 5 8-5v10z" />
+                                </svg>
+                                <span class="text-[#001EAA] font-inter">info@demumail@gmail.com</span>
+                            </li>
+                            <li class="flex items-center justify-center md:justify-start space-x-2">
+                                <svg class="h-5 w-5 text-[#106CCA] shrink-0" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 2c-4.42 0-8 3.58-8 8 0 4.86 5.56 11.23 8 13.31 2.44-2.08 8-8.45 8-13.31 0-4.42-3.58-8-8-8zm0 11c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3z" />
+                                </svg>
+                                <span class="text-[#001EAA] font-inter">180/A, CAD Avenue, Los Angeles</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="w-full h-[0.5px]! z-50 hidden md:block text-[#B6DAFE]">
+            </hr>
+
+            <div
+                class="flex flex-col md:flex-row items-center justify-between pt-6 text-center md:text-left space-y-4 md:space-y-0 text-sm">
+                <span class="text-[#001EAA] font-inter">Copyright © 2025. Fore Mobility. All right reserved</span>
+                <div class="flex flex-wrap justify-center gap-x-6 gap-y-2">
+                    <a href="#"
+                        class="hover:text-blue-600 transition-colors duration-200 text-[#001EAA] font-inter">Privacy
+                        Policy</a>
+                    <a href="#"
+                        class="hover:text-blue-600 transition-colors duration-200 text-[#001EAA] font-inter">Terms &
+                        Condition</a>
+                    <a href="#"
+                        class="hover:text-blue-600 transition-colors duration-200 text-[#001EAA] font-inter">Cookie
+                        Policy</a>
+                </div>
+            </div>
+        </section>
+    </footer>
+
 
     <script src="/assets/js/app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
