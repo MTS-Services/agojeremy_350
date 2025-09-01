@@ -22,9 +22,9 @@
 
 <body>
     <header
-        class="relative py-5 z-10 bg-[url('../images/personal_car.png')] bg-cover bg-center min-h-[80vh] md:min-h-[90vh] lg:min-h-screen">
+        class="relative py-5 z-10 bg-[url('../images/personal_car.png')] bg-cover  bg-center min-h-[60vh] md:min-h-[70vh] lg:min-h-[85vh]">
         <nav
-            class="container mx-auto px-4 lg:px-0 py-6 sm:py-0 flex flex-col md:flex-row justify-between items-center ">
+            class="container  px-4 lg:px-0 py-6 sm:py-0 flex flex-col md:flex-row justify-between items-center ">
             <div class="flex justify-between items-center w-full md:w-auto">
                 <div class="text-center mb-4 md:mb-0">
                     <a href="index.html"> <img src="/assets/images/logo.png" alt="FORE MOBILITY Logo"
@@ -112,76 +112,40 @@
             </div>
         </nav>
         <!-- inner banner -->
-        <section class="container px-4 md:px-0  md:pt-14">
-            <div class="max-w-full justify-center px-[96px] items-center">
+        <section class="container  px-4 md:px-0 items-center md:pt-24 lg:pt-28 xl:pt-32 ">
+            <div class="max-w-full justify-center px-10 sm:px-12 md:px-18 lg:px-24 items-center">
                 <div class="text-center">
-                    <h1 class="mb-4 text-xl  leading-[67.2px] text-white sm:text-4xl lg:text-5xl font-inter">
-                     Your Car, Only When You Need It — No <br class="hidden md:block"> Loans, No Long-Term Commitments
+                    <h1 class="mb-4 text-xl leading-6 sm:leading-7 md:leading-9 lg:leading-16 text-white sm:text-4xl lg:text-5xl font-inter">
+                        Your Car, Only When You Need It — No <br class="hidden md:block"> Loans, No Long-Term
+                        Commitments
                     </h1>
-                    <p  class="text-base font-light leading-relaxed text-white sm:text-lg  font-inter">Join thousands of drivers who’ve switched to Fore Mobility</p>
-                    <!-- <p class="text-base font-light leading-relaxed text-white sm:text-lg md:text-2xl font-inter">
-                        Cars for personal use, gig work, small business, and multifamily
-                        communities &mdash; with insurance & maintenance included.
-                    </p> -->
+                    <p class="text-base font-light leading-relaxed text-white sm:text-lg  font-inter">
+                        Join thousands of drivers who’ve switched to Fore Mobility
+                    </p>
+                    <p class="text-base font-light leading-relaxed text-white sm:text-lg md:text-xl font-inter">
+                        Forget car loans, repair bills, and long commitments — get an insured, maintained car on your
+                        terms, starting today.
+                    </p>
                 </div>
-                <div
-                    class="mt-8 flex min-h-[40px] max-w-full items-center rounded-full border border-white border-opacity-20 bg-white/15 bg-opacity-70 p-0.5 shadow-lg backdrop-blur-lg sm:max-w-[500px] md:mx-4 lg:mx-0 flex-row">
-                    <input type="text" placeholder="Check cars near you"
-                        class="flex-grow w-full px-4 py-2 text-sm text-white bg-transparent rounded-full focus:outline-none placeholder:text-white sm:w-auto" />
+
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6 lg:gap-8 xl:gap-10 mt-8">
                     <button
-                        class="w-auto rounded-full bg-primary px-6 py-2 text-sm font-normal text-white transition duration-300 hover:bg-blue-700 font-inter">
-                        Check
+                        class="bg-blue-500 hover:bg-blue-600 text-white font-medium px-6 py-3 rounded-lg inline-flex items-center justify-center gap-2 transition-colors w-full sm:w-auto">
+                       See Cars Near You
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M17 7l-10 10M7 7h10v10" />
+                        </svg>
+                    </button>
+                    <button
+                        class=" text-white font-medium border-2 border-gray-50 text-base sm:text-lg lg:text-xl px-6 py-2 rounded-lg inline-flex items-center justify-center gap-2 transition-colors w-full sm:w-auto">
+                        Learn How It Works
+                       
                     </button>
                 </div>
-
-                <div class="mt-14 grid w-full grid-cols-2 gap-4 md:gap-6 md:px-4 lg:grid-cols-4 lg:px-0">
-                    <div
-                        class="flex flex-col items-start justify-between p-3 px-6 text-left text-white rounded-xl bg-primary bg-opacity-80">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mb-3">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                        </svg>
-                        <h3 class="mb-2 text-base font-medium">Personal</h3>
-                        <p class="text-sm">Everyday errands & weekend trips</p>
-                    </div>
-
-                    <div
-                        class="flex flex-col items-start justify-between p-3 px-6 text-left text-white rounded-xl bg-primary bg-opacity-80">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mb-3">
-                            <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
-                            <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
-                        </svg>
-                        <h3 class="mb-2 text-base font-medium">Gig Drivers</h3>
-                        <p class="text-sm">Affordable cars for Uber, Lyft, DoorDash</p>
-                    </div>
-
-                    <div
-                        class="flex flex-col items-start justify-between p-3 px-6 text-left text-white rounded-xl bg-primary bg-opacity-80">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mb-3">
-                            <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
-                            <line x1="12" y1="18" x2="12.01" y2="18"></line>
-                        </svg>
-                        <h3 class="mb-2 text-base font-medium">Small business</h3>
-                        <p class="text-sm">Flexible fleet for your team</p>
-                    </div>
-
-                    <div
-                        class="flex flex-col items-start justify-between p-3 px-6 text-left text-white rounded-xl bg-primary bg-opacity-80">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                            stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 mb-3">
-                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
-                            <polyline points="9 22 9 12 15 12 15 22"></polyline>
-                        </svg>
-                        <h3 class="mb-2 text-base font-medium">Multifamily</h3>
-                        <p class="text-sm">Shared cars for apartment residents</p>
-                    </div>
-                </div>
-
                 <div
-                    class="flex flex-col items-center gap-6 mt-12 sm:items-start md:flex-row md:gap-12 md:px-4 lg:px-0">
+                    class="flex flex-col items-center gap-6 mt-12 justify-center md:flex-row md:gap-12 md:px-4 lg:px-0">
                     <div class="flex items-center space-x-2">
                         <div class="flex items-center justify-center flex-shrink-0 w-6 h-6 text-white">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
@@ -224,7 +188,7 @@
     </header>
     <main>
         <!-- get the app -->
-        <section class="bg-white pt-16 sm:pt-18 lg:pt-20 pb-8 relative z-10 container  px-4 lg:px-0">
+        <section class="bg-white pt-16 sm:pt-18 lg:pt-20  pb-8 relative z-10 container  px-4 lg:px-0">
             <div class="flex flex-col lg:flex-row items-center justify-between gap-7 w-full">
                 <div class="left_side w-full lg:w-1/2 ">
                     <h2 class="font-poppins font-medium text-3xl md:text-5xl">Get the Fore Mobility App</h2>
