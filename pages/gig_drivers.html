@@ -189,226 +189,195 @@
     </header>
     <main>
         <!-- How Much More You’ll Keep Each Week -->
-        <section class="py-10 container">
-            <div class="text-center">
-                <h2 class="text-2xl md:text-4xl font-inter font-normal mb-4">Why Smart Drivers Choose Fore</h2>
+        <section class="pb-14 pt-16 sm:pt-20 lg:pt-28 px-4 lg:px-0">
+            <div class="container mx-auto text-center">
+                <!-- Title -->
+                <h2 class="text-2xl md:text-4xl lg:text-5xl font-semibold text-black mb-3">
+                    How Much More You’ll Keep Each Week
+                </h2>
+                <p class="text-gray-600 text-xl mb-14">
+                    Based on average weekly rates in [city/region] for Uber/Lyft approved vehicles.
+                </p>
 
-            </div>
-
-            <div class="font-inter py-10">
-                <div class="flex justify-center items-center p-4">
-
-                    <!-- Desktop Comparison Table -->
-                    <div
-                        class="hidden md:block w-full bg-white border rounded-xl border-[#B6DAFE] shadow-sky-300 shadow-sm">
-
+                <!-- Desktop Table -->
+                <div class="hidden md:block w-full overflow-x-auto">
+                    <div class="bg-white rounded-xl shadow-xl border-b border-gray-100 overflow-hidden">
                         <!-- Header -->
-                        <div
-                            class="grid grid-cols-[1fr_1.5fr_1.5fr] rounded-t-xl text-sm lg:text-base font-semibold overflow-hidden">
-                            <div class="bg-primary text-white px-4 py-5 border-r border-white/20">Feature</div>
-                            <div class="bg-primary text-white px-4 py-5 border-r border-white/20">Fore Mobility</div>
-                            <div class="bg-primary text-white px-4 py-5">Traditional Lease</div>
+                        <div class="grid grid-cols-4 bg-primary text-white text-sm md:text-base font-semibold">
+                            <div class="px-4 py-4 border-r border-white/20">Mileage / Week</div>
+                            <div class="px-4 py-4 border-r border-white/20">Fore Rental</div>
+                            <div class="px-4 py-4 border-r border-white/20">Uber/Lyft Rental</div>
+                            <div class="px-4 py-4">Weekly Savings</div>
                         </div>
 
-                        <!-- Monthly Cost -->
-                        <div class="grid grid-cols-[1fr_1.5fr_1.5fr] items-center bg-[#E6E9FB] text-sm lg:text-base">
-                            <div class="flex items-center p-4 text-[#000D4A] font-medium">
-                                <img src="/assets/images/feature (6).svg" class="w-6 mr-3" alt="Monthly Cost"> Monthly
-                                Cost
-                            </div>
-                            <div class="p-4">
+                        <!-- Rows -->
+                        <div class="grid grid-cols-4 text-sm md:text-base bg-[#E6E9FB] border-t border-gray-200">
+                            <div class="px-4 py-4 text-gray-800 font-medium">500 miles</div>
+                            <div class="px-4 py-4">
                                 <span
-                                    class="inline-block bg-[#E3F4E9] text-tertiary border rounded-full px-3 py-1 font-medium">
-                                    <i class="fa-solid fa-check mr-1"></i> $450/month – all-in
-                                </span>
+                                    class="inline-block bg-[#E3F4E9] text-green-600 border border-green-400 rounded-full px-3 py-1 font-medium">✓
+                                    $150/Week</span>
                             </div>
-                            <div class="p-4">
-                                <span
-                                    class="inline-block bg-[#FFE4E7] text-[#DC3545] rounded-full px-3 py-1 font-medium">
-                                    $600+ every month (loan, insurance & repairs extra)
-                                </span>
+                            <div class="px-4 py-4">
+                                <span class="inline-block text-red-500 font-medium bg-[#FFD4D480] rounded-full p-1.5 px-3">$200/Week</span>
                             </div>
+                            <div class="px-4 py-4 font-semibold text-gray-800">$50/Week</div>
                         </div>
 
-                        <!-- Down Payment -->
-                        <div
-                            class="grid grid-cols-[1fr_1.5fr_1.5fr] items-center text-sm lg:text-base border-t border-gray-200">
-                            <div class="flex items-center p-4 text-[#000D4A] font-medium">
-                                <img src="/assets/images/feature (8).svg" class="w-6 mr-3" alt="Down Payment"> Down
-                                Payment
-                            </div>
-                            <div class="p-4">
+                        <div class="grid grid-cols-4 text-sm md:text-base border-t border-gray-200">
+                            <div class="px-4 py-4 text-gray-800 font-medium">1000 miles</div>
+                            <div class="px-4 py-4">
                                 <span
-                                    class="flex items-center bg-[#E3F4E9] text-tertiary border rounded-full px-3 py-1 font-medium">
-                                    <i class="fa-solid fa-check mr-2"></i> $0 down — start today
-                                </span>
+                                    class="inline-block bg-[#E3F4E9] text-green-600 border border-green-400 rounded-full px-3 py-1 font-medium">✓
+                                    $250/Week</span>
                             </div>
-                            <div class="p-4">
-                                <span
-                                    class="inline-block bg-[#FFE4E7] text-[#DC3545] rounded-full px-3 py-1 font-medium">
-                                    $2,000+ down – plus dealer fees
-                                </span>
+                            <div class="px-4 py-4">
+                                <span class="inline-block text-red-500 font-medium bg-[#FFD4D480] rounded-full p-1.5 px-3">$350/Week</span>
                             </div>
+                            <div class="px-4 py-4 font-semibold text-gray-800">$100/Week</div>
                         </div>
 
-                        <!-- Maintenance -->
-                        <div
-                            class="grid grid-cols-[1fr_1.5fr_1.5fr] items-center bg-[#E6E9FB] text-sm lg:text-base border-t border-gray-200">
-                            <div class="flex items-center p-4 text-[#000D4A] font-medium">
-                                <img src="/assets/images/feature (7).svg" class="w-6 mr-3" alt="Maintenance">
-                                Maintenance
-                            </div>
-                            <div class="p-4">
+                        <div class="grid grid-cols-4 text-sm md:text-base bg-[#E6E9FB] border-t border-gray-200">
+                            <div class="px-4 py-4 text-gray-800 font-medium">1500 miles</div>
+                            <div class="px-4 py-4">
                                 <span
-                                    class="inline-block bg-[#E3F4E9] text-tertiary border rounded-full px-3 py-1 font-medium">
-                                    <i class="fa-solid fa-check mr-1"></i> Included – save $500+ per year
-                                </span>
+                                    class="inline-block bg-[#E3F4E9] text-green-600 border border-green-400 rounded-full px-3 py-1 font-medium">✓
+                                    $350/Week</span>
                             </div>
-                            <div class="p-4">
-                                <span
-                                    class="inline-block bg-[#FFE4E7] text-[#DC3545] rounded-full px-3 py-1 font-medium">
-                                    You pay for every repair
-                                </span>
+                            <div class="px-4 py-4">
+                                <span class="inline-block text-red-500 font-medium bg-[#FFD4D480] rounded-full p-1.5 px-3">$550/Week</span>
                             </div>
+                            <div class="px-4 py-4 font-semibold text-gray-800">$150/Week</div>
                         </div>
 
-                        <!-- Insurance -->
-                        <div
-                            class="grid grid-cols-[1fr_1.5fr_1.5fr] items-center text-sm lg:text-base border-t border-gray-200">
-                            <div class="flex items-center p-4 text-[#000D4A] font-medium">
-                                <img src="/assets/images/feature (5).svg" class="w-6 mr-3" alt="Insurance"> Insurance
-                            </div>
-                            <div class="p-4">
+                        <div class="grid grid-cols-4 text-sm md:text-base border-t border-gray-200">
+                            <div class="px-4 py-4 text-gray-800 font-medium">3000 miles</div>
+                            <div class="px-4 py-4">
                                 <span
-                                    class="inline-block bg-[#E3F4E9] text-tertiary border rounded-full px-3 py-1 font-medium">
-                                    <i class="fa-solid fa-check mr-1"></i> Included – no separate bill
-                                </span>
+                                    class="inline-block bg-[#E3F4E9] text-green-600 border border-green-400 rounded-full px-3 py-1 font-medium">✓
+                                    $450/Week</span>
                             </div>
-                            <div class="p-4">
-                                <span
-                                    class="inline-block bg-[#FFE4E7] text-[#DC3545] rounded-full px-3 py-1 font-medium">
-                                    Extra bill every month
-                                </span>
+                            <div class="px-4 py-4">
+                                <span class="inline-block text-red-500 font-medium bg-[#FFD4D480] rounded-full p-1.5 px-3">$650/Week</span>
                             </div>
+                            <div class="px-4 py-4 font-semibold text-gray-800">$200/Week</div>
                         </div>
 
-                        <!-- Contract Term -->
-                        <div
-                            class="grid grid-cols-[1fr_1.5fr_1.5fr] items-center bg-[#E6E9FB] text-sm lg:text-base border-t border-gray-200">
-                            <div class="flex items-center p-4 text-[#000D4A] font-medium">
-                                <img src="/assets/images/feature (4).svg" class="w-6 mr-3" alt="Contract Term"> Contract
-                                Term
-                            </div>
-                            <div class="p-4">
+                        <div class="grid grid-cols-4 text-sm md:text-base bg-[#E6E9FB] border-t border-gray-200">
+                            <div class="px-4 py-4 text-gray-800 font-medium">4000 miles</div>
+                            <div class="px-4 py-4">
                                 <span
-                                    class="inline-block bg-[#E3F4E9] text-tertiary border rounded-full px-3 py-1 font-medium">
-                                    <i class="fa-solid fa-check mr-1"></i> Flexible – swap or pause anytime
-                                </span>
+                                    class="inline-block bg-[#E3F4E9] text-green-600 border border-green-400 rounded-full px-3 py-1 font-medium">✓
+                                    $550/Week</span>
                             </div>
-                            <div class="p-4">
-                                <span
-                                    class="inline-block bg-[#FFE4E7] text-[#DC3545] rounded-full px-3 py-1 font-medium">
-                                    Locked in for 5 years
-                                </span>
+                            <div class="px-4 py-4">
+                                <span class="inline-block text-red-500 font-medium bg-[#FFD4D480] rounded-full p-1.5 px-3">$950/Week</span>
                             </div>
+                            <div class="px-4 py-4 font-semibold text-gray-800">$400/Week</div>
                         </div>
 
-                        <!-- Usage -->
-                        <div
-                            class="grid grid-cols-[1fr_1.5fr_1.5fr] items-center text-sm lg:text-base border-t border-gray-200">
-                            <div class="flex items-center p-4 text-[#000D4A] font-medium">
-                                <img src="/assets/images/feature (2).svg" class="w-6 mr-3" alt="Usage"> Usage
-                            </div>
-                            <div class="p-4">
+                        <div class="grid grid-cols-4 text-sm md:text-base border-t border-gray-200">
+                            <div class="px-4 py-4 text-gray-800 font-medium">5000 miles</div>
+                            <div class="px-4 py-4">
                                 <span
-                                    class="inline-block bg-[#E3F4E9] text-tertiary border rounded-full px-3 py-1 font-medium">
-                                    <i class="fa-solid fa-check mr-1"></i> Pay only when you drive – no wasted money
-                                </span>
+                                    class="inline-block bg-[#E3F4E9] text-green-600 border border-green-400 rounded-full px-3 py-1 font-medium">✓
+                                    $850/Week</span>
                             </div>
-                            <div class="p-4">
-                                <span
-                                    class="inline-block bg-[#FFE4E7] text-[#DC3545] rounded-full px-3 py-1 font-medium">
-                                    Pay even when it’s parked
-                                </span>
+                            <div class="px-4 py-4">
+                                <span class="inline-block text-red-500 font-medium bg-[#FFD4D480] rounded-full p-1.5 px-3">$1050/Week</span>
                             </div>
+                            <div class="px-4 py-4 font-semibold text-gray-800">$200/Week</div>
                         </div>
+                    </div>
+                </div>
 
-                        <!-- Depreciation -->
-                        <div
-                            class="grid grid-cols-[1fr_1.5fr_1.5fr] items-center bg-[#E6E9FB] text-sm lg:text-base border-t border-gray-200 rounded-b-xl overflow-hidden">
-                            <div class="flex items-center p-4 text-[#000D4A] font-medium">
-                                <img src="/assets/images/feature (1).svg" class="w-6 mr-3" alt="Depreciation">
-                                Depreciation
-                            </div>
-                            <div class="p-4">
-                                <span
-                                    class="inline-block bg-[#E3F4E9] text-tertiary border rounded-full px-3 py-1 font-medium">
-                                    <i class="fa-solid fa-check mr-1"></i> No resale hassle or value loss
-                                </span>
-                            </div>
-                            <div class="p-4">
-                                <span
-                                    class="inline-block bg-[#FFE4E7] text-[#DC3545] rounded-full px-3 py-1 font-medium">
-                                    Car loses value from day one
-                                </span>
-                            </div>
-                        </div>
-
+                <!-- Mobile Cards -->
+                <div class="block md:hidden space-y-6">
+                    <!-- Card 1 -->
+                    <div class="bg-white border-2 border-primary rounded-xl shadow-md p-6">
+                        <h3 class="text-lg font-semibold text-primary text-center mb-4">500 miles</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><strong>Fore Rental:</strong> <span class="text-green-600 font-medium">✓
+                                    $150/Week</span></li>
+                            <li><strong>Uber/Lyft Rental:</strong> <span
+                                    class="text-red-500 font-medium">$200/Week</span></li>
+                            <li><strong>Weekly Savings:</strong> <span
+                                    class="font-semibold text-gray-800">$50/Week</span></li>
+                        </ul>
                     </div>
 
-                    <!-- Mobile Stacked Cards -->
-                    <div class="block md:hidden w-full space-y-4">
-                        <div class="bg-white border-2 border-primary rounded-xl shadow-lg p-4">
-                            <h3 class="text-xl font-semibold text-primary text-center mb-4">Fore Mobility</h3>
-                            <ul class="space-y-3 text-sm">
-                                <li><strong>Monthly Cost:</strong> <span class="text-tertiary font-medium">$450/month –
-                                        all-in</span></li>
-                                <li><strong>Down Payment:</strong> <span class="text-tertiary font-medium">$0 down —
-                                        start today</span></li>
-                                <li><strong>Maintenance:</strong> <span class="text-tertiary font-medium">Included –
-                                        save $500+ per year</span></li>
-                                <li><strong>Insurance:</strong> <span class="text-tertiary font-medium">Included – no
-                                        separate bill</span></li>
-                                <li><strong>Contract Term:</strong> <span class="text-tertiary font-medium">Flexible –
-                                        swap or pause anytime</span></li>
-                                <li><strong>Usage:</strong> <span class="text-tertiary font-medium">Pay only when you
-                                        drive – no wasted money</span></li>
-                                <li><strong>Depreciation:</strong> <span class="text-tertiary font-medium">No resale
-                                        hassle or value loss</span></li>
-                            </ul>
-                        </div>
-
-                        <div class="bg-white border rounded-xl shadow-sm p-4">
-                            <h3 class="text-xl font-semibold text-[#000D4A] text-center mb-4">Traditional Lease</h3>
-                            <ul class="space-y-3 text-sm">
-                                <li><strong>Monthly Cost:</strong> <span class="text-red-600">$600+ every month (loan,
-                                        insurance & repairs extra)</span></li>
-                                <li><strong>Down Payment:</strong> <span class="text-red-600">$2,000+ down – plus dealer
-                                        fees</span></li>
-                                <li><strong>Maintenance:</strong> <span class="text-red-600">You pay for every
-                                        repair</span></li>
-                                <li><strong>Insurance:</strong> <span class="text-red-600">Extra bill every month</span>
-                                </li>
-                                <li><strong>Contract Term:</strong> <span class="text-red-600">Locked in for 5
-                                        years</span></li>
-                                <li><strong>Usage:</strong> <span class="text-red-600">Pay even when it’s parked</span>
-                                </li>
-                                <li><strong>Depreciation:</strong> <span class="text-red-600">Car loses value from day
-                                        one</span></li>
-                            </ul>
-                        </div>
-
-
+                    <!-- Card 2 -->
+                    <div class="bg-white border-2 border-primary rounded-xl shadow-md p-6">
+                        <h3 class="text-lg font-semibold text-primary text-center mb-4">1000 miles</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><strong>Fore Rental:</strong> <span class="text-green-600 font-medium">✓
+                                    $250/Week</span></li>
+                            <li><strong>Uber/Lyft Rental:</strong> <span
+                                    class="text-red-500 font-medium">$350/Week</span></li>
+                            <li><strong>Weekly Savings:</strong> <span
+                                    class="font-semibold text-gray-800">$100/Week</span></li>
+                        </ul>
                     </div>
 
+                    <!-- Card 3 -->
+                    <div class="bg-white border-2 border-primary rounded-xl shadow-md p-6">
+                        <h3 class="text-lg font-semibold text-primary text-center mb-4">1500 miles</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><strong>Fore Rental:</strong> <span class="text-green-600 font-medium">✓
+                                    $350/Week</span></li>
+                            <li><strong>Uber/Lyft Rental:</strong> <span
+                                    class="text-red-500 font-medium">$550/Week</span></li>
+                            <li><strong>Weekly Savings:</strong> <span
+                                    class="font-semibold text-gray-800">$150/Week</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="bg-white border-2 border-primary rounded-xl shadow-md p-6">
+                        <h3 class="text-lg font-semibold text-primary text-center mb-4">3000 miles</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><strong>Fore Rental:</strong> <span class="text-green-600 font-medium">✓
+                                    $450/Week</span></li>
+                            <li><strong>Uber/Lyft Rental:</strong> <span
+                                    class="text-red-500 font-medium">$650/Week</span></li>
+                            <li><strong>Weekly Savings:</strong> <span
+                                    class="font-semibold text-gray-800">$200/Week</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="bg-white border-2 border-primary rounded-xl shadow-md p-6">
+                        <h3 class="text-lg font-semibold text-primary text-center mb-4">4000 miles</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><strong>Fore Rental:</strong> <span class="text-green-600 font-medium">✓
+                                    $550/Week</span></li>
+                            <li><strong>Uber/Lyft Rental:</strong> <span
+                                    class="text-red-500 font-medium">$950/Week</span></li>
+                            <li><strong>Weekly Savings:</strong> <span
+                                    class="font-semibold text-gray-800">$400/Week</span></li>
+                        </ul>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="bg-white border-2 border-primary rounded-xl shadow-md p-6">
+                        <h3 class="text-lg font-semibold text-primary text-center mb-4">5000 miles</h3>
+                        <ul class="space-y-2 text-sm">
+                            <li><strong>Fore Rental:</strong> <span class="text-green-600 font-medium">✓
+                                    $850/Week</span></li>
+                            <li><strong>Uber/Lyft Rental:</strong> <span
+                                    class="text-red-500 font-medium">$1050/Week</span></li>
+                            <li><strong>Weekly Savings:</strong> <span
+                                    class="font-semibold text-gray-800">$200/Week</span></li>
+                        </ul>
+                    </div>
                 </div>
 
                 <!-- CTA Button -->
                 <div class="mt-8 flex justify-center">
                     <button
                         class="bg-primary text-white text-base px-6 py-3 md:px-8 md:py-4 rounded-md font-medium shadow-md hover:bg-blue-600 transition-colors flex items-center gap-2">
-                        Check Eligibility
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24"
+                        See Cars Available
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                 d="M17 7l-10 10M7 7h10v10" />
@@ -416,8 +385,8 @@
                     </button>
                 </div>
             </div>
-
         </section>
+
 
         <!-- Why Gig Drivers Choose Fore -->
         <section class="pb-10 md:py-18 pt-6 px-4 lg:px-0">
