@@ -997,238 +997,169 @@
 
     <footer>
         <!-- faq section -->
-        <section class="py-10  px-4 sm:py-14 lg:my-20!">
-            <div class="pb-8 text-center px-6">
-                <h2 class="text-xl font-medium text-gray-900 font-inter sm:text-2xl lg:text-3xl xl:text-4xl">
-                    Frequently Asking Questions
-                </h2>
-            </div>
+      <section class="py-10 px-4 sm:py-14 lg:my-20">
+        <div class="pb-8 text-center px-6">
+            <h2 class="text-xl font-medium text-gray-900 font-inter sm:text-2xl lg:text-3xl xl:text-4xl">
+                Frequently Asking Questions
+            </h2>
+        </div>
 
-            <div class="container mx-auto bg-gray-50 rounded-lg shadow-sm">
-                <div x-data="{ open: false }" class="bg-white mb-4 shadow-md">
-                    <button @click="open = !open"
-                        class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
-                        <span class="text-2xl font-medium text-gray-700 font-helvetica">What if I need to cancel?</span>
-                        <svg :class="open ? 'rotate-180' : ''"
-                            class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
-                            xmlns="http://www.w3.org/2000/svg" width="29" height="24" viewBox="0 0 29 24" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.29736 8L14.6521 17L25.0068 8H4.29736Z"
-                                fill="#898B8E" />
-                        </svg>
-                    </button>
-                    <div x-show="open" x-transition:enter="transition ease-out duration-200"
-                        x-transition:enter-start="opacity-0 transform -translate-y-2"
-                        x-transition:enter-end="opacity-100 transform translate-y-0"
-                        x-transition:leave="transition ease-in duration-150"
-                        x-transition:leave-start="opacity-100 transform translate-y-0"
-                        x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 py-4">
-                        <p class="text-sm leading-relaxed text-gray-600">
-                            You can cancel your subscription at any time. Your access will continue
-                            until the end of your current billing period.
-                        </p>
-                    </div>
-                </div>
-
-                <div x-data="{ open: true }" class="bg-[#F4F4F4] mb-4 shadow-md">
-                    <button @click="open = !open"
-                        class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
-                        <span class="text-2xl font-bold text-gray-700 font-helvetica">“Do I need my own
-                            insurance?”</span>
-                        <svg :class="open ? 'rotate-180' : ''"
-                            class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
-                            xmlns="http://www.w3.org/2000/svg" width="29" height="24" viewBox="0 0 29 24" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.29736 8L14.6521 17L25.0068 8H4.29736Z"
-                                fill="#898B8E" />
-                        </svg>
-                    </button>
-                    <div x-show="open" x-transition:enter="transition ease-out duration-200"
-                        x-transition:enter-start="opacity-0 transform -translate-y-2"
-                        x-transition:enter-end="opacity-100 transform translate-y-0"
-                        x-transition:leave="transition ease-in duration-150"
-                        x-transition:leave-start="opacity-100 transform translate-y-0"
-                        x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 pb-4">
-                        <p class="text-sm leading-relaxed text-gray-600">
-                            No &mdash; Your Subscription Includes Full Coverage Insurance.
-                        </p>
-                    </div>
-                </div>
-
-                <div x-data="{ open: false }" class="bg-white mb-4 shadow-md">
-                    <button @click="open = !open"
-                        class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
-                        <span class="text-2xl font-medium text-gray-700 font-helvetica">Can I take the car on a long
-                            trip?</span>
-                        <svg :class="open ? 'rotate-180' : ''"
-                            class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
-                            xmlns="http://www.w3.org/2000/svg" width="29" height="24" viewBox="0 0 29 24" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.29736 8L14.6521 17L25.0068 8H4.29736Z"
-                                fill="#898B8E" />
-                        </svg>
-                    </button>
-                    <div x-show="open" x-transition:enter="transition ease-out duration-200"
-                        x-transition:enter-start="opacity-0 transform -translate-y-2"
-                        x-transition:enter-end="opacity-100 transform translate-y-0"
-                        x-transition:leave="transition ease-in duration-150"
-                        x-transition:leave-start="opacity-100 transform translate-y-0"
-                        x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 py-4">
-                        <p class="text-sm leading-relaxed text-gray-600">
-                            Yes, you can take the car on a long trip. Our subscriptions don't
-                            restrict your travel distance or location within the country.
-                        </p>
-                    </div>
-                </div>
-
-                <div x-data="{ open: false }" class="bg-white mb-4 shadow-md">
-                    <button @click="open = !open"
-                        class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
-                        <span class="text-2xl font-medium text-gray-700 font-helvetica">What if the car has a
-                            problem?</span>
-                        <svg :class="open ? 'rotate-180' : ''"
-                            class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
-                            xmlns="http://www.w3.org/2000/svg" width="29" height="24" viewBox="0 0 29 24" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.29736 8L14.6521 17L25.0068 8H4.29736Z"
-                                fill="#898B8E" />
-                        </svg>
-                    </button>
-                    <div x-show="open" x-transition:enter="transition ease-out duration-200"
-                        x-transition:enter-start="opacity-0 transform -translate-y-2"
-                        x-transition:enter-end="opacity-100 transform translate-y-0"
-                        x-transition:leave="transition ease-in duration-150"
-                        x-transition:leave-start="opacity-100 transform translate-y-0"
-                        x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 py-4">
-                        <p class="text-sm leading-relaxed text-gray-600">
-                            In the event of a mechanical problem, contact our 24/7 roadside
-                            assistance. We will arrange for a tow and a replacement vehicle as
-                            needed, all covered by your subscription.
-                        </p>
-                    </div>
-                </div>
-
-                <div x-data="{ open: false }" class="bg-white mb-4 shadow-md">
-                    <button @click="open = !open"
-                        class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
-                        <span class="text-2xl font-medium text-gray-700 font-helvetica">What cars are available?</span>
-                        <svg :class="open ? 'rotate-180' : ''"
-                            class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
-                            xmlns="http://www.w3.org/2000/svg" width="29" height="24" viewBox="0 0 29 24" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.29736 8L14.6521 17L25.0068 8H4.29736Z"
-                                fill="#898B8E" />
-                        </svg>
-                    </button>
-                    <div x-show="open" x-transition:enter="transition ease-out duration-200"
-                        x-transition:enter-start="opacity-0 transform -translate-y-2"
-                        x-transition:enter-end="opacity-100 transform translate-y-0"
-                        x-transition:leave="transition ease-in duration-150"
-                        x-transition:leave-start="opacity-100 transform translate-y-0"
-                        x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 py-4">
-                        <p class="text-sm leading-relaxed text-gray-600">
-                            We offer a wide range of vehicles from compact sedans to luxury SUVs.
-                            You can browse our full list of available models on our website.
-                        </p>
-                    </div>
-                </div>
-
-                <div x-data="{ open: false }" class="bg-white mb-4 shadow-md">
-                    <button @click="open = !open"
-                        class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
-                        <span class="text-2xl font-medium text-gray-700 font-helvetica">How soon can I get a car?</span>
-                        <svg :class="open ? 'rotate-180' : ''"
-                            class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
-                            xmlns="http://www.w3.org/2000/svg" width="29" height="24" viewBox="0 0 29 24" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.29736 8L14.6521 17L25.0068 8H4.29736Z"
-                                fill="#898B8E" />
-                        </svg>
-                    </button>
-                    <div x-show="open" x-transition:enter="transition ease-out duration-200"
-                        x-transition:enter-start="opacity-0 transform -translate-y-2"
-                        x-transition:enter-end="opacity-100 transform translate-y-0"
-                        x-transition:leave="transition ease-in duration-150"
-                        x-transition:leave-start="opacity-100 transform translate-y-0"
-                        x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 py-4">
-                        <p class="text-sm leading-relaxed text-gray-600">
-                            Typically, you can pick up your new car within 2-3 business days after
-                            your subscription is approved and the first payment is processed.
-                        </p>
-                    </div>
-                </div>
-
-                <div x-data="{ open: false }" class="bg-white mb-4 shadow-md">
-                    <button @click="open = !open"
-                        class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
-                        <span class="text-2xl font-medium text-gray-700 font-helvetica">Is maintenance included?</span>
-                        <svg :class="open ? 'rotate-180' : ''"
-                            class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
-                            xmlns="http://www.w3.org/2000/svg" width="29" height="24" viewBox="0 0 29 24" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.29736 8L14.6521 17L25.0068 8H4.29736Z"
-                                fill="#898B8E" />
-                        </svg>
-                    </button>
-                    <div x-show="open" x-transition:enter="transition ease-out duration-200"
-                        x-transition:enter-start="opacity-0 transform -translate-y-2"
-                        x-transition:enter-end="opacity-100 transform translate-y-0"
-                        x-transition:leave="transition ease-in duration-150"
-                        x-transition:leave-start="opacity-100 transform translate-y-0"
-                        x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 py-4">
-                        <p class="text-sm leading-relaxed text-gray-600">
-                            Yes, all routine maintenance, including oil changes and tire rotations,
-                            is included in your subscription.
-                        </p>
-                    </div>
-                </div>
-
-                <div x-data="{ open: false }" class="bg-white mb-4 shadow-md">
-                    <button @click="open = !open"
-                        class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
-                        <span class="text-2xl font-medium text-gray-700 font-helvetica">What do I need to do to
-                            qualify?</span>
-                        <svg :class="open ? 'rotate-180' : ''"
-                            class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
-                            xmlns="http://www.w3.org/2000/svg" width="29" height="24" viewBox="0 0 29 24" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.29736 8L14.6521 17L25.0068 8H4.29736Z"
-                                fill="#898B8E" />
-                        </svg>
-                    </button>
-                    <div x-show="open" x-transition:enter="transition ease-out duration-200"
-                        x-transition:enter-start="opacity-0 transform -translate-y-2"
-                        x-transition:enter-end="opacity-100 transform translate-y-0"
-                        x-transition:leave="transition ease-in duration-150"
-                        x-transition:leave-start="opacity-100 transform translate-y-0"
-                        x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 py-4">
-                        <p class="text-sm leading-relaxed text-gray-600">
-                            To qualify, you need to be at least 21 years old, have a valid driver's
-                            license, and pass a credit and background check.
-                        </p>
-                    </div>
-                </div>
-
-                <div x-data="{ open: false }" class="bg-white mb-4 shadow-md">
-                    <button @click="open = !open"
-                        class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
-                        <span class="text-2xl font-medium text-gray-700 font-helvetica">How does this save me money
-                            compared to buying?</span>
-                        <svg :class="open ? 'rotate-180' : ''"
-                            class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
-                            xmlns="http://www.w3.org/2000/svg" width="29" height="24" viewBox="0 0 29 24" fill="none">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M4.29736 8L14.6521 17L25.0068 8H4.29736Z"
-                                fill="#898B8E" />
-                        </svg>
-                    </button>
-                    <div x-show="open" x-transition:enter="transition ease-out duration-200"
-                        x-transition:enter-start="opacity-0 transform -translate-y-2"
-                        x-transition:enter-end="opacity-100 transform translate-y-0"
-                        x-transition:leave="transition ease-in duration-150"
-                        x-transition:leave-start="opacity-100 transform translate-y-0"
-                        x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 py-4">
-                        <p class="text-sm leading-relaxed text-gray-600">
-                            Our subscription model eliminates the need for a down payment, interest
-                            on a loan, and unexpected maintenance costs. It also includes
-                            insurance, so your total monthly cost is predictable and often lower
-                            than the sum of traditional car ownership expenses.
-                        </p>
-                    </div>
+        <div class="container mx-auto max-w-2xl">
+            <div x-data="{ open: true }" class="bg-[#F4F4F4] mb-4 shadow-sm rounded-sm ">
+                <button @click="open = !open"
+                    class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
+                    <span class="text-lg font-bold text-gray-700 font-helvetica">Do I need to drive a minimum number of trips?</span>
+                    <svg :class="open ? 'rotate-180' : ''"
+                        class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                    </svg>
+                </button>
+                <div x-show="open" x-transition:enter="transition ease-out duration-200"
+                    x-transition:enter-start="opacity-0 transform -translate-y-2"
+                    x-transition:enter-end="opacity-100 transform translate-y-0"
+                    x-transition:leave="transition ease-in duration-150"
+                    x-transition:leave-start="opacity-100 transform translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 pb-4">
+                    <p class="text-sm leading-relaxed text-gray-600">
+                        No, Drive As Much Or As Little As You Want.
+                    </p>
                 </div>
             </div>
-        </section>
+
+            <div x-data="{ open: false }" class="bg-white mb-4 shadow-sm rounded-sm ">
+                <button @click="open = !open"
+                    class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
+                    <span class="text-lg font-medium text-gray-700 font-helvetica">Can I use the car for personal use or other jobs?</span>
+                    <svg :class="open ? 'rotate-180' : ''"
+                        class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                    </svg>
+                </button>
+                <div x-show="open" x-transition:enter="transition ease-out duration-200"
+                    x-transition:enter-start="opacity-0 transform -translate-y-2"
+                    x-transition:enter-end="opacity-100 transform translate-y-0"
+                    x-transition:leave="transition ease-in duration-150"
+                    x-transition:leave-start="opacity-100 transform translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 pb-4">
+                    <p class="text-sm leading-relaxed text-gray-600">
+                        Yes, our cars are for both personal use and ride-sharing jobs.
+                    </p>
+                </div>
+            </div>
+
+            <div x-data="{ open: false }" class="bg-white mb-4 shadow-sm rounded-sm ">
+                <button @click="open = !open"
+                    class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
+                    <span class="text-lg font-medium text-gray-700 font-helvetica">What about wear and tear? Are there extra charges?</span>
+                    <svg :class="open ? 'rotate-180' : ''"
+                        class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                    </svg>
+                </button>
+                <div x-show="open" x-transition:enter="transition ease-out duration-200"
+                    x-transition:enter-start="opacity-0 transform -translate-y-2"
+                    x-transition:enter-end="opacity-100 transform translate-y-0"
+                    x-transition:leave="transition ease-in duration-150"
+                    x-transition:leave-start="opacity-100 transform translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 pb-4">
+                    <p class="text-sm leading-relaxed text-gray-600">
+                        Normal wear and tear is included. We only charge for excessive damage.
+                    </p>
+                </div>
+            </div>
+            
+            <div x-data="{ open: false }" class="bg-white mb-4 shadow-sm rounded-sm ">
+                <button @click="open = !open"
+                    class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
+                    <span class="text-lg font-medium text-gray-700 font-helvetica">Is there a deposit or credit check?</span>
+                    <svg :class="open ? 'rotate-180' : ''"
+                        class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                    </svg>
+                </button>
+                <div x-show="open" x-transition:enter="transition ease-out duration-200"
+                    x-transition:enter-start="opacity-0 transform -translate-y-2"
+                    x-transition:enter-end="opacity-100 transform translate-y-0"
+                    x-transition:leave="transition ease-in duration-150"
+                    x-transition:leave-start="opacity-100 transform translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 pb-4">
+                    <p class="text-sm leading-relaxed text-gray-600">
+                        We have a simple background check and no security deposit is required.
+                    </p>
+                </div>
+            </div>
+
+            <div x-data="{ open: false }" class="bg-white mb-4 shadow-sm rounded-sm ">
+                <button @click="open = !open"
+                    class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
+                    <span class="text-lg font-medium text-gray-700 font-helvetica">How do insurance claims work if I have an accident?</span>
+                    <svg :class="open ? 'rotate-180' : ''"
+                        class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                    </svg>
+                </button>
+                <div x-show="open" x-transition:enter="transition ease-out duration-200"
+                    x-transition:enter-start="opacity-0 transform -translate-y-2"
+                    x-transition:enter-end="opacity-100 transform translate-y-0"
+                    x-transition:leave="transition ease-in duration-150"
+                    x-transition:leave-start="opacity-100 transform translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 pb-4">
+                    <p class="text-sm leading-relaxed text-gray-600">
+                        Contact us immediately after an accident. We will guide you through the process and handle all claims.
+                    </p>
+                </div>
+            </div>
+
+            <div x-data="{ open: true }" class="bg-[#F4F4F4] mb-4 shadow-sm rounded-sm ">
+                <button @click="open = !open"
+                    class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
+                    <span class="text-lg font-bold text-gray-700 font-helvetica">How soon can I get a car after approval?</span>
+                    <svg :class="open ? 'rotate-180' : ''"
+                        class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                    </svg>
+                </button>
+                <div x-show="open" x-transition:enter="transition ease-out duration-200"
+                    x-transition:enter-start="opacity-0 transform -translate-y-2"
+                    x-transition:enter-end="opacity-100 transform translate-y-0"
+                    x-transition:leave="transition ease-in duration-150"
+                    x-transition:leave-start="opacity-100 transform translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 pb-4">
+                    <p class="text-sm leading-relaxed text-gray-600">
+                        Most Drivers Get Their Car Within 24 Hours Of Being Approved
+                    </p>
+                </div>
+            </div>
+
+            <div x-data="{ open: false }" class="bg-white mb-4 shadow-sm rounded-sm ">
+                <button @click="open = !open"
+                    class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
+                    <span class="text-lg font-medium text-gray-700 font-helvetica">Are Fore cars approved for Uber/Lyft?</span>
+                    <svg :class="open ? 'rotate-180' : ''"
+                        class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
+                        xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                    </svg>
+                </button>
+                <div x-show="open" x-transition:enter="transition ease-out duration-200"
+                    x-transition:enter-start="opacity-0 transform -translate-y-2"
+                    x-transition:enter-end="opacity-100 transform translate-y-0"
+                    x-transition:leave="transition ease-in duration-150"
+                    x-transition:leave-start="opacity-100 transform translate-y-0"
+                    x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 pb-4">
+                    <p class="text-sm leading-relaxed text-gray-600">
+                        Yes, all our cars are eligible for use with Uber, Lyft, and other ride-sharing services.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
         <!-- mobility app section -->
         <section class="bg-white relative lg:mt-32 z-10 container mx-auto px-4 py-16 sm:py-10 lg:pb-20!  ">
             <div class="flex flex-col lg:flex-row items-center justify-between gap-7 w-full">
