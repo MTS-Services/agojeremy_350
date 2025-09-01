@@ -6,17 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
 
-
+    <!-- swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
+    <!-- custom css -->
     <style>
         .testimonial-swiper .swiper-button-next,
         .testimonial-swiper .swiper-button-prev {
             display: none !important;
         }
     </style>
-  <link rel="stylesheet" crossorigin href="/assets/index-Ufe8KAF1.css">
+  <link rel="stylesheet" crossorigin href="/assets/index-CkG2RhMm.css">
 </head>
 
 <body>
@@ -87,8 +88,9 @@
                         x-transition:leave-end="opacity-0 transform scale-95"
                         class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-20">
                         <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                            <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                role="menuitem">Option A</a>
+                            <a href="/pages/personal_car.html"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Personal
+                                car</a>
                             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                 role="menuitem">Option B</a>
                             <a href="#" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
@@ -225,7 +227,7 @@
     </header>
     <main>
         <!-- get the app -->
-        <section class="bg-white pt-16 sm:pt-18 lg:pt-20 pb-8 relative z-10 container mx-auto px-4 lg:px-0">
+        <section class="bg-white pt-16 sm:pt-18 lg:pt-20 pb-8 relative z-10 container  px-4 lg:px-0">
             <div class="flex flex-col lg:flex-row items-center justify-between gap-7 w-full">
                 <div class="left_side w-full lg:w-1/2 ">
                     <h2 class="font-poppins font-medium text-3xl md:text-5xl">Get the Fore Mobility App</h2>
@@ -302,7 +304,7 @@
             </div>
         </section>
         <!-- Plans section -->
-        <section class="container mx-auto md:py-18 xl:24 py-12  px-4 lg:px-0 rounded-2xl bg-white">
+        <section class="container  md:py-18 xl:24 py-12  px-4 lg:px-0 rounded-2xl bg-white">
             <!-- Header -->
             <div class="text-center mb-12">
                 <h2 class="font-inter font-medium text-3xl sm:text-4xl lg:text-5xl text-gray-800 mb-3">
@@ -433,7 +435,7 @@
             </div>
         </section>
         <!-- how it works -->
-        <section class="pb-10 md:pb-20 pt-6 md:pt-10 px-4 lg:px-0">
+        <section class="pb-10 md:pb-10 pt-6 md:pt-10 px-4 lg:px-0">
             <div class="max-w-5xl mx-auto ">
                 <!-- Header Section -->
                 <div class="text-center mb-8 md:mb-12">
@@ -445,8 +447,13 @@
                 <!-- Timeline Section -->
                 <div class="relative">
                     <!-- Vertical Timeline Line - Hidden on mobile, shown on medium screens and up -->
-                    <div class="hidden md:block absolute left-5 md:left-14 z-50 top-0 bottom-0 w-0.5 bg-[#106CCA]">
+                    <div class="hidden md:block absolute left-5 md:left-14 z-50 top-0 mb-3 bottom-0 w-0.5 bg-[#106CCA]">
+                        <!-- Arrowhead -->
+                        <div class="absolute -bottom-2 left-1/2 -translate-x-1/2 
+                w-0 h-0 border-l-6 border-r-6 border-t-8 border-transparent 
+                border-t-[#106CCA]"></div>
                     </div>
+
 
                     <!-- Step 01 -->
                     <div
@@ -611,78 +618,75 @@
         </section>
 
         <!-- Features -->
-        <section>
-            <div class="container mx-auto py-10 pb-20 px-4 sm:px-6 lg:px-8">
-                <div
-                    class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-start mt-12 gap-6 md:gap-10">
-                    <div>
-                        <div class="flex items-center space-x-2">
-                            <div class="w-9 h-9  flex items-center justify-center text-black flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                                </svg>
-                            </div>
-                            <span class="text-black font-medium ml-3 text-2xl font-helvetica">Safety Inspected</span>
+        <section class="container py-10 pb-20 px-4 sm:px-6 lg:px-8">
+            <div
+                class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 items-start mt-12 gap-6 md:gap-10">
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <div class="w-9 h-9  flex items-center justify-center text-black flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                            </svg>
                         </div>
-                        <p class="mt-2 text-base font-helvetica pr-4 md:pr-8">Every vehicle is thoroughly checked to
-                            ensure top safety standards.</p>
+                        <span class="text-black font-medium ml-3 text-2xl font-helvetica">Safety Inspected</span>
                     </div>
+                    <p class="mt-2 text-base font-helvetica pr-4 md:pr-8">Every vehicle is thoroughly checked to
+                        ensure top safety standards.</p>
+                </div>
 
-                    <div>
-                        <div class="flex items-center space-x-2">
-                            <div class="w-9 h-9  flex items-center justify-center text-black flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="3"></circle>
-                                    <path
-                                        d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33H15.8a1.65 1.65 0 0 0-1.51 1v.09a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09a1.65 1.65 0 0 0-1.51-1H4.2a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82V9a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09a1.65 1.65 0 0 0 1.51-1V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1.51 1H12.2a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V15a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
-                                    </path>
-                                </svg>
-                            </div>
-                            <span class="text-black font-medium ml-3 text-2xl font-helvetica">Regularly
-                                Maintained</span>
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <div class="w-9 h-9  flex items-center justify-center text-black flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="3"></circle>
+                                <path
+                                    d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33H15.8a1.65 1.65 0 0 0-1.51 1v.09a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09a1.65 1.65 0 0 0-1.51-1H4.2a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82V9a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09a1.65 1.65 0 0 0 1.51-1V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1.51 1H12.2a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V15a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z">
+                                </path>
+                            </svg>
                         </div>
-                        <p class="mt-2 text-base font-helvetica pr-4 md:pr-8">Every vehicle is routinely serviced for
-                            safety and reliability.</p>
+                        <span class="text-black font-medium ml-3 text-2xl font-helvetica">Regularly
+                            Maintained</span>
                     </div>
+                    <p class="mt-2 text-base font-helvetica pr-4 md:pr-8">Every vehicle is routinely serviced for
+                        safety and reliability.</p>
+                </div>
 
-                    <div>
-                        <div class="flex items-center space-x-2">
-                            <div class="w-9 h-9  flex items-center justify-center text-black flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                    class="lucide lucide-headset-icon lucide-headset">
-                                    <path
-                                        d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z" />
-                                    <path d="M21 16v2a4 4 0 0 1-4 4h-5" />
-                                </svg>
-                            </div>
-                            <span class="text-black font-medium ml-3 text-2xl font-helvetica">24/7 Roadside
-                                Assistance</span>
+                <div>
+                    <div class="flex items-center space-x-2">
+                        <div class="w-9 h-9  flex items-center justify-center text-black flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                class="lucide lucide-headset-icon lucide-headset">
+                                <path
+                                    d="M3 11h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-5Zm0 0a9 9 0 1 1 18 0m0 0v5a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3Z" />
+                                <path d="M21 16v2a4 4 0 0 1-4 4h-5" />
+                            </svg>
                         </div>
-                        <p class="mt-2 text-base font-helvetica pr-4 md:pr-8">Get round-the-clock support anytime your
-                            vehicle needs help on the road.</p>
+                        <span class="text-black font-medium ml-3 text-2xl font-helvetica">24/7 Roadside
+                            Assistance</span>
                     </div>
+                    <p class="mt-2 text-base font-helvetica pr-4 md:pr-8">Get round-the-clock support anytime your
+                        vehicle needs help on the road.</p>
+                </div>
 
-                    <div class="ml-0 lg:ml-4">
-                        <div class="flex items-center  space-x-2">
-                            <div class="w-9 h-9   flex items-center justify-center text-black flex-shrink-0">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000"
-                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
-                                    <polyline points="9 12 12 15 15 9"></polyline>
-                                </svg>
-                            </div>
-                            <span class="text-black font-medium ml-3 text-2xl font-helvetica">Fully Insured</span>
+                <div class="ml-0 lg:ml-4">
+                    <div class="flex items-center  space-x-2">
+                        <div class="w-9 h-9   flex items-center justify-center text-black flex-shrink-0">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="#000"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                                <polyline points="9 12 12 15 15 9"></polyline>
+                            </svg>
                         </div>
-                        <p class="mt-2 text-base font-helvetica pr-4 md:pr-8">All vehicles come with complete insurance
-                            coverage for peace.</p>
+                        <span class="text-black font-medium ml-3 text-2xl font-helvetica">Fully Insured</span>
                     </div>
+                    <p class="mt-2 text-base font-helvetica pr-4 md:pr-8">All vehicles come with complete insurance
+                        coverage for peace.</p>
                 </div>
             </div>
         </section>
-
         <!-- smarter ways to drive -->
         <section class="py-10 container">
             <div class="text-center">
@@ -1171,7 +1175,6 @@
                 </div>
             </div>
         </section>
-
     </main>
 
     <footer>
@@ -1327,7 +1330,7 @@
                 </div>
             </div>
         </section>
-        <!--  -->
+        <!-- Footer banner -->
         <section class="relative lg:z-30! ">
             <div class="bg-primary py-16 px-4 md:px-8 lg:px-16 mb-20 lg:p-24! text-white text-center bg-cover bg-center"
                 style="background-image: url('/assets/footer-BssEIvSZ.jpg');">
@@ -1556,15 +1559,91 @@
             </div>
         </section>
     </footer>
-
-
-    <script src="/assets/js/app.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <!-- custom js -->
+    <script src="assets/js/app.js"></script>
+    <!-- swiper js -->
+    <!-- <script src="assets/js/home_slider.js"> </script> -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- alpine js -->
+    <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+    <script>
+        // Initialize Swiper
+        const swiper = new Swiper('.testimonial-swiper', {
+            spaceBetween: 24,
+            slidesPerView: 1,
+            loop: true,
+            navigation: false, // Disable default navigation
+            breakpoints: {
+                640: {
+                    slidesPerView: 2,
+                },
+                1024: {
+                    slidesPerView: 3,
+                }
+            }
+        });
 
-    <script src="assets/js/home_slider.js"> </script>
+        // Custom navigation buttons
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            swiper.slidePrev();
+        });
 
-   
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            swiper.slideNext();
+        });
+
+        // Tab functionality
+        const tabButtons = document.querySelectorAll('.tab-button');
+        let activeTab = 'personal';
+
+        tabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const tabId = button.getAttribute('data-tab');
+
+                // Update active tab
+                activeTab = tabId;
+
+                // Update button styles
+                tabButtons.forEach(btn => {
+                    if (btn.getAttribute('data-tab') === tabId) {
+                        btn.className = 'tab-button sm:px-6 px-3 py-2 rounded-full text-sm font-normal font-poppins transition-all duration-200 bg-gray-100 text-gray-900 shadow-sm whitespace-nowrap';
+                    } else {
+                        btn.className = 'tab-button sm:px-6 px-3 py-2 rounded-full text-sm font-normal font-poppins transition-all duration-200 text-gray-600 hover:text-gray-900 whitespace-nowrap';
+                    }
+                });
+
+                console.log('Active tab:', tabId);
+            });
+        });
+
+        // Button click handlers
+        document.querySelectorAll('button[class*="bg-blue-500"]').forEach(button => {
+            button.addEventListener('click', () => {
+                console.log(button.textContent + ' clicked');
+            });
+        });
+
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const menuToggle = document.getElementById('menu-toggle');
+            const mainMenu = document.getElementById('main-menu');
+            const findOutMore = document.querySelector('.mt-4.md\\:mt-0');
+            const menuIcon = document.getElementById('menu-icon');
+
+            menuToggle.addEventListener('click', function () {
+                const isMenuOpen = mainMenu.classList.toggle('hidden');
+                findOutMore.classList.toggle('hidden', isMenuOpen);
+
+                // Toggle the hamburger and close icon paths
+                if (isMenuOpen) {
+                    menuIcon.setAttribute('d', 'M4 6h16M4 12h16m-7 6h7'); // Hamburger icon
+                } else {
+                    menuIcon.setAttribute('d', 'M6 18L18 6M6 6l12 12'); // Close icon
+                }
+            });
+        });
+
+    </script>
 </body>
 
 </html>
