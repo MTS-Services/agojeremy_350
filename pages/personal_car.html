@@ -27,10 +27,92 @@
             color: #fff !important;
             border-radius: 8px !important;
         }
+
+        .modal-content {
+            animation: slide-in 0.5s ease-out;
+        }
+
+        @keyframes slide-in {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 
-<body>
+<body x-data="{ open: false }" :class="{ 'overflow-hidden': open }">
+    <!-- modal form -->
+    <section>
+        <!-- Overlay -->
+        <div x-cloak x-show="open" x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+            x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100"
+            x-transition:leave-end="opacity-0" class="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
+
+            <!-- Modal Box -->
+            <div @click.away="open = false"
+                class="modal-content max-w-5xl mx-auto bg-white rounded-xl shadow-lg border border-gray-200 p-6 md:p-8 relative">
+
+                <!-- Close Button -->
+                <button @click="open = false"
+                    class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <!-- Heading -->
+                <h1 class="max-w-[600px] text-lg sm:text-4xl font-semibold text-gray-800 mb-6 font-inter">
+                    Leave your info and we'll contact you.
+                </h1>
+
+                <!-- Form -->
+                <form>
+                    <div class="mb-5">
+                        <label for="name" class="block text-sm font-medium text-gray-500 mb-2 font-inter">Name</label>
+                        <input type="text" id="name" placeholder="Enter your full name"
+                            class="w-full px-4 py-3 bg-blue-50 text-gray-800 border-none rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-200">
+                    </div>
+
+                    <div class="mb-5">
+                        <label for="email" class="block text-sm font-medium text-gray-500 mb-2 font-inter">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email"
+                            class="w-full px-4 py-3 bg-blue-50 text-gray-800 border-none rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-200">
+                    </div>
+
+                    <div class="mb-5">
+                        <label for="phone" class="block text-sm font-medium text-gray-500 mb-2 font-inter">Phone
+                            Number</label>
+                        <input type="tel" id="phone" placeholder="Enter your phone number"
+                            class="w-full px-4 py-3 bg-blue-50 text-gray-800 border-none rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-200">
+                    </div>
+
+                    <div class="mb-6">
+                        <textarea rows="6" placeholder="Looking to get started? We'll contact you."
+                            class="w-full px-4 py-3 bg-gray-100 text-gray-700 border-none rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-gray-300 transition duration-200"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit"
+                        class="w-full md:w-[60%] flex items-center justify-center space-x-2 px-6 py-3 bg-[#1487FC] hover:bg-[#0d6cd6] text-white font-medium rounded-lg shadow-md transition duration-200 focus:outline-none focus:ring-2 focus:ring-[#1487FC] focus:ring-offset-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-5 h-5">
+                            <path fill="currentColor"
+                                d="M476 3L36 228c-49 24-32 60-4 70l93 29 36 115c5 16 9 22 18 24 9 1 14-3 26-13l52-49 108 79c20 11 35 6 40-18l74-402c6-33-12-49-39-37z" />
+                        </svg>
+                        <span class="font-inter">Get My Fleet Quote</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
     <header
         class="relative py-5 z-10 bg-[url('../images/personal_car.png')] bg-cover  bg-center min-h-[60vh] md:min-h-[70vh] lg:min-h-[85vh]">
         <nav
@@ -115,7 +197,7 @@
             </div>
 
             <div class="mt-4 md:mt-0 hidden md:block">
-                <a href="#"
+                <button @click="open = true"
                     class="inline-flex items-center sm:px-6 px-3 sm:py-3 py-1 bg-primary sm:text-base text-xs text-white rounded-md font-medium font-inter hover:bg-blue-700 transition duration-300">
                     <span>Download now</span>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24"
@@ -123,7 +205,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M17 7l-10 10M7 7h10v10" />
                     </svg>
-                </a>
+                </button>
             </div>
         </nav>
         <!-- inner banner -->
@@ -146,7 +228,7 @@
 
                 <div
                     class="flex flex-col sm:flex-row items-center justify-center gap-4 md:gap-6 lg:gap-8 xl:gap-10 mt-8">
-                    <button
+                    <button @click="open = true" 
                         class="bg-blue-500 hover:bg-blue-600 text-white font-medium px-6 py-3 rounded-lg inline-flex items-center justify-center gap-2 transition-colors w-full sm:w-auto">
                         See Cars Near You
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -155,7 +237,7 @@
                                 d="M17 7l-10 10M7 7h10v10" />
                         </svg>
                     </button>
-                    <button
+                    <button @click="open = true"
                         class=" text-white font-medium border-2 border-gray-50 text-base sm:text-lg lg:text-xl px-6 py-2 rounded-lg inline-flex items-center justify-center gap-2 transition-colors w-full sm:w-auto">
                         Learn How It Works
 
@@ -537,7 +619,7 @@
 
                 <!-- CTA Button -->
                 <div class="mt-8 flex justify-center">
-                    <button
+                    <button @click="open = true"
                         class="bg-primary text-white text-base px-6 py-3 md:px-8 md:py-4 rounded-full font-medium shadow-md hover:bg-blue-600 transition-colors flex items-center gap-2">
                         Check Eligibility
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24"
@@ -584,7 +666,7 @@
                             </ul>
                         </div>
                         <div class="flex flex-col items-center">
-                            <button
+                            <button @click="open = true"
                                 class="w-full bg-blue-600 text-white py-3 px-6 rounded-xl text-lg font-medium hover:bg-blue-700 transition-colors mb-3">
                                 Get started
                             </button>
@@ -613,7 +695,7 @@
                             </ul>
                         </div>
                         <div class="flex flex-col items-center">
-                            <button
+                            <button @click="open = true"
                                 class="w-full bg-blue-600 text-white py-3 px-6 rounded-xl text-lg font-medium hover:bg-blue-700 transition-colors mb-3">
                                 Get started
                             </button>
@@ -642,7 +724,7 @@
                             </ul>
                         </div>
                         <div class="flex flex-col items-center">
-                            <button
+                            <button @click="open = true"
                                 class="w-full bg-blue-600 text-white py-3 px-6 rounded-xl text-lg font-medium hover:bg-blue-700 transition-colors mb-3">
                                 Get started
                             </button>
@@ -653,7 +735,7 @@
                 </div>
 
                 <div class="mt-12 text-center">
-                    <button
+                    <button @click="open = true"
                         class="bg-blue-600 text-white py-3 px-8 rounded-full text-lg font-medium shadow-md hover:bg-blue-700 transition-colors flex items-center justify-center mx-auto">
                         Download app
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24"
@@ -910,7 +992,7 @@
 
                 <!-- CTA Button -->
                 <div class="text-center mt-9">
-                    <button
+                    <button @click="open = true"
                         class="bg-blue-500 hover:bg-blue-600 text-white font-medium px-6 py-3 rounded-lg inline-flex items-center justify-center gap-2 transition-colors w-full sm:w-auto">
                         Join Now
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -1102,7 +1184,7 @@
                     </div>
                 </div>
                 <div class="text-center ">
-                    <button
+                    <button @click="open = true"
                         class="bg-blue-500 hover:bg-blue-600 text-white font-medium px-6 py-3 rounded-lg inline-flex items-center justify-center gap-2 transition-colors w-full sm:w-auto">
                         Get Free Audit
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -1417,10 +1499,10 @@
                         they're
                         gone!
                     </p>
-                    <a href="#"
+                    <button @click="open = true"
                         class="inline-block bg-white text-[#106CCA] py-3 px-6 rounded-lg shadow-md transition-transform transform hover:scale-105">
                         Contact Us
-                    </a>
+                    </button>
                     <p class="text-sm sm:text-base mt-4">
                         No hidden fees. Cancel anytime
                     </p>
@@ -1436,7 +1518,7 @@
                 <div class="flex flex-col justify-between items-center md:items-start text-center md:text-left">
                     <div>
                         <a href="#" class="inline-block mb-4 cursor-pointer">
-                            <img src="/assets/images/footer_logo.png" alt="Logo" class="h-16 w-auto">
+                            <img src="/assets/images/logo.png" alt="Logo" class="h-16 w-auto">
                         </a>
                         <p class="text-sm text-[#0021BF] mb-10 max-w-xs font-inter">
                             Fore Mobility Services — Your Trusted Partner for
