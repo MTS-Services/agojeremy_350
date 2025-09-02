@@ -701,7 +701,7 @@
 
                 <!-- CTA Button -->
                 <div class="text-center mt-9">
-                    <button
+                    <button @click="open = true"
                         class="bg-blue-500 hover:bg-blue-600 text-white font-medium px-6 py-3 rounded-lg inline-flex items-center justify-center gap-2 transition-colors w-full sm:w-auto">
                         Ask an Expert
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -1035,7 +1035,7 @@
                 </div>
 
                 <div class="mt-8 flex justify-center">
-                    <button
+                    <button @click="open = true"
                         class="bg-primary text-white text-base px-6 py-3 md:px-8 md:py-4 rounded-full font-medium shadow-md hover:bg-blue-600 transition-colors flex items-center gap-2">
                         Get Consultation
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -1106,7 +1106,7 @@
 
                                     <p class="text-[#0F1125] font-medium text-lg mb-6">Saved me $300/month</p>
 
-                                    <button
+                                    <button @click="open = true"
                                         class="w-1/2 bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 rounded-lg transition-colors duration-200">
                                         Explore Plans
                                     </button>
@@ -1139,7 +1139,7 @@
 
                                     <p class="text-[#0F1125] font-medium text-lg mb-6">No maintenance worries</p>
 
-                                    <button
+                                    <button @click="open = true"
                                         class="w-1/2 bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 rounded-lg transition-colors duration-200">
                                         Start Driving
                                     </button>
@@ -1172,7 +1172,7 @@
 
                                     <p class="text-[#0F1125] font-medium text-lg mb-6">Booked in 2 minutes</p>
 
-                                    <button
+                                    <button @click="open = true"
                                         class="w-1/2 bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 rounded-lg transition-colors duration-200">
                                         Get Fleet Pricing
                                     </button>
@@ -1206,7 +1206,7 @@
 
                                     <p class="text-[#0F1125] font-medium text-lg mb-6">Reduced costs by 40%</p>
 
-                                    <button
+                                    <button @click="open = true"
                                         class="w-1/2 bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 rounded-lg transition-colors duration-200">
                                         View Solutions
                                     </button>
@@ -1240,7 +1240,7 @@
 
                                     <p class="text-[#0F1125] font-medium text-lg mb-6">Perfect for weekends</p>
 
-                                    <button
+                                    <button @click="open = true"
                                         class="w-1/2 bg-blue-500 hover:bg-blue-600 text-white font-medium py-2.5 rounded-lg transition-colors duration-200">
                                         Get Started
                                     </button>
@@ -1458,10 +1458,10 @@
                         they're
                         gone!
                     </p>
-                    <a href="#"
+                    <button @click="open = true"
                         class="inline-block bg-white text-[#106CCA] py-3 px-6 rounded-lg shadow-md transition-transform transform hover:scale-105">
                         Contact Us
-                    </a>
+                    </button>
                     <p class="text-sm sm:text-base mt-4">
                         No hidden fees. Cancel anytime
                     </p>
