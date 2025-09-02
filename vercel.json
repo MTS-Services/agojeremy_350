@@ -1,6 +1,10 @@
 {
     "rewrites": [
         {
+            "source": "/(.*)",
+            "destination": "/index.html"
+        },
+        {
             "source": "/business-fleet",
             "destination": "/business_fleet.html"
         },
