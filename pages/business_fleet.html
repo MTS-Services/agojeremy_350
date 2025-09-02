@@ -21,6 +21,12 @@
         [x-cloak] {
             display: none !important;
         }
+
+        .active_button {
+            background-color: #1487FC !important;
+            color: #fff !important;
+            border-radius: 8px !important;
+        }
     </style>
 </head>
 
@@ -62,13 +68,16 @@
                         x-transition:leave="transition ease-in duration-150"
                         x-transition:leave-start="opacity-100 transform scale-100"
                         x-transition:leave-end="opacity-0 transform scale-95"
-                        class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-20">
-                        <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                        class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 mt-2 w-48 rounded-lg shadow-lg bg-white   z-20">
+                        <div class="" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                            <a href="index.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 "
+                                role="menuitem">Landing </a>
                             <a href="/pages/gig_drivers.html"
                                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Gig
                                 Drivers</a>
                             <a href="/pages/business_fleet.html"
-                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Business
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active_button"
+                                role="menuitem">Business
                                 Fleet</a>
 
                         </div>
@@ -91,8 +100,8 @@
                         x-transition:leave="transition ease-in duration-150"
                         x-transition:leave-start="opacity-100 transform scale-100"
                         x-transition:leave-end="opacity-0 transform scale-95"
-                        class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 mt-2 w-48 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 z-20">
-                        <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
+                        class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 mt-2 w-48 rounded-lg shadow-lg bg-white   z-20">
+                        <div class="" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                             <a href="/pages/personal_car.html"
                                 class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Personal
                                 car</a>
