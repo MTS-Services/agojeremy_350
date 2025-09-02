@@ -1,0 +1,40 @@
+{
+
+    "rewrites": [
+
+
+        {
+
+            "source": "/business-fleet",
+
+            "destination": "/pages/business_fleet.html"
+
+        },
+
+        {
+
+            "source": "/gig-drivers",
+
+            "destination": "/pages/gig_drivers.html"
+
+        },
+
+        {
+
+            "source": "/personal-car",
+
+            "destination": "/pages/personal_car.html"
+
+        },
+        {
+
+            "source": "/real-estate",
+
+            "destination": "/pages/real_estate.html"
+
+        }
+
+    ]
+
+}
+ 
