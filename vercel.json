@@ -3,6 +3,19 @@
     {
       "source": "/gig_drivers",
       "destination": "/gig_drivers.html"
+    },
+    {
+      "source": "/gig_drivers",
+      "destination": "/gig_drivers.html"
+    },
+    {
+      "source": "/personal_fleet",
+      "destination": "/personal_fleet.html"
+    },
+    {
+      "source": "/real_estate",
+      "destination": "/real_estate.html"
     }
+    
   ]
 }
