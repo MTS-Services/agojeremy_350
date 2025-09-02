@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Business Fleet Page</title>
+    <title>Real Estate Page</title>
 
     <!-- swiper CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
@@ -114,7 +114,7 @@
         </div>
     </section>
     <header
-        class="relative py-5 z-10 bg-[url('../images/business_fleet_hero_image.png')] bg-cover  bg-center min-h-[60vh] md:min-h-[70vh] lg:min-h-[85vh]">
+        class="relative py-5 z-10 bg-[url('../images/real_estate_hero_image.png')] bg-cover  bg-center min-h-[60vh] md:min-h-[70vh] lg:min-h-[85vh]">
         <nav
             class="container mx-auto px-4 lg:px-0 py-6 sm:py-0 flex flex-col md:flex-row justify-between items-center ">
             <div class="flex justify-between items-center w-full md:w-auto">
@@ -150,16 +150,15 @@
                         x-transition:leave="transition ease-in duration-150"
                         x-transition:leave-start="opacity-100 transform scale-100"
                         x-transition:leave-end="opacity-0 transform scale-95"
-                        class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 mt-2 w-48 rounded-lg shadow-lg bg-white   z-20">
+                        class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 mt-2 w-48 rounded-lg shadow-lg bg-white  z-20">
                         <div class="" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
                             <a href="/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 "
                                 role="menuitem">Home </a>
-                            <a href="pages/gig_drivers.html"
-                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Gig
+                            <a href="gig_drivers.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                role="menuitem">Gig
                                 Drivers</a>
-                            <a href="pages/business_fleet.html"
-                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active_button"
-                                role="menuitem">Business
+                            <a href="business_fleet.html"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Business
                                 Fleet</a>
 
                         </div>
@@ -184,11 +183,12 @@
                         x-transition:leave-end="opacity-0 transform scale-95"
                         class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 mt-2 w-48 rounded-lg shadow-lg bg-white   z-20">
                         <div class="" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                            <a href="pages/personal_car.html"
-                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Personal
+                            <a href="personal_car.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                role="menuitem">Personal
                                 car</a>
-                            <a href="pages/real_estate.html"
-                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Real
+                            <a href="real_estate.html"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active_button"
+                                role="menuitem">Real
                                 estate</a>
 
                         </div>
@@ -213,247 +213,131 @@
             <div class="max-w-full justify-start items-center">
                 <div class="text-start">
                     <h1
-                        class="mb-4 text-xl leading-6 sm:leading-7 md:leading-9 lg:leading-16 text-white sm:text-4xl lg:text-5xl font-inter">
-                        Fore for Business – <br class="hidden sm:block"> Fleet Management, <br class="hidden sm:block">
-                        Simplified.
+                        class="mb-4 text-xl leading-6 sm:leading-7 md:leading-9 lg:leading-16 text-white sm:text-4xl lg:text-5xl xl:text-7xl font-inter">
+                        Mobility as an Amenity <br class="hidden sm:block"> – Fore for Real Estate.
                     </h1>
-                    <p class="text-base font-light leading-relaxed text-white sm:text-lg  font-inter mb-3">Cut fleet
-                        costs by 30% and deploy vehicles in days</p>
-                    <p class="text-base font-light leading-relaxed text-white sm:text-lg  font-inter">
-                        Don’t tie up capital in company cars. Subscribe to
-                        the vehicles you need, <br class="hidden sm:block"> when you need them – with full management,
-                        maintenance, and <br class="hidden sm:block"> insurance handled by Fore.
-                    </p>
-
+                    <p class="text-base lg:text-xl font-light leading-relaxed text-white sm:text-lg  font-inter mb-3">
+                        “Offer your
+                        residents the convenience of a shared car on-site. We <br class="hidden sm:block"> provide the
+                        vehicles and technology
+                        – you offer a cutting-edge amenity <br class="hidden sm:block"> that boosts your property’s
+                        appeal.”</p>
+                    < </div>
+                        <div
+                            class="flex flex-col sm:flex-row items-center justify-start gap-4 md:gap-6 lg:gap-8 xl:gap-10 mt-8">
+                            <button @click="open = true"
+                                class="bg-blue-500 hover:bg-blue-600 text-white font-medium px-6 py-3 rounded-lg inline-flex items-center justify-center gap-2 transition-colors w-full sm:w-auto">
+                                Partner with Fore for Your Property
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M17 7l-10 10M7 7h10v10" />
+                                </svg>
+                            </button>
+                        </div>
                 </div>
-                <div
-                    class="flex flex-col sm:flex-row items-center justify-start gap-4 md:gap-6 lg:gap-8 xl:gap-10 mt-8">
-                    <button @click="open = true"
-                        class="bg-blue-500 hover:bg-blue-600 text-white font-medium px-6 py-3 rounded-lg inline-flex items-center justify-center gap-2 transition-colors w-full sm:w-auto">
-                        Contact Us for a Business Quote
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                            stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                d="M17 7l-10 10M7 7h10v10" />
-                        </svg>
-                    </button>
-                    <button @click="open = true"
-                        class=" text-white font-medium border-2 border-gray-50 text-base sm:text-lg lg:text-xl px-6 py-2 rounded-lg inline-flex items-center justify-center gap-2 transition-colors w-full sm:w-auto">
-                        Download Fleet Brochure
-
-                    </button>
-                </div>
-            </div>
         </section>
     </header>
     <main>
-        <!-- Key Selling Points  -->
-        <section class="pb-10 md:py-22 pt-6 px-4 lg:px-0">
+        <!-- Benefits to Property Owners/Managers  -->
+        <section class="pb-10 md:py-28 px-4 lg:px-0">
             <div class="container">
                 <div class="text-center mb-8 md:mb-12">
                     <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-black mb-5">
-                        Key Selling Points
+                        Benefits to Property Owners/Managers
                     </h2>
                 </div>
 
                 <div class="flex flex-wrap justify-center gap-5">
 
+                    <!-- Card 1 -->
                     <div
                         class="bg-white rounded-lg p-4 hover:shadow-xl shadow-lg flex flex-col items-start gap-4 border border-gray-100 w-full sm:w-[48%] md:w-[31%] lg:w-[22%]">
-                        <div class="">
-                            <p class="text-lg font-semibold text-black mb-3"> Reduce Costs & Liabilities:</p>
-                            <h3 class="text-base text-[#3C3C3C] mb-3">Predictable monthly expenses, avoiding surprise
-                                repairs. Save up to 25% in the first year.</h3>
-                            <p class="text-[#0C5197]">Client reduced fleet costs by 25% in the first year by avoiding
-                                surprise repairs.</p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="bg-white rounded-lg p-4 hover:shadow-xl shadow-lg flex flex-col items-start gap-4 border border-gray-100 w-full sm:w-[48%] md:w-[31%] lg:w-[22%]">
-                        <div class="">
-                            <p class="text-lg font-semibold text-black mb-3"> Flexible Scaling:</p>
-                            <h3 class="text-base text-[#3C3C3C] mb-3">Easily scale up for peak seasons or down when not
-                                needed. No long leases, save on costs.</h3>
-                            <p class="text-[#0C5197]">Retail client scaled fleet from 10 to 50 vehicles during peak
-                                season and saved costs afterward.</p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="bg-white rounded-lg p-4 hover:shadow-xl shadow-lg flex flex-col items-start gap-4 border border-gray-100 w-full sm:w-[48%] md:w-[31%] lg:w-[22%]">
-                        <div class="">
-                            <p class="text-lg font-semibold text-black mb-3"> Full Maintenance</p>
-                            <h3 class="text-base text-[#3C3C3C] mb-3">We handle all maintenance and inspections,
-                                reducing downtime by 40% and boosting productivity.</h3>
-                            <p class="text-[#0C5197]">Logistics company cut downtime by 40%, boosting productivity by
-                                15%.</p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="bg-white rounded-lg p-4 hover:shadow-xl shadow-lg flex flex-col items-start gap-4 border border-gray-100 w-full sm:w-[48%] md:w-[31%] lg:w-[22%]">
-                        <div class="">
-                            <p class="text-lg font-semibold text-black mb-3"> Insurance Included:</p>
-                            <h3 class="text-base text-[#3C3C3C] mb-3">Insurance included for all vehicles, saving up to
-                                $10,000 annually with full coverage.</h3>
-                            <p class="text-[#0C5197]">Fleet owner saved $10,000 annually on insurance with full coverage
-                                under our policy.</p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="bg-white rounded-lg p-4 hover:shadow-xl shadow-lg flex flex-col items-start gap-4 border border-gray-100 w-full sm:w-[48%] md:w-[31%] lg:w-[22%]">
-                        <div class="">
-                            <p class="text-lg font-semibold text-black mb-3"> Real-Time Tracking & Analytics:</p>
-                            <h3 class="text-base text-[#3C3C3C] mb-3">Track fleet locations and usage in real time. Cut
-                                fuel costs by 18% using our Fleet Dashboard.</h3>
-                            <p class="text-[#0C5197]">Transportation company cut fuel costs by 18% using our Fleet
-                                Dashboard.</p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="bg-white rounded-lg p-4 hover:shadow-xl shadow-lg flex flex-col items-start gap-4 border border-gray-100 w-full sm:w-[48%] md:w-[31%] lg:w-[22%]">
-                        <div class="">
-                            <p class="text-lg font-semibold text-black mb-3"> Dedicated Support:</p>
-                            <h3 class="text-base text-[#3C3C3C] mb-3">Priority support available 24/7. Get an extra
-                                vehicle or service on short notice.</h3>
-                            <p class="text-[#0C5197]">Business client received an extra vehicle within 24 hours for
-                                urgent need.</p>
-                        </div>
-                    </div>
-
-                    <div
-                        class="bg-white rounded-lg p-4 hover:shadow-xl shadow-lg flex flex-col items-start gap-4 border border-gray-100 w-full sm:w-[48%] md:w-[31%] lg:w-[22%]">
-                        <div class="">
-                            <p class="text-lg font-semibold text-black mb-3"> Customized Solutions:</p>
-                            <h3 class="text-base text-[#3C3C3C] mb-3">Tailored fleet solutions with branded vehicles for
-                                better visibility and 20% more efficiency.</h3>
-                            <p class="text-[#0C5197]">Delivery service customized fleet with branded vehicles,
-                                increasing visibility and efficiency.</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- Case Study: ABC Home Services -->
-        <section class="py-10 md:py-16 px-4 lg:px-0">
-            <div class="container mx-auto">
-                <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-medium font-inter text-black mb-2 md:mb-5">
-                    Case Study: ABC Home Services</h2>
-                <div class="flex flex-col lg:flex-row gap-8  lg:gap-12">
-                    <div class="lg:w-1/2">
-                        <p class="text-[#474747] font-inter text-font-12px sm:text-font-14px mb-6">
-                            ABC Home Services transformed their operations by replacing their aging fleet of 15
-                            maintenance vans with our flexible car subscription service. Within 90 days, they saw
-                            immediate improvements in reliability, cost predictability, and team productivity.
+                        <p class="text-lg font-semibold text-black mb-3">Attract & Retain Residents</p>
+                        <p class="text-base text-[#3C3C3C]">
+                            Stand out by offering something unique: a ‘community car’ that residents can use. Great for
+                            urban renters who don’t own cars – they’ll choose your building for the occasional mobility
+                            it provides.
                         </p>
-
-                        <h3 class="text-xl sm:text-2xl font-medium text-black mb-4">Key Benefits Achieved:</h3>
-                        <ul class="list-none space-y-2 mb-3">
-                            <li class="flex items-start text-[#474747] font-inter text-font-12px sm:text-font-14px">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-2 flex-shrink-0"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                                </svg>
-                                40% reduction in vehicle-related operational costs ($200 saved per year)
-                            </li>
-                            <li class="flex items-start text-[#474747] font-inter text-font-12px sm:text-font-14px">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-2 flex-shrink-0"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                                </svg>
-                                99.2% fleet uptime with 24/7 maintenance support
-                            </li>
-                            <li class="flex items-start text-[#474747] font-inter text-font-12px sm:text-font-14px">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-2 flex-shrink-0"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Flexible scaling during peak seasons without capital investment
-                            </li>
-                            <li class="flex items-start text-[#474747] font-inter text-font-12px sm:text-font-14px">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-2 flex-shrink-0"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Improved employee satisfaction with newer, reliable vehicles
-                            </li>
-                            <li class="flex items-start text-[#474747] font-inter text-font-12px sm:text-font-14px">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-2 flex-shrink-0"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                                </svg>
-                                $300/month saved in downtime costs
-                            </li>
-                        </ul>
-
-                        <h3 class="text-xl sm:text-2xl font-medium text-black mb-2z">Fleet Analytics</h3>
-                        <ul class="list-none space-y-2">
-                            <li class="flex items-start text-[#474747] font-inter text-font-12px sm:text-font-14px">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-2 flex-shrink-0"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Fleet Uptime: 99.2% (Excellent)
-                            </li>
-                            <li class="flex items-start text-[#474747] font-inter text-font-12px sm:text-font-14px">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-2 flex-shrink-0"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Vehicle Usage Trends: Usage Rate: 80%, Active Vehicles: 68%
-                            </li>
-                            <li class="flex items-start text-[#474747] font-inter text-font-12px sm:text-font-14px">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-2 flex-shrink-0"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Cost Reduction: 40%
-                            </li>
-                            <li class="flex items-start text-[#474747] font-inter text-font-12px sm:text-font-14px">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-2 flex-shrink-0"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Employee Satisfaction: 94.5%
-                            </li>
-                            <li class="flex items-start text-[#474747] font-inter text-font-12px sm:text-font-14px">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-blue-600 mr-2 flex-shrink-0"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-                                    <path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7" />
-                                </svg>
-                                Scaling Flexibility: 85%
-                            </li>
-                        </ul>
                     </div>
-                    <div class="lg:w-1/2 flex justify-start items-start">
-                        <div class=" w-full">
 
-                            <img src="/assets/images/business_servis.png" alt="">
-                        </div>
+                    <!-- Card 2 -->
+                    <div
+                        class="bg-white rounded-lg p-4 hover:shadow-xl shadow-lg flex flex-col items-start gap-4 border border-gray-100 w-full sm:w-[48%] md:w-[31%] lg:w-[22%]">
+                        <p class="text-lg font-semibold text-black mb-3">Turnkey Service</p>
+                        <p class="text-base text-[#3C3C3C]">
+                            Fore handles everything – vehicle provision, insurance, bookings, cleaning, maintenance.
+                            This is a zero-hassle amenity for you. You simply allow us to use a parking space and
+                            promote it to residents.
+                        </p>
                     </div>
-                </div>
-                <div class="bg-white p-6 md:p-8 rounded-lg shadow-sm border border-gray-100 mt-8">
-                    <p class="text-[#474747] font-inter text-font-12px sm:text-font-14px italic mb-4">
-                        "The transition was seamless. Our technicians now focus on serving customers instead of worrying
-                        about vehicle breakdowns. It's been a game-changer for our business. We've reduced downtime from
-                        6 hours/month to under 1 hour, saving $5,000/month in lost revenue."
-                    </p>
-                    <p class="text-[#474747] font-inter text-font-12px sm:text-font-14px font-semibold">
-                        — Sarah Chon, Operations Director, ABC Home Services
-                    </p>
+
+                    <!-- Card 3 -->
+                    <div
+                        class="bg-white rounded-lg p-4 hover:shadow-xl shadow-lg flex flex-col items-start gap-4 border border-gray-100 w-full sm:w-[48%] md:w-[31%] lg:w-[22%]">
+                        <p class="text-lg font-semibold text-black mb-3">Improve Parking Efficiency</p>
+                        <p class="text-base text-[#3C3C3C]">
+                            Encourage a car-sharing mindset. Some residents may choose not to bring a second car (or any
+                            car) if they know a shared one is available, freeing up parking space and reducing
+                            congestion.
+                        </p>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div
+                        class="bg-white rounded-lg p-4 hover:shadow-xl shadow-lg flex flex-col items-start gap-4 border border-gray-100 w-full sm:w-[48%] md:w-[31%] lg:w-[22%]">
+                        <p class="text-lg font-semibold text-black mb-3">Revenue Sharing (Optional)</p>
+                        <p class="text-base text-[#3C3C3C]">
+                            Create a new revenue stream. If desired, we can share usage revenue with the property or set
+                            up a model where the property subsidizes a car for free use up to X hours per resident, with
+                            additional usage paid – flexible arrangements to suit your goals.
+                        </p>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div
+                        class="bg-white rounded-lg p-4 hover:shadow-xl shadow-lg flex flex-col items-start gap-4 border border-gray-100 w-full sm:w-[48%] md:w-[31%] lg:w-[22%]">
+                        <p class="text-lg font-semibold text-black mb-3">Modern & Eco-Friendly Image</p>
+                        <p class="text-base text-[#3C3C3C]">
+                            Offering an on-site EV or hybrid for residents positions your property as eco-conscious and
+                            tech-savvy. It can support green building certifications and appeal to those who care about
+                            sustainability.
+                        </p>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div
+                        class="bg-white rounded-lg p-4 hover:shadow-xl shadow-lg flex flex-col items-start gap-4 border border-gray-100 w-full sm:w-[48%] md:w-[31%] lg:w-[22%]">
+                        <p class="text-lg font-semibold text-black mb-3">Customized Integration</p>
+                        <p class="text-base text-[#3C3C3C]">
+                            Our system can integrate with your existing resident app or keycard system. Only authorized
+                            residents will be able to access the vehicles. We can also provide co-branded materials so
+                            it feels like a seamless part of your amenities.
+                        </p>
+                    </div>
+
+                    <!-- Card 7 -->
+                    <div
+                        class="bg-white rounded-lg p-4 hover:shadow-xl shadow-lg flex flex-col items-start gap-4 border border-gray-100 w-full sm:w-[48%] md:w-[31%] lg:w-[22%]">
+                        <p class="text-lg font-semibold text-black mb-3">Safety and Reliability</p>
+                        <p class="text-base text-[#3C3C3C]">
+                            Vehicles are insured and covered by Fore. We ensure they are regularly cleaned and
+                            well-maintained. Residents reserve through the app, so there is a digital record of usage.
+                            We can even set usage rules (like no smoking, must refuel if under 1/4 tank) to keep things
+                            orderly.
+                        </p>
+                    </div>
+
                 </div>
             </div>
         </section>
-        <!-- Outline Process for Businesses: -->
-        <section class="pb-10 md:pb-10 pt-6 md:pt-10 px-4 lg:px-0">
+
+        <!-- How It Works for the Property -->
+        <section class="pb-10 md:pb-24 pt-6 md:pt-10 px-4 lg:px-0">
             <div class="max-w-5xl mx-auto ">
                 <div class="text-center mb-8 md:mb-12">
-                    <h2 class="text-3xl sm:text-4xl font-normal font-inter text-black mb-3">Outline Process for
-                        Businesses:
+                    <h2 class="text-3xl sm:text-4xl font-normal font-inter text-black mb-3">How It Works for the
+                        Property
                     </h2>
                 </div>
 
@@ -483,12 +367,14 @@
                                     <div class="sm:ml-2">
                                         <h3
                                             class="text-2xl sm:text-3xl md:text-4xl font-medium text-black mb-2 md:mb-4">
-                                            Get your fleet plan in 24 hours</h3>
-                                        <p
-                                            class="text-[#474747] font-inter text-base sm:text-lg md:text-xl lg:text-2xl">
-                                            Free, no-obligation consultation<br>
-                                            <span class="text-sm italic">Example: Texas startup got a custom fleet plan
-                                                next day.</span>
+                                            Initial Setup</h3>
+                                        <p class="text-[#474747] font-inter lg:text-base text-font-14px">
+                                            You reach out to Fore and we assess your property’s needs (how
+                                            many units, interest in a car, suitable parking spot, etc.). We’ll recommend
+                                            the
+                                            number and type of vehicles. Typically, one vehicle can serve many residents
+                                            (we’ll
+                                            use usage data to optimize).
                                         </p>
                                     </div>
                                 </div>
@@ -514,12 +400,14 @@
                                     <div class="sm:ml-2">
                                         <h3
                                             class="text-2xl sm:text-3xl md:text-4xl font-medium text-black mb-2 md:mb-4">
-                                            How fast onboarding happens</h3>
-                                        <p
-                                            class="text-[#474747] font-inter text-base sm:text-lg md:text-xl lg:text-2xl">
-                                            In under 48 hours<br>
-                                            <span class="text-sm italic">Example: 12 drivers onboarded in 48 hours for a
-                                                delivery firm.</span>
+                                            Agreement</h3>
+                                        <p class="text-[#474747] font-inter lg:text-base text-font-14px">
+                                            We sign an agreement covering the placement of our vehicle(s) at your
+                                            site and the service terms. Decide on any cost-sharing or subsidy model.
+                                            Fore can
+                                            either charge residents directly per use, or you can cover some cost as an
+                                            included
+                                            amenity – we’re flexible.
                                         </p>
                                     </div>
                                 </div>
@@ -545,12 +433,14 @@
                                     <div class="sm:ml-2">
                                         <h3
                                             class="text-2xl sm:text-3xl md:text-4xl font-medium text-black mb-2 md:mb-4">
-                                            Operation</h3>
-                                        <p
-                                            class="text-[#474747] font-inter text-base sm:text-lg md:text-xl lg:text-2xl">
-                                            Reduce fleet admin workload by 80% with automated maintenance tracking<br>
-                                            <span class="text-sm italic">Example: Construction company cut admin work by
-                                                80%</span>
+                                            Launch</h3>
+                                        <p class="text-[#474747] font-inter lg:text-base text-font-14px">
+                                            Fore delivers the vehicle(s) and sets up signage and instructions. We hold
+                                            a demo event or provide materials so residents know how to sign up and use
+                                            the
+                                            service. We can co-brand the experience (e.g., call it ‘[Building Name] Car
+                                            Share,
+                                            powered by Fore’).
                                         </p>
                                     </div>
                                 </div>
@@ -568,7 +458,7 @@
                             <div class="flex flex-col sm:flex-row items-start gap-4">
                                 <div class="bg-[#106CCA] p-3 md:p-4 flex-shrink-0 self-start">
                                     <img src="/assets/images/business_process (1).svg" alt="Get Fleet Plan Icon"
-                                        class="w-9 h-9">
+                                        class="w-9 h-9 ">
                                 </div>
 
                                 <div class="flex-1 flex flex-col sm:flex-row items-start gap-3 mb-2">
@@ -576,13 +466,14 @@
                                     <div class="sm:ml-2">
                                         <h3
                                             class="text-2xl sm:text-3xl md:text-4xl font-medium text-black mb-2 md:mb-4">
-                                            Ongoing Flexibility</h3>
-                                        <p
-                                            class="text-[#474747] font-inter text-base sm:text-lg md:text-xl lg:text-2xl">
-                                            Ramp up for holiday season or project launches — no long-term
-                                            commitments<br>
-                                            <span class="text-sm italic">Example: Retailer scaled fleet only for holiday
-                                                rush.</span>
+                                            Operation</h3>
+                                        <p class="text-[#474747] font-inter lg:text-base text-font-14px">
+                                            Residents use the car via the Fore app. They reserve time slots and
+                                            unlock the car with their phone. The car might have a home parking spot with
+                                            a sign
+                                            (which we’ll provide). Fore monitors and manages usage. We handle all
+                                            cleaning,
+                                            maintenance, and can swap out the car if needed for servicing.
                                         </p>
                                     </div>
                                 </div>
@@ -608,21 +499,113 @@
                                     <div class="sm:ml-2">
                                         <h3
                                             class="text-2xl sm:text-3xl md:text-4xl font-medium text-black mb-2 md:mb-4">
-                                            Billing</h3>
-                                        <p
-                                            class="text-[#474747] font-inter text-base sm:text-lg md:text-xl lg:text-2xl">
-                                            One predictable invoice. No surprise costs.<br>
-                                            <span class="text-sm italic">Example: Rideshare firm liked one simple
-                                                monthly invoice.</span>
+                                            Support</h3>
+                                        <p class="text-[#474747] font-inter lg:text-base text-font-14px">
+                                            If a resident has an issue while using the car, they contact Fore’s support
+                                            (24/7). We take care of it just as we would with any subscriber. Property
+                                            management isn’t burdened with these day-to-day issues.
                                         </p>
                                     </div>
                                 </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div
+                        class="relative flex items-center mb-6 bg-white rounded-lg p-4 md:p-6 shadow-sm border border-gray-100">
+                        <div
+                            class="hidden md:block absolute left-4 md:left-11 w-5 h-5 md:w-6 md:h-6 bg-blue-500 rounded-full border-4 border-[#B0BBF2] shadow-sm shadow-primary">
+                        </div>
+
+                        <div class="md:ml-12 lg:ml-16 w-full">
+                            <div class="flex flex-col sm:flex-row items-start gap-4">
+                                <div class="bg-[#106CCA] p-3 md:p-4 flex-shrink-0 self-start ">
+                                    <img src="/assets/images/business_process (1).svg" alt="Get Fleet Plan Icon"
+                                        class="w-9 h-9">
+                                </div>
+
+                                <div class="flex-1 flex flex-col sm:flex-row items-start gap-3 mb-2">
+                                    <span class="text-4xl sm:text-5xl md:text-6xl font-bold text-black">06</span>
+                                    <div class="sm:ml-2">
+                                        <h3
+                                            class="text-2xl sm:text-3xl md:text-4xl font-medium text-black mb-2 md:mb-4">
+                                            Ongoing</h3>
+                                        <p class="text-[#474747] font-inter lg:text-base text-font-14px">
+                                            We provide the property with periodic usage reports – e.g., ‘The car was
+                                            used X times this month by Y different residents, total mileage, etc.’ You
+                                            can see the
+                                            value it’s providing. If demand is consistently high (fully booked car), we
+                                            might
+                                            suggest adding another vehicle. If it’s low, we could adjust availability or
+                                            remove if
+                                            needed (with notice) – so you’re never stuck.
+                                        </p>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
 
                 </div>
             </div>
+            <div class="text-center mt-8">
+                <button @click="open = true"
+                    class="bg-primary text-white py-3 px-6 rounded-lg text-lg font-medium inline-flex items-center justify-center">
+                    Send Me Details
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-3" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M17 7l-10 10M7 7h10v10" />
+                    </svg>
+                </button>
+            </div>
+        </section>
+        <!-- iamges  -->
+        <section class="flex flex-col gap-6 pb-10">
+
+            <!-- Unlock Section -->
+            <div
+                class="relative flex items-start pt-9 justify-center w-full min-h-[60vh] md:min-h-[70vh] lg:min-h-screen">
+                <img src="/assets/images/real_estate  (1).jpg" alt="Unlock"
+                    class="absolute inset-0 !w-full h-full object-cover ">
+                <div class="relative z-10 text-center px-4 sm:px-6 lg:px-16">
+                    <h3 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-black">Unlock</h3>
+                    <p class="text-2xl mt-2 text-black max-w-2xl mx-auto">
+                        Use your phone to instantly unlock the car, right from your building entrance. No keys, no
+                        waiting — just tap and go.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Return Section -->
+            <div
+                class="relative flex items-start pt-9 justify-center w-full min-h-[60vh] md:min-h-[70vh] lg:min-h-screen">
+                <img src="/assets/images/real_estate  (2).jpg" alt="Return" class="absolute inset-0 !w-full h-full ">
+                <div class="relative z-10 text-center px-4 sm:px-6 lg:px-16">
+                    <h3 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-black">Return</h3>
+                    <p class="text-2xl mt-2 text-black max-w-2xl mx-auto">
+                        Park the car back in the same spot when you’re <br class="hidden sm:block"> done. No searching
+                        for spaces, no extra charges.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Co-Branded Comfort Section -->
+            <div
+                class="relative flex items-start pt-9 justify-center w-full min-h-[60vh] md:min-h-[70vh] lg:min-h-screen">
+                <img src="/assets/images/real_estate  (3).jpg" alt="Co-Branded Comfort"
+                    class="absolute inset-0 w-full h-full object-cover">
+                <div class="relative z-10 text-center px-4 sm:px-6 lg:px-16">
+                    <h3 class="text-3xl md:text-4xl lg:text-5xl font-semibold text-white">Co-Branded Comfort</h3>
+                    <p class="text-2xl mt-2 text-white max-w-2xl mx-auto">
+                        Enjoy a premium car service co-branded with your <br class="hidden sm:block"> residence, adding
+                        style and convenience to your <br class="hidden sm:block">
+                        daily life.
+                    </p>
+                </div>
+            </div>
+
         </section>
 
 
@@ -644,8 +627,7 @@
                                         </div>
                                         <div>
                                             <h3 class="font-semibold text-gray-900 text-xl">Michael Chen</h3>
-                                            <p class="text-gray-600 text-font-12px">Logistics Manager</p>
-                                            <p class="text-gray-600 text-font-12px">ABC Home Services</p>
+                                            <p class="text-gray-600 text-font-16px">Riverside Resident</p>
                                         </div>
                                     </div>
 
@@ -658,9 +640,8 @@
                                     </div>
 
 
-                                    <p class="text-[#0F1125] font-medium text-lg font-poppins">Fore allowed us to scale
-                                        our delivery <br class="hidden lg:block"> fleet by 30% during peak season <br
-                                            class="hidden lg:block"> without buying a single van.
+                                    <p class="text-[#0F1125] font-medium text-lg font-poppins">The attention to detail
+                                        and resident care exceeded all my expectations. This is luxury living redefined.
                                     </p>
                                 </div>
                             </div>
@@ -677,8 +658,7 @@
                                         </div>
                                         <div>
                                             <h3 class="font-semibold text-gray-900 text-xl">Sarah Johnson</h3>
-                                            <p class="text-gray-600 text-font-12px">Logistics Manager</p>
-                                            <p class="text-gray-600 text-font-12px">ABC Home Services</p>
+                                            <p class="text-gray-600 text-font-16px">Downtown Resident</p>
                                         </div>
                                     </div>
 
@@ -690,9 +670,8 @@
                                         <i class="fa-solid fa-star w-6 h-6 text-sm"></i>
                                     </div>
 
-                                    <p class="text-[#0F1125] font-medium text-lg ">With Fore, we onboarded 15 new <br
-                                            class="hidden lg:block">
-                                        drivers in just 48 hours — ready for <br class="hidden lg:block"> holiday rush.
+                                    <p class="text-[#0F1125] font-medium text-lg ">Living here has been absolutely
+                                        incredible. The service is unmatched and the community feels like home.
                                     </p>
                                 </div>
                             </div>
@@ -709,8 +688,7 @@
                                         </div>
                                         <div>
                                             <h3 class="font-semibold text-gray-900 text-xl">Emily Rodriguez</h3>
-                                            <p class="text-gray-600 text-font-12px">Logistics Manager</p>
-                                            <p class="text-gray-600 text-font-12px">ABC Home Services</p>
+                                            <p class="text-gray-600 text-font-16px">Skyline Resident</p>
                                         </div>
                                     </div>
 
@@ -722,9 +700,8 @@
                                         <i class="fa-solid fa-star w-6 h-6 text-sm"></i>
                                     </div>
 
-                                    <p class="text-[#0F1125] font-medium text-lg">Fore cut our fleet admin work by <br
-                                            class="hidden lg:block"> 80%, letting us focus fully on <br
-                                            class="hidden lg:block"> customers.
+                                    <p class="text-[#0F1125] font-medium text-lg">From move-in to daily life,everything
+                                        is seamless. The support team truly cares about our experience.
                                     </p>
                                 </div>
                             </div>
@@ -741,8 +718,7 @@
                                         </div>
                                         <div>
                                             <h3 class="font-semibold text-gray-900 text-xl">David Kim</h3>
-                                            <p class="text-gray-600 text-font-12px">Logistics Manager</p>
-                                            <p class="text-gray-600 text-font-12px">ABC Home Services</p>
+                                            <p class="text-gray-600 text-font-16px">ABC Home Services</p>
                                         </div>
                                     </div>
 
@@ -773,8 +749,7 @@
                                         </div>
                                         <div>
                                             <h3 class="font-semibold text-gray-900 text-xl">Lisa Thompson</h3>
-                                            <p class="text-gray-600 text-font-12px">Logistics Manager</p>
-                                            <p class="text-gray-600 text-font-12px">ABC Home Services</p>
+                                            <p class="text-gray-600 text-font-16px">ABC Home Services</p>
                                         </div>
                                     </div>
 
@@ -837,7 +812,7 @@
         <section class="py-10 px-4 sm:py-14 lg:my-20">
             <div class="pb-8 text-center px-6">
                 <h2 class="text-xl font-medium text-gray-900 font-inter sm:text-2xl lg:text-3xl xl:text-4xl">
-                    Frequently Asking Questions
+                    Frequently Asked Questions
                 </h2>
             </div>
 
@@ -845,8 +820,8 @@
                 <div x-data="{ open: false }" class="bg-white mb-4 shadow-sm rounded-sm ">
                     <button @click="open = !open"
                         class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
-                        <span class="text-lg font-medium text-gray-700 font-helvetica">What if a vehicle gets in an
-                            accident? Is unanswered in the screenshot</span>
+                        <span class="text-lg font-medium text-gray-700 font-helvetica">What does it cost the
+                            property?</span>
                         <svg :class="open ? 'rotate-180' : ''"
                             class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -860,8 +835,79 @@
                         x-transition:leave-start="opacity-100 transform translate-y-0"
                         x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 pb-4">
                         <p class="text-sm leading-relaxed text-gray-600">
-                            If a vehicle gets in an accident, please contact our support immediately. We will guide you
-                            through the process for insurance claims and repairs.
+                            The cost varies based on the number of vehicles and specific needs. Please contact us for a
+                            detailed quote.
+                        </p>
+                    </div>
+                </div>
+
+                <div x-data="{ open: false }" class="bg-white mb-4 shadow-sm rounded-sm ">
+                    <button @click="open = !open"
+                        class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
+                        <span class="text-lg font-medium text-gray-700 font-helvetica">Liability concerns?</span>
+                        <svg :class="open ? 'rotate-180' : ''"
+                            class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                        </svg>
+                    </button>
+                    <div x-show="open" x-transition:enter="transition ease-out duration-200"
+                        x-transition:enter-start="opacity-0 transform -translate-y-2"
+                        x-transition:enter-end="opacity-100 transform translate-y-0"
+                        x-transition:leave="transition ease-in duration-150"
+                        x-transition:leave-start="opacity-100 transform translate-y-0"
+                        x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 pb-4">
+                        <p class="text-sm leading-relaxed text-gray-600">
+                            We include full insurance coverage for rideshare, delivery, and personal use with our
+                            vehicles. This minimizes liability for the property.
+                        </p>
+                    </div>
+                </div>
+
+                <div x-data="{ open: false }" class="bg-white mb-4 shadow-sm rounded-sm ">
+                    <button @click="open = !open"
+                        class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
+                        <span class="text-lg font-medium text-gray-700 font-helvetica">Parking requirements?</span>
+                        <svg :class="open ? 'rotate-180' : ''"
+                            class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                        </svg>
+                    </button>
+                    <div x-show="open" x-transition:enter="transition ease-out duration-200"
+                        x-transition:enter-start="opacity-0 transform -translate-y-2"
+                        x-transition:enter-end="opacity-100 transform translate-y-0"
+                        x-transition:leave="transition ease-in duration-150"
+                        x-transition:leave-start="opacity-100 transform translate-y-0"
+                        x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 pb-4">
+                        <p class="text-sm leading-relaxed text-gray-600">
+                            We can discuss specific parking needs to find a solution that works best for your property
+                            layout and resident access.
+                        </p>
+                    </div>
+                </div>
+
+                <div x-data="{ open: false }" class="bg-white mb-4 shadow-sm rounded-sm ">
+                    <button @click="open = !open"
+                        class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
+                        <span class="text-lg font-medium text-gray-700 font-helvetica">What if the car is not used much
+                            or overused?</span>
+                        <svg :class="open ? 'rotate-180' : ''"
+                            class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
+                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
+                        </svg>
+                    </button>
+                    <div x-show="open" x-transition:enter="transition ease-out duration-200"
+                        x-transition:enter-start="opacity-0 transform -translate-y-2"
+                        x-transition:enter-end="opacity-100 transform translate-y-0"
+                        x-transition:leave="transition ease-in duration-150"
+                        x-transition:leave-start="opacity-100 transform translate-y-0"
+                        x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 pb-4">
+                        <p class="text-sm leading-relaxed text-gray-600">
+                            We offer unlimited mileage and 24/7 use for our vehicles, so you don't have to worry about
+                            overage fees. The service is designed to be flexible for drivers, and a fleet management
+                            system can help optimize usage to maximize efficiency.
                         </p>
                     </div>
                 </div>
@@ -869,8 +915,8 @@
                 <div x-data="{ open: true }" class="bg-[#F4F4F4] mb-4 shadow-sm rounded-sm ">
                     <button @click="open = !open"
                         class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
-                        <span class="text-lg font-bold text-gray-700 font-helvetica">Our drivers take vehicles home, is
-                            that allowed?</span>
+                        <span class="text-lg font-bold text-gray-700 font-helvetica">Can the public access it or only
+                            residents?</span>
                         <svg :class="open ? 'rotate-180' : ''"
                             class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
                             xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
@@ -884,128 +930,8 @@
                         x-transition:leave-start="opacity-100 transform translate-y-0"
                         x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 pb-4">
                         <p class="text-sm leading-relaxed text-gray-600">
-                            Yes, Drivers Can Treat Them Like Company Vehicles. We Just Need Each Driver Registered With
-                            Us For Insurance.
-                        </p>
-                    </div>
-                </div>
-
-                <div x-data="{ open: false }" class="bg-white mb-4 shadow-sm rounded-sm ">
-                    <button @click="open = !open"
-                        class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
-                        <span class="text-lg font-medium text-gray-700 font-helvetica">We have specialized equipment or
-                            branding needs.</span>
-                        <svg :class="open ? 'rotate-180' : ''"
-                            class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
-                        </svg>
-                    </button>
-                    <div x-show="open" x-transition:enter="transition ease-out duration-200"
-                        x-transition:enter-start="opacity-0 transform -translate-y-2"
-                        x-transition:enter-end="opacity-100 transform translate-y-0"
-                        x-transition:leave="transition ease-in duration-150"
-                        x-transition:leave-start="opacity-100 transform translate-y-0"
-                        x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 pb-4">
-                        <p class="text-sm leading-relaxed text-gray-600">
-                            Please contact us to discuss your specialized equipment or branding needs. We are flexible
-                            and can often accommodate custom requests.
-                        </p>
-                    </div>
-                </div>
-
-                <div x-data="{ open: false }" class="bg-white mb-4 shadow-sm rounded-sm ">
-                    <button @click="open = !open"
-                        class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
-                        <span class="text-lg font-medium text-gray-700 font-helvetica">Is this a lease? How is it
-                            accounted?</span>
-                        <svg :class="open ? 'rotate-180' : ''"
-                            class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
-                        </svg>
-                    </button>
-                    <div x-show="open" x-transition:enter="transition ease-out duration-200"
-                        x-transition:enter-start="opacity-0 transform -translate-y-2"
-                        x-transition:enter-end="opacity-100 transform translate-y-0"
-                        x-transition:leave="transition ease-in duration-150"
-                        x-transition:leave-start="opacity-100 transform translate-y-0"
-                        x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 pb-4">
-                        <p class="text-sm leading-relaxed text-gray-600">
-                            This is a rental agreement, not a traditional lease. For specific accounting advice, please
-                            consult with a financial professional.
-                        </p>
-                    </div>
-                </div>
-
-                <div x-data="{ open: false }" class="bg-white mb-4 shadow-sm rounded-sm ">
-                    <button @click="open = !open"
-                        class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
-                        <span class="text-lg font-medium text-gray-700 font-helvetica">Is there a minimum term or
-                            volume?</span>
-                        <svg :class="open ? 'rotate-180' : ''"
-                            class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
-                        </svg>
-                    </button>
-                    <div x-show="open" x-transition:enter="transition ease-out duration-200"
-                        x-transition:enter-start="opacity-0 transform -translate-y-2"
-                        x-transition:enter-end="opacity-100 transform translate-y-0"
-                        x-transition:leave="transition ease-in duration-150"
-                        x-transition:leave-start="opacity-100 transform translate-y-0"
-                        x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 pb-4">
-                        <p class="text-sm leading-relaxed text-gray-600">
-                            We offer flexible terms with no minimum contract period or required driving volume. You can
-                            rent for a week, a month, or longer.
-                        </p>
-                    </div>
-                </div>
-
-                <div x-data="{ open: false }" class="bg-white mb-4 shadow-sm rounded-sm ">
-                    <button @click="open = !open"
-                        class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
-                        <span class="text-lg font-medium text-gray-700 font-helvetica">How fast can you scale during
-                            seasonal peaks?</span>
-                        <svg :class="open ? 'rotate-180' : ''"
-                            class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
-                        </svg>
-                    </button>
-                    <div x-show="open" x-transition:enter="transition ease-out duration-200"
-                        x-transition:enter-start="opacity-0 transform -translate-y-2"
-                        x-transition:enter-end="opacity-100 transform translate-y-0"
-                        x-transition:leave="transition ease-in duration-150"
-                        x-transition:leave-start="opacity-100 transform translate-y-0"
-                        x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 pb-4">
-                        <p class="text-sm leading-relaxed text-gray-600">
-                            We have a robust fleet and can rapidly scale to meet increased demand during seasonal peaks.
-                            Contact us in advance for large-scale needs.
-                        </p>
-                    </div>
-                </div>
-
-                <div x-data="{ open: false }" class="bg-white mb-4 shadow-sm rounded-sm ">
-                    <button @click="open = !open"
-                        class="flex w-full items-center justify-between px-6 py-6 text-left transition-colors duration-200 hover:bg-gray-50 focus:bg-gray-50 focus:outline-none">
-                        <span class="text-lg font-medium text-gray-700 font-helvetica">Contact us to discuss your
-                            specific needs</span>
-                        <svg :class="open ? 'rotate-180' : ''"
-                            class="h-5 w-5 transform text-gray-500 transition-transform duration-200"
-                            xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z" />
-                        </svg>
-                    </button>
-                    <div x-show="open" x-transition:enter="transition ease-out duration-200"
-                        x-transition:enter-start="opacity-0 transform -translate-y-2"
-                        x-transition:enter-end="opacity-100 transform translate-y-0"
-                        x-transition:leave="transition ease-in duration-150"
-                        x-transition:leave-start="opacity-100 transform translate-y-0"
-                        x-transition:leave-end="opacity-0 transform -translate-y-2" class="px-6 pb-4">
-                        <p class="text-sm leading-relaxed text-gray-600">
-                            We're here to help! Please reach out to us via phone, email, or our contact form to discuss
-                            how we can meet your unique requirements.
+                            Typically, only residents have access for exclusivity, but a property could choose to allow
+                            public use if they want to monetize it. This is not common for an amenity model.
                         </p>
                     </div>
                 </div>
@@ -1046,120 +972,35 @@
             </div>
         </section>
         <!-- Footer banner -->
-        <section class="relative lg:z-30! pb-20 ">
-            <div class="bg-blue-500 p-12 flex items-center justify-center  ">
-                <div class="flex items-center gap-12 container w-full">
-                    <!-- Left Side - Contact Info -->
-                    <div class="text-white flex-1">
-                        <h2 class="text-4xl font-bold mb-8">We'll contact you within 24 hours</h2>
+        <section class="relative lg:z-30! ">
+            <div class="bg-primary py-16 px-4 md:px-8 lg:px-16 mb-20 lg:p-24! text-white text-center bg-cover bg-center"
+                style="background-image: url('/assets/images/footer.jpg');">
 
-                        <div class="space-y-6">
-                            <!-- Email -->
-                            <div class="flex items-center gap-3">
-                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
-                                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
-                                </svg>
-                                <span>sales@foremobility.com</span>
-                            </div>
+                <div class="absolute inset-0 bg-[#0C5197] opacity-75"></div>
 
-                            <!-- Phone -->
-                            <div class="bg-white text-blue-500 rounded-lg p-4 flex items-center gap-3 max-w-xs">
-                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path
-                                        d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
-                                </svg>
-                                <span class="font-semibold">+123 456 789</span>
-                            </div>
-
-                            <!-- Address -->
-                            <div class="flex items-center gap-3">
-                                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-                                    <path fill-rule="evenodd"
-                                        d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-                                        clip-rule="evenodd" />
-                                </svg>
-                                <span>123 Street 456 House</span>
-                            </div>
-                        </div>
-
-                        <!-- Social Media Icons -->
-                        <div class="flex gap-4 mt-8">
-                            <!-- Facebook -->
-                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                                <svg class="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
-                                    <path
-                                        d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-                                </svg>
-                            </div>
-
-                            <!-- Instagram -->
-                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                                <svg class="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
-                                    <path
-                                        d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-2.297 0-4.163-1.865-4.163-4.163 0-2.297 1.866-4.162 4.163-4.162 2.296 0 4.162 1.865 4.162 4.162 0 2.298-1.866 4.163-4.162 4.163zm7.424 0c-2.297 0-4.163-1.865-4.163-4.163 0-2.297 1.866-4.162 4.163-4.162 2.297 0 4.163 1.865 4.163 4.162 0 2.298-1.866 4.163-4.163 4.163z" />
-                                </svg>
-                            </div>
-
-                            <!-- Twitter -->
-                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                                <svg class="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
-                                    <path
-                                        d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
-                                </svg>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Right Side - Contact Form -->
-                    <div class="bg-white rounded-2xl p-8 flex-1 max-w-md">
-                        <form class="space-y-6">
-                            <!-- Name Input -->
-                            <div>
-                                <input type="text" placeholder="Your name"
-                                    class="w-full p-4 border-b-2 border-gray-200 bg-transparent focus:border-blue-500 outline-none text-gray-700 placeholder-gray-500" />
-                            </div>
-
-                            <!-- Email Input -->
-                            <div>
-                                <input type="email" placeholder="Your email"
-                                    class="w-full p-4 border-b-2 border-gray-200 bg-transparent focus:border-blue-500 outline-none text-gray-700 placeholder-gray-500" />
-                            </div>
-
-                            <!-- Message Input -->
-                            <div>
-                                <input placeholder="Your message"
-                                    class="w-full p-4 border-b-2 border-gray-200 bg-transparent focus:border-blue-500 outline-none text-gray-700 placeholder-gray-500"></input>
-                            </div>
-
-                            <!-- Dropdown -->
-                            <div class="relative">
-                                <select
-                                    class="w-full p-4 border-b-2 border-gray-200 bg-transparent focus:border-blue-500 outline-none text-gray-500 appearance-none cursor-pointer">
-                                    <option>How many vehicles do you need?</option>
-                                    <option>1-5 vehicles</option>
-                                    <option>6-10 vehicles</option>
-                                    <option>11-20 vehicles</option>
-                                    <option>20+ vehicles</option>
-                                </select>
-                                <svg class="absolute right-4 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-500 pointer-events-none"
-                                    fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M19 9l-7 7-7-7" />
-                                </svg>
-                            </div>
-
-                            <!-- Submit Button -->
-                            <button type="submit"
-                                class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-4 px-6 rounded-lg flex items-center justify-center gap-2 transition-colors">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                                </svg>
-                                Get My Fleet Quote
-                            </button>
-                        </form>
-                    </div>
+                <div class="relative z-10 max-w-5xl mx-auto">
+                    <h2 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl mb-4">
+                        Your Car, Your Terms — Start Today
+                    </h2>
+                    <p class="text-base sm:text-lg mb-5">
+                        Join thousands of drivers saving time & money with
+                        Fore
+                        Mobility’s all- <br class="hidden sm:block"> inclusive car subscriptions —
+                        insurance,
+                        maintenance, and roadside <br class="hidden sm:block"> included.
+                    </p>
+                    <p class="text-lg font-semibold mb-8">
+                        Limited cars available in your area — book before
+                        they're
+                        gone!
+                    </p>
+                    <button @click="open = true"
+                        class="inline-block bg-white text-[#106CCA] py-3 px-6 rounded-lg shadow-md transition-transform transform hover:scale-105">
+                        Contact Us
+                    </button>
+                    <p class="text-sm sm:text-base mt-4">
+                        No hidden fees. Cancel anytime
+                    </p>
                 </div>
             </div>
         </section>
