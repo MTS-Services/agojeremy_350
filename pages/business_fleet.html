@@ -27,10 +27,92 @@
             color: #fff !important;
             border-radius: 8px !important;
         }
+            .modal-content {
+            animation: slide-in 0.5s ease-out;
+        }
+
+        @keyframes slide-in {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
     </style>
 </head>
 
-<body>
+<body x-data="{ open: false }" :class="{ 'overflow-hidden': open }">
+    <!-- modal form -->
+    <section >
+        <!-- Overlay -->
+        <div x-cloak x-show="open" x-transition:enter="transition ease-out duration-300"
+            x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100"
+            x-transition:leave="transition ease-in duration-300" x-transition:leave-start="opacity-100"
+            x-transition:leave-end="opacity-0"
+            class="fixed inset-0 z-50 flex items-center justify-center bg-black/40">
+
+            <!-- Modal Box -->
+            <div @click.away="open = false"
+                class="modal-content max-w-5xl mx-auto bg-white rounded-xl shadow-lg border border-gray-200 p-6 md:p-8 relative">
+
+                <!-- Close Button -->
+                <button @click="open = false"
+                    class="absolute top-4 right-4 text-gray-500 hover:text-gray-800 transition">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+
+                <!-- Heading -->
+                <h1 class="max-w-[600px] text-lg sm:text-4xl font-semibold text-gray-800 mb-6 font-inter">
+                    Leave your info and we'll contact you.
+                </h1>
+
+                <!-- Form -->
+                <form>
+                    <div class="mb-5">
+                        <label for="name" class="block text-sm font-medium text-gray-500 mb-2 font-inter">Name</label>
+                        <input type="text" id="name" placeholder="Enter your full name"
+                            class="w-full px-4 py-3 bg-blue-50 text-gray-800 border-none rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-200">
+                    </div>
+
+                    <div class="mb-5">
+                        <label for="email" class="block text-sm font-medium text-gray-500 mb-2 font-inter">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email"
+                            class="w-full px-4 py-3 bg-blue-50 text-gray-800 border-none rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-200">
+                    </div>
+
+                    <div class="mb-5">
+                        <label for="phone" class="block text-sm font-medium text-gray-500 mb-2 font-inter">Phone
+                            Number</label>
+                        <input type="tel" id="phone" placeholder="Enter your phone number"
+                            class="w-full px-4 py-3 bg-blue-50 text-gray-800 border-none rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-200">
+                    </div>
+
+                    <div class="mb-6">
+                        <textarea rows="6" placeholder="Looking to get started? We'll contact you."
+                            class="w-full px-4 py-3 bg-gray-100 text-gray-700 border-none rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-gray-300 transition duration-200"></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit"
+                        class="w-full md:w-[60%] flex items-center justify-center space-x-2 px-6 py-3 bg-[#1487FC] hover:bg-[#0d6cd6] text-white font-medium rounded-lg shadow-md transition duration-200 focus:outline-none focus:ring-2 focus:ring-[#1487FC] focus:ring-offset-2">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="w-5 h-5">
+                            <path fill="currentColor"
+                                d="M476 3L36 228c-49 24-32 60-4 70l93 29 36 115c5 16 9 22 18 24 9 1 14-3 26-13l52-49 108 79c20 11 35 6 40-18l74-402c6-33-12-49-39-37z" />
+                        </svg>
+                        <span class="font-inter">Get My Fleet Quote</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
     <header
         class="relative py-5 z-10 bg-[url('../images/business_fleet_hero_image.png')] bg-cover  bg-center min-h-[60vh] md:min-h-[70vh] lg:min-h-[85vh]">
         <nav
@@ -115,7 +197,7 @@
             </div>
 
             <div class="mt-4 md:mt-0 hidden md:block">
-                <a href="#"
+                <button @click="open = true"
                     class="inline-flex items-center sm:px-6 px-3 sm:py-3 py-1 bg-primary sm:text-base text-xs text-white rounded-md font-medium font-inter hover:bg-blue-700 transition duration-300">
                     <span>Get Started</span>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24"
@@ -123,7 +205,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                             d="M17 7l-10 10M7 7h10v10" />
                     </svg>
-                </a>
+                </button>
             </div>
         </nav>
         <!-- inner banner -->
@@ -146,7 +228,7 @@
                 </div>
                 <div
                     class="flex flex-col sm:flex-row items-center justify-start gap-4 md:gap-6 lg:gap-8 xl:gap-10 mt-8">
-                    <button
+                    <button @click="open = true" 
                         class="bg-blue-500 hover:bg-blue-600 text-white font-medium px-6 py-3 rounded-lg inline-flex items-center justify-center gap-2 transition-colors w-full sm:w-auto">
                         Contact Us for a Business Quote
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
@@ -155,7 +237,7 @@
                                 d="M17 7l-10 10M7 7h10v10" />
                         </svg>
                     </button>
-                    <button
+                    <button @click="open = true"
                         class=" text-white font-medium border-2 border-gray-50 text-base sm:text-lg lg:text-xl px-6 py-2 rounded-lg inline-flex items-center justify-center gap-2 transition-colors w-full sm:w-auto">
                         Download Fleet Brochure
 
@@ -541,17 +623,6 @@
 
                 </div>
             </div>
-            <div class="text-center mt-8">
-                <button
-                    class="bg-primary text-white py-3 px-6 rounded-lg text-lg font-medium inline-flex items-center justify-center">
-                    Send Me Details
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-3" fill="none" viewBox="0 0 24 24"
-                        stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M17 7l-10 10M7 7h10v10" />
-                    </svg>
-                </button>
-            </div>
         </section>
 
 
@@ -748,14 +819,14 @@
                 </div>
 
 
-                <div
+                <button @click="open = true"
                     class="text-center absolute right-0 w-14 h-14 bg-primary text-white rounded-full hidden sm:flex items-center justify-center">
                     <svg xmlns="http://www.w3.org/2000/svg" width="36" height="37" viewBox="0 0 36 37" fill="none">
                         <path fill-rule="evenodd" clip-rule="evenodd"
                             d="M29.7001 16.1968C29.2351 11.4268 26.4151 3.92676 17.7001 3.92676C8.98507 3.92676 6.16507 11.4268 5.70007 16.1968C4.06884 16.8159 2.99285 18.382 3.00004 20.1268V22.2268C3.00004 24.5464 4.88048 26.4268 7.20007 26.4268C9.51967 26.4268 11.4001 24.5464 11.4001 22.2268V20.1268C11.3925 18.4197 10.3561 16.8857 8.77507 16.2418C9.07507 13.4818 10.5451 6.92676 17.7001 6.92676C24.8551 6.92676 26.3101 13.4818 26.6101 16.2418C25.0323 16.8871 24.001 18.4221 24.0001 20.1268V22.2268C24.0066 23.8392 24.9325 25.3067 26.3851 26.0068C25.7551 27.1918 24.1501 28.7968 20.2051 29.2768C19.4165 28.0793 17.8908 27.6072 16.5637 28.1501C15.2367 28.6929 14.4792 30.099 14.756 31.5058C15.0327 32.9126 16.2663 33.9268 17.7001 33.9268C18.8331 33.9205 19.8659 33.2764 20.3701 32.2618C26.8051 31.5268 28.8601 28.2118 29.5051 26.2618C31.25 25.6965 32.4236 24.0608 32.4001 22.2268V20.1268C32.4073 18.382 31.3313 16.8159 29.7001 16.1968ZM8.40007 22.2268C8.40007 22.8895 7.86281 23.4268 7.20007 23.4268C6.53733 23.4268 6.00007 22.8895 6.00007 22.2268V20.1268C6.00007 19.698 6.22879 19.3019 6.60007 19.0875C6.97135 18.8732 7.42879 18.8732 7.80007 19.0875C8.17135 19.3019 8.40007 19.698 8.40007 20.1268V22.2268ZM27.0001 20.1268C27.0001 19.464 27.5373 18.9268 28.2001 18.9268C28.8628 18.9268 29.4001 19.464 29.4001 20.1268V22.2268C29.4001 22.8895 28.8628 23.4268 28.2001 23.4268C27.5373 23.4268 27.0001 22.8895 27.0001 22.2268V20.1268Z"
                             fill="white" />
                     </svg>
-                </div>
+                </button>
             </div>
 
         </section>
@@ -997,10 +1068,10 @@
                         they're
                         gone!
                     </p>
-                    <a href="#"
+                    <button @click="open = true"
                         class="inline-block bg-white text-[#106CCA] py-3 px-6 rounded-lg shadow-md transition-transform transform hover:scale-105">
                         Contact Us
-                    </a>
+                    </button>
                     <p class="text-sm sm:text-base mt-4">
                         No hidden fees. Cancel anytime
                     </p>
