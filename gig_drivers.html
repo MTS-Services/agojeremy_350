@@ -429,85 +429,61 @@
                 </div>
 
                 <!-- Mobile Cards -->
-                <div class="block md:hidden space-y-6">
-                    <!-- Card 1 -->
-                    <div class="bg-white border-2 border-primary rounded-xl shadow-md p-6">
-                        <h3 class="text-lg font-semibold text-primary text-center mb-4">500 miles</h3>
-                        <ul class="space-y-2 text-sm">
-                            <li><strong>Fore Rental:</strong> <span class="text-green-600 font-medium">✓
-                                    $150/Week</span></li>
-                            <li><strong>Uber/Lyft Rental:</strong> <span
-                                    class="text-red-500 font-medium">$200/Week</span></li>
-                            <li><strong>Weekly Savings:</strong> <span
-                                    class="font-semibold text-gray-800">$50/Week</span></li>
-                        </ul>
-                    </div>
-
-                    <!-- Card 2 -->
-                    <div class="bg-white border-2 border-primary rounded-xl shadow-md p-6">
-                        <h3 class="text-lg font-semibold text-primary text-center mb-4">1000 miles</h3>
-                        <ul class="space-y-2 text-sm">
-                            <li><strong>Fore Rental:</strong> <span class="text-green-600 font-medium">✓
-                                    $250/Week</span></li>
-                            <li><strong>Uber/Lyft Rental:</strong> <span
-                                    class="text-red-500 font-medium">$350/Week</span></li>
-                            <li><strong>Weekly Savings:</strong> <span
-                                    class="font-semibold text-gray-800">$100/Week</span></li>
-                        </ul>
-                    </div>
-
-                    <!-- Card 3 -->
-                    <div class="bg-white border-2 border-primary rounded-xl shadow-md p-6">
-                        <h3 class="text-lg font-semibold text-primary text-center mb-4">1500 miles</h3>
-                        <ul class="space-y-2 text-sm">
-                            <li><strong>Fore Rental:</strong> <span class="text-green-600 font-medium">✓
-                                    $350/Week</span></li>
-                            <li><strong>Uber/Lyft Rental:</strong> <span
-                                    class="text-red-500 font-medium">$550/Week</span></li>
-                            <li><strong>Weekly Savings:</strong> <span
-                                    class="font-semibold text-gray-800">$150/Week</span></li>
-                        </ul>
-                    </div>
-
-                    <!-- Card 4 -->
-                    <div class="bg-white border-2 border-primary rounded-xl shadow-md p-6">
-                        <h3 class="text-lg font-semibold text-primary text-center mb-4">3000 miles</h3>
-                        <ul class="space-y-2 text-sm">
-                            <li><strong>Fore Rental:</strong> <span class="text-green-600 font-medium">✓
-                                    $450/Week</span></li>
-                            <li><strong>Uber/Lyft Rental:</strong> <span
-                                    class="text-red-500 font-medium">$650/Week</span></li>
-                            <li><strong>Weekly Savings:</strong> <span
-                                    class="font-semibold text-gray-800">$200/Week</span></li>
-                        </ul>
-                    </div>
-
-                    <!-- Card 5 -->
-                    <div class="bg-white border-2 border-primary rounded-xl shadow-md p-6">
-                        <h3 class="text-lg font-semibold text-primary text-center mb-4">4000 miles</h3>
-                        <ul class="space-y-2 text-sm">
-                            <li><strong>Fore Rental:</strong> <span class="text-green-600 font-medium">✓
-                                    $550/Week</span></li>
-                            <li><strong>Uber/Lyft Rental:</strong> <span
-                                    class="text-red-500 font-medium">$950/Week</span></li>
-                            <li><strong>Weekly Savings:</strong> <span
-                                    class="font-semibold text-gray-800">$400/Week</span></li>
-                        </ul>
-                    </div>
-
-                    <!-- Card 6 -->
-                    <div class="bg-white border-2 border-primary rounded-xl shadow-md p-6">
-                        <h3 class="text-lg font-semibold text-primary text-center mb-4">5000 miles</h3>
-                        <ul class="space-y-2 text-sm">
-                            <li><strong>Fore Rental:</strong> <span class="text-green-600 font-medium">✓
-                                    $850/Week</span></li>
-                            <li><strong>Uber/Lyft Rental:</strong> <span
-                                    class="text-red-500 font-medium">$1050/Week</span></li>
-                            <li><strong>Weekly Savings:</strong> <span
-                                    class="font-semibold text-gray-800">$200/Week</span></li>
-                        </ul>
+                <div class="block md:hidden w-full px-1">
+                    <div class="overflow-x-auto rounded-lg shadow-md">
+                        <table class="min-w-[350px] w-full border-collapse text-[11px]">
+                            <thead>
+                                <tr class="bg-gradient-to-r from-primary to-indigo-500 text-white text-center">
+                                    <th
+                                        class="px-2 py-1 text-left sticky left-0 bg-gradient-to-r from-primary to-indigo-500 z-10">
+                                        Miles</th>
+                                    <th class="px-2 py-1">Fore Rental</th>
+                                    <th class="px-2 py-1">Uber/Lyft Rental</th>
+                                    <th class="px-2 py-1">Savings</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-b bg-white">
+                                    <td class="px-2 py-1 font-semibold sticky left-0 bg-white">500</td>
+                                    <td class="px-2 py-1 text-green-600 text-center">✓ $150/Week</td>
+                                    <td class="px-2 py-1 text-red-600 text-center">$200/Week</td>
+                                    <td class="px-2 py-1 text-gray-800 text-center">$50/Week</td>
+                                </tr>
+                                <tr class="border-b bg-gray-50">
+                                    <td class="px-2 py-1 font-semibold sticky left-0 bg-gray-50">1000</td>
+                                    <td class="px-2 py-1 text-green-600 text-center">✓ $250/Week</td>
+                                    <td class="px-2 py-1 text-red-600 text-center">$350/Week</td>
+                                    <td class="px-2 py-1 text-gray-800 text-center">$100/Week</td>
+                                </tr>
+                                <tr class="border-b bg-white">
+                                    <td class="px-2 py-1 font-semibold sticky left-0 bg-white">1500</td>
+                                    <td class="px-2 py-1 text-green-600 text-center">✓ $350/Week</td>
+                                    <td class="px-2 py-1 text-red-600 text-center">$550/Week</td>
+                                    <td class="px-2 py-1 text-gray-800 text-center">$150/Week</td>
+                                </tr>
+                                <tr class="border-b bg-gray-50">
+                                    <td class="px-2 py-1 font-semibold sticky left-0 bg-gray-50">3000</td>
+                                    <td class="px-2 py-1 text-green-600 text-center">✓ $450/Week</td>
+                                    <td class="px-2 py-1 text-red-600 text-center">$650/Week</td>
+                                    <td class="px-2 py-1 text-gray-800 text-center">$200/Week</td>
+                                </tr>
+                                <tr class="border-b bg-white">
+                                    <td class="px-2 py-1 font-semibold sticky left-0 bg-white">4000</td>
+                                    <td class="px-2 py-1 text-green-600 text-center">✓ $550/Week</td>
+                                    <td class="px-2 py-1 text-red-600 text-center">$950/Week</td>
+                                    <td class="px-2 py-1 text-gray-800 text-center">$400/Week</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="px-2 py-1 font-semibold sticky left-0 bg-gray-50">5000</td>
+                                    <td class="px-2 py-1 text-green-600 text-center">✓ $850/Week</td>
+                                    <td class="px-2 py-1 text-red-600 text-center">$1050/Week</td>
+                                    <td class="px-2 py-1 text-gray-800 text-center">$200/Week</td>
+                                </tr>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
+
 
                 <!-- CTA Button -->
                 <div class="mt-8 flex justify-center">
