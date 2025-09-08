@@ -89,10 +89,18 @@
                     </div>
 
                     <div class="mb-5">
-                        <label for="phone" class="block text-sm font-medium text-gray-500 mb-2 font-inter">Phone
-                            Number</label>
-                        <input type="tel" id="phone" placeholder="Enter your phone number"
+                        <label for="vehicles" class="block text-sm font-medium text-gray-500 mb-2 font-inter">
+                            How many vehicles do you need?
+                        </label>
+                        <select id="vehicles"
                             class="w-full px-4 py-3 bg-blue-50 text-gray-800 border-none rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-200">
+                            <option value="">Select number of vehicles</option>
+                            <option value="1">1</option>
+                            <option value="2-5">2-5</option>
+                            <option value="6-10">6-10</option>
+                            <option value="10-20">10-20</option>
+                            <option value="20+">20+</option>
+                        </select>
                     </div>
 
                     <div class="mb-6">
@@ -241,97 +249,88 @@
     </header>
     <main>
         <!-- Benefits to Property Owners/Managers  -->
-        <section class="pb-10 md:py-28 px-4 lg:px-0">
-            <div class="container">
-                <div class="text-center mb-8 md:mb-12">
-                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-semibold text-black mb-5">
+        <section class="pb-10 md:py-28 px-4 lg:px-0 bg-gray-50">
+            <div class="container mx-auto">
+                <div class="text-center mb-12">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-gray-900">
                         Benefits to Property Owners/Managers
                     </h2>
                 </div>
 
-                <div class="flex flex-wrap justify-center gap-5">
-
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 md:gap-8">
                     <!-- Card 1 -->
                     <div
-                        class="bg-white rounded-lg p-4 hover:shadow-xl shadow-lg flex flex-col items-start gap-4 border border-gray-100 w-full sm:w-[48%] md:w-[31%] lg:w-[22%]">
-                        <p class="text-lg font-semibold text-black mb-3">Attract & Retain Residents</p>
-                        <p class="text-base text-[#3C3C3C]">
-                            Stand out by offering something unique: a ‘community car’ that residents can use. Great for
-                            urban renters who don’t own cars – they’ll choose your building for the occasional mobility
-                            it provides.
+                        class="bg-gradient-to-br from-blue-100 to-blue-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition transform hover:-translate-y-1 hover:scale-105 border border-gray-100 flex flex-col gap-4">
+                        <h3 class="text-lg font-semibold text-gray-900">Attract & Retain Residents</h3>
+                        <p class="text-gray-700 text-sm sm:text-base">
+                            Stand out by offering a ‘community car’ that residents can use. Great for urban renters who
+                            don’t own cars – they’ll choose your building for the occasional mobility it provides.
                         </p>
                     </div>
 
                     <!-- Card 2 -->
                     <div
-                        class="bg-white rounded-lg p-4 hover:shadow-xl shadow-lg flex flex-col items-start gap-4 border border-gray-100 w-full sm:w-[48%] md:w-[31%] lg:w-[22%]">
-                        <p class="text-lg font-semibold text-black mb-3">Turnkey Service</p>
-                        <p class="text-base text-[#3C3C3C]">
+                        class="bg-gradient-to-br from-green-100 to-green-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition transform hover:-translate-y-1 hover:scale-105 border border-gray-100 flex flex-col gap-4">
+                        <h3 class="text-lg font-semibold text-gray-900">Turnkey Service</h3>
+                        <p class="text-gray-700 text-sm sm:text-base">
                             Fore handles everything – vehicle provision, insurance, bookings, cleaning, maintenance.
-                            This is a zero-hassle amenity for you. You simply allow us to use a parking space and
-                            promote it to residents.
+                            Zero-hassle amenity: just allow a parking space and promote it.
                         </p>
                     </div>
 
                     <!-- Card 3 -->
                     <div
-                        class="bg-white rounded-lg p-4 hover:shadow-xl shadow-lg flex flex-col items-start gap-4 border border-gray-100 w-full sm:w-[48%] md:w-[31%] lg:w-[22%]">
-                        <p class="text-lg font-semibold text-black mb-3">Improve Parking Efficiency</p>
-                        <p class="text-base text-[#3C3C3C]">
-                            Encourage a car-sharing mindset. Some residents may choose not to bring a second car (or any
-                            car) if they know a shared one is available, freeing up parking space and reducing
-                            congestion.
+                        class="bg-gradient-to-br from-purple-100 to-purple-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition transform hover:-translate-y-1 hover:scale-105 border border-gray-100 flex flex-col gap-4">
+                        <h3 class="text-lg font-semibold text-gray-900">Improve Parking Efficiency</h3>
+                        <p class="text-gray-700 text-sm sm:text-base">
+                            Encourage a car-sharing mindset. Some residents may not bring a second car if a shared one
+                            is available, freeing up parking space and reducing congestion.
                         </p>
                     </div>
 
                     <!-- Card 4 -->
                     <div
-                        class="bg-white rounded-lg p-4 hover:shadow-xl shadow-lg flex flex-col items-start gap-4 border border-gray-100 w-full sm:w-[48%] md:w-[31%] lg:w-[22%]">
-                        <p class="text-lg font-semibold text-black mb-3">Revenue Sharing (Optional)</p>
-                        <p class="text-base text-[#3C3C3C]">
-                            Create a new revenue stream. If desired, we can share usage revenue with the property or set
-                            up a model where the property subsidizes a car for free use up to X hours per resident, with
-                            additional usage paid – flexible arrangements to suit your goals.
+                        class="bg-gradient-to-br from-pink-100 to-pink-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition transform hover:-translate-y-1 hover:scale-105 border border-gray-100 flex flex-col gap-4">
+                        <h3 class="text-lg font-semibold text-gray-900">Revenue Sharing (Optional)</h3>
+                        <p class="text-gray-700 text-sm sm:text-base">
+                            Create a new revenue stream. We can share usage revenue or subsidize a car for free use up
+                            to X hours, with additional usage paid – flexible arrangements.
                         </p>
                     </div>
 
                     <!-- Card 5 -->
                     <div
-                        class="bg-white rounded-lg p-4 hover:shadow-xl shadow-lg flex flex-col items-start gap-4 border border-gray-100 w-full sm:w-[48%] md:w-[31%] lg:w-[22%]">
-                        <p class="text-lg font-semibold text-black mb-3">Modern & Eco-Friendly Image</p>
-                        <p class="text-base text-[#3C3C3C]">
-                            Offering an on-site EV or hybrid for residents positions your property as eco-conscious and
-                            tech-savvy. It can support green building certifications and appeal to those who care about
-                            sustainability.
+                        class="bg-gradient-to-br from-yellow-100 to-yellow-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition transform hover:-translate-y-1 hover:scale-105 border border-gray-100 flex flex-col gap-4">
+                        <h3 class="text-lg font-semibold text-gray-900">Modern & Eco-Friendly Image</h3>
+                        <p class="text-gray-700 text-sm sm:text-base">
+                            Offering an on-site EV or hybrid positions your property as eco-conscious and tech-savvy.
+                            Supports green certifications and appeals to sustainability-minded residents.
                         </p>
                     </div>
 
                     <!-- Card 6 -->
                     <div
-                        class="bg-white rounded-lg p-4 hover:shadow-xl shadow-lg flex flex-col items-start gap-4 border border-gray-100 w-full sm:w-[48%] md:w-[31%] lg:w-[22%]">
-                        <p class="text-lg font-semibold text-black mb-3">Customized Integration</p>
-                        <p class="text-base text-[#3C3C3C]">
-                            Our system can integrate with your existing resident app or keycard system. Only authorized
-                            residents will be able to access the vehicles. We can also provide co-branded materials so
-                            it feels like a seamless part of your amenities.
+                        class="bg-gradient-to-br from-indigo-100 to-indigo-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition transform hover:-translate-y-1 hover:scale-105 border border-gray-100 flex flex-col gap-4">
+                        <h3 class="text-lg font-semibold text-gray-900">Customized Integration</h3>
+                        <p class="text-gray-700 text-sm sm:text-base">
+                            Our system integrates with your existing resident app or keycard system. Only authorized
+                            residents can access vehicles. Co-branded materials make it seamless.
                         </p>
                     </div>
 
                     <!-- Card 7 -->
                     <div
-                        class="bg-white rounded-lg p-4 hover:shadow-xl shadow-lg flex flex-col items-start gap-4 border border-gray-100 w-full sm:w-[48%] md:w-[31%] lg:w-[22%]">
-                        <p class="text-lg font-semibold text-black mb-3">Safety and Reliability</p>
-                        <p class="text-base text-[#3C3C3C]">
-                            Vehicles are insured and covered by Fore. We ensure they are regularly cleaned and
-                            well-maintained. Residents reserve through the app, so there is a digital record of usage.
-                            We can even set usage rules (like no smoking, must refuel if under 1/4 tank) to keep things
-                            orderly.
+                        class="bg-gradient-to-br from-teal-100 to-teal-50 rounded-2xl p-6 shadow-md hover:shadow-xl transition transform hover:-translate-y-1 hover:scale-105 border border-gray-100 flex flex-col gap-4">
+                        <h3 class="text-lg font-semibold text-gray-900">Safety and Reliability</h3>
+                        <p class="text-gray-700 text-sm sm:text-base">
+                            Vehicles are insured and maintained. Residents reserve via the app, keeping a digital
+                            record. We can set rules (no smoking, refuel if under 1/4 tank) for safety.
                         </p>
                     </div>
-
                 </div>
             </div>
         </section>
+
 
         <!-- How It Works for the Property -->
         <section class="pb-10 md:pb-24 pt-6 md:pt-10 px-4 lg:px-0">
@@ -563,48 +562,53 @@
             </div>
         </section>
         <!-- iamges  -->
-      <section class="flex flex-col gap-6 pb-10">
+        <section class="flex flex-col gap-6 pb-10">
 
-    <!-- Unlock Section -->
-    <div class="relative flex items-start justify-center w-full min-h-[60vh] md:min-h-[70vh] lg:min-h-screen pt-9">
-        <img src="/assets/images/real_estate  (1).jpg" alt="Unlock"
-            class="absolute inset-0 w-full h-full object-cover">
-        <div class="relative z-10 text-center px-4 sm:px-6 lg:px-16">
-            <h3 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-black">Unlock</h3>
-            <p class="text-lg sm:text-xl md:text-2xl mt-2 text-black max-w-2xl mx-auto">
-                Use your phone to instantly unlock the car, right from your building entrance. No keys, no
-                waiting — just tap and go.
-            </p>
-        </div>
-    </div>
+            <!-- Unlock Section -->
+            <div
+                class="relative flex items-start justify-center w-full min-h-[60vh] md:min-h-[70vh] lg:min-h-screen pt-9">
+                <img src="/assets/images/real_estate  (1).jpg" alt="Unlock"
+                    class="absolute inset-0 w-full h-full object-cover">
+                <div class="relative z-10 text-center px-4 sm:px-6 lg:px-16">
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-black">Unlock</h3>
+                    <p class="text-lg sm:text-xl md:text-2xl mt-2 text-black max-w-2xl mx-auto">
+                        Use your phone to instantly unlock the car, right from your building entrance. No keys, no
+                        waiting — just tap and go.
+                    </p>
+                </div>
+            </div>
 
-    <!-- Return Section -->
-    <div class="relative flex items-start justify-center w-full min-h-[60vh] md:min-h-[70vh] lg:min-h-screen pt-9">
-        <img src="/assets/images/real_estate  (2).jpg" alt="Return" class="absolute inset-0 w-full h-full object-cover">
-        <div class="relative z-10 text-center px-4 sm:px-6 lg:px-16">
-            <h3 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-black">Return</h3>
-            <p class="text-lg sm:text-xl md:text-2xl mt-2 text-black max-w-2xl mx-auto">
-                Park the car back in the same spot when you’re <br class="hidden sm:block"> done. No searching
-                for spaces, no extra charges.
-            </p>
-        </div>
-    </div>
+            <!-- Return Section -->
+            <div
+                class="relative flex items-start justify-center w-full min-h-[60vh] md:min-h-[70vh] lg:min-h-screen pt-9">
+                <img src="/assets/images/real_estate  (2).jpg" alt="Return"
+                    class="absolute inset-0 w-full h-full object-cover">
+                <div class="relative z-10 text-center px-4 sm:px-6 lg:px-16">
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-black">Return</h3>
+                    <p class="text-lg sm:text-xl md:text-2xl mt-2 text-black max-w-2xl mx-auto">
+                        Park the car back in the same spot when you’re <br class="hidden sm:block"> done. No searching
+                        for spaces, no extra charges.
+                    </p>
+                </div>
+            </div>
 
-    <!-- Co-Branded Comfort Section -->
-    <div class="relative flex items-start justify-center w-full min-h-[60vh] md:min-h-[70vh] lg:min-h-screen pt-9">
-        <img src="/assets/images/real_estate  (3).jpg" alt="Co-Branded Comfort"
-            class="absolute inset-0 w-full h-full object-cover">
-        <div class="relative z-10 text-center px-4 sm:px-6 lg:px-16">
-            <h3 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white">Co-Branded Comfort</h3>
-            <p class="text-lg sm:text-xl md:text-2xl mt-2 text-white max-w-2xl mx-auto">
-                Enjoy a premium car service co-branded with your <br class="hidden sm:block"> residence, adding
-                style and convenience to your <br class="hidden sm:block">
-                daily life.
-            </p>
-        </div>
-    </div>
+            <!-- Co-Branded Comfort Section -->
+            <div
+                class="relative flex items-start justify-center w-full min-h-[60vh] md:min-h-[70vh] lg:min-h-screen pt-9">
+                <img src="/assets/images/real_estate  (3).jpg" alt="Co-Branded Comfort"
+                    class="absolute inset-0 w-full h-full object-cover">
+                <div class="relative z-10 text-center px-4 sm:px-6 lg:px-16">
+                    <h3 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-semibold text-white">Co-Branded Comfort
+                    </h3>
+                    <p class="text-lg sm:text-xl md:text-2xl mt-2 text-white max-w-2xl mx-auto">
+                        Enjoy a premium car service co-branded with your <br class="hidden sm:block"> residence, adding
+                        style and convenience to your <br class="hidden sm:block">
+                        daily life.
+                    </p>
+                </div>
+            </div>
 
-</section>
+        </section>
 
 
         <!-- testimonial -->
