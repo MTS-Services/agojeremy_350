@@ -89,14 +89,13 @@
                     </div>
 
                     <div class="mb-5">
-                        <label for="phone" class="block text-sm font-medium text-gray-500 mb-2 font-inter">Phone
-                            Number</label>
+                        <label for="phone" class="block text-sm font-medium text-gray-500 mb-2 font-inter">Number of Vehicles</label>
                         <input type="tel" id="phone" placeholder="Enter your phone number"
                             class="w-full px-4 py-3 bg-blue-50 text-gray-800 border-none rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-300 transition duration-200">
                     </div>
 
                     <div class="mb-6">
-                        <textarea rows="6" placeholder="Looking to get started? We'll contact you."
+                        <textarea rows="6" placeholder=""
                             class="w-full px-4 py-3 bg-gray-100 text-gray-700 border-none rounded-lg resize-none focus:outline-none focus:ring-2 focus:ring-gray-300 transition duration-200"></textarea>
                     </div>
 
@@ -157,10 +156,10 @@
                             <a href="/gig_drivers.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                 role="menuitem">Gig
                                 Drivers</a>
-                            <a href="/business_fleet.html"
-                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active_button"
-                                role="menuitem">Business
-                                Fleet</a>
+                            <a href="/personal_car.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                                role="menuitem">Personal
+                                Car</a>
+
 
                         </div>
                     </div>
@@ -184,12 +183,13 @@
                         x-transition:leave-end="opacity-0 transform scale-95"
                         class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 mt-2 w-48 rounded-lg shadow-lg bg-white   z-20">
                         <div class="" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                            <a href="/personal_car.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                role="menuitem">Personal
-                                car</a>
+                            <a href="/business_fleet.html"
+                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active_button"
+                                role="menuitem">Business
+                                Fleet</a>
                             <a href="/real_estate.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
                                 role="menuitem">Real
-                                estate</a>
+                                Estate</a>
 
                         </div>
                     </div>
@@ -339,7 +339,7 @@
             </div>
         </section>
         <!-- Case Study: ABC Home Services -->
-        <section class="py-10 md:py-16 px-4 lg:px-0">
+        <section class="py-10 md:py-16 px-4 lg:px-0 bg-secondary">
             <div class="container mx-auto">
                 <h2 class="text-3xl sm:text-4xl lg:text-5xl xl:text-6xl font-medium font-inter text-black mb-2 md:mb-5">
                     Case Study: ABC Home Services</h2>
@@ -627,7 +627,7 @@
 
 
         <!-- testimonial -->
-        <section class="py-10 px-4 lg:px-0">
+        <section class="py-10 px-4 lg:px-0 ">
             <div class="container relative">
                 <div class="relative">
                     <div class="swiper testimonial-swiper">
@@ -834,7 +834,7 @@
 
     <footer>
         <!-- faq section -->
-        <section class="py-10 px-4 sm:py-14 lg:my-20">
+        <section class="py-10 px-4 sm:py-14 lg:my-20 bg-secondary">
             <div class="pb-8 text-center px-6">
                 <h2 class="text-xl font-medium text-gray-900 font-inter sm:text-2xl lg:text-3xl xl:text-4xl">
                     Frequently Asking Questions
@@ -1046,64 +1046,69 @@
             </div>
         </section>
         <!-- Footer banner -->
-        <section class="relative lg:z-30! pb-20 ">
-            <div class="bg-blue-500 p-12 flex items-center justify-center  ">
-                <div class="flex items-center gap-12 container w-full">
-                    <!-- Left Side - Contact Info -->
-                    <div class="text-white flex-1">
-                        <h2 class="text-4xl font-bold mb-8">We'll contact you within 24 hours</h2>
+        <section class="relative pb-20 z-50">
+            <div class="bg-blue-500 p-6 sm:p-12 flex items-center justify-center">
+                <div class="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 container w-full">
 
-                        <div class="space-y-6">
+                    <!-- Left Side - Contact Info -->
+                    <div class="text-white flex-1 w-full text-center lg:text-left">
+                        <h2 class="text-2xl sm:text-3xl lg:text-4xl font-bold mb-6 sm:mb-8">
+                            We'll contact you within 24 hours
+                        </h2>
+
+                        <div class="space-y-4 sm:space-y-6">
                             <!-- Email -->
-                            <div class="flex items-center gap-3">
+                            <div class="flex items-center justify-center lg:justify-start gap-3">
                                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                                     <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z" />
                                     <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z" />
                                 </svg>
-                                <span>sales@foremobility.com</span>
+                                <span class="text-sm sm:text-base">sales@foremobility.com</span>
                             </div>
 
                             <!-- Phone -->
-                            <div class="bg-white text-blue-500 rounded-lg p-4 flex items-center gap-3 max-w-xs">
+                            <div
+                                class="bg-white text-blue-500 rounded-lg p-3 sm:p-4 flex items-center gap-3 max-w-xs mx-auto lg:mx-0">
                                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                                     <path
                                         d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z" />
                                 </svg>
-                                <span class="font-semibold">+123 456 789</span>
+                                <span class="font-semibold text-sm sm:text-base">+123 456 789</span>
                             </div>
 
                             <!-- Address -->
-                            <div class="flex items-center gap-3">
+                            <div class="flex items-center justify-center lg:justify-start gap-3">
                                 <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                                     <path fill-rule="evenodd"
                                         d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
                                         clip-rule="evenodd" />
                                 </svg>
-                                <span>123 Street 456 House</span>
+                                <span class="text-sm sm:text-base">123 Street 456 House</span>
                             </div>
                         </div>
 
                         <!-- Social Media Icons -->
-                        <div class="flex gap-4 mt-8">
-                            <!-- Facebook -->
-                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                                <svg class="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+                        <div class="flex justify-center lg:justify-start gap-4 mt-6 sm:mt-8">
+                            <div
+                                class="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-full flex items-center justify-center">
+                                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-blue-500" fill="currentColor"
+                                    viewBox="0 0 24 24">
                                     <path
                                         d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
                                 </svg>
                             </div>
-
-                            <!-- Instagram -->
-                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                                <svg class="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+                            <div
+                                class="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-full flex items-center justify-center">
+                                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-blue-500" fill="currentColor"
+                                    viewBox="0 0 24 24">
                                     <path
                                         d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 6.62 5.367 11.987 11.988 11.987 6.62 0 11.987-5.367 11.987-11.987C24.014 5.367 18.637.001 12.017.001zM8.449 16.988c-2.297 0-4.163-1.865-4.163-4.163 0-2.297 1.866-4.162 4.163-4.162 2.296 0 4.162 1.865 4.162 4.162 0 2.298-1.866 4.163-4.162 4.163zm7.424 0c-2.297 0-4.163-1.865-4.163-4.163 0-2.297 1.866-4.162 4.163-4.162 2.297 0 4.163 1.865 4.163 4.162 0 2.298-1.866 4.163-4.163 4.163z" />
                                 </svg>
                             </div>
-
-                            <!-- Twitter -->
-                            <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center">
-                                <svg class="w-6 h-6 text-blue-500" fill="currentColor" viewBox="0 0 24 24">
+                            <div
+                                class="w-10 h-10 sm:w-12 sm:h-12 bg-white rounded-full flex items-center justify-center">
+                                <svg class="w-5 h-5 sm:w-6 sm:h-6 text-blue-500" fill="currentColor"
+                                    viewBox="0 0 24 24">
                                     <path
                                         d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z" />
                                 </svg>
@@ -1112,30 +1117,20 @@
                     </div>
 
                     <!-- Right Side - Contact Form -->
-                    <div class="bg-white rounded-2xl p-8 flex-1 max-w-md">
-                        <form class="space-y-6">
-                            <!-- Name Input -->
-                            <div>
-                                <input type="text" placeholder="Your name"
-                                    class="w-full p-4 border-b-2 border-gray-200 bg-transparent focus:border-blue-500 outline-none text-gray-700 placeholder-gray-500" />
-                            </div>
+                    <div class="bg-white rounded-2xl p-6 sm:p-8 flex-1 w-full max-w-md">
+                        <form class="space-y-4 sm:space-y-6">
+                            <input type="text" placeholder="Your name"
+                                class="w-full p-3 sm:p-4 border-b-2 border-gray-200 bg-transparent focus:border-blue-500 outline-none text-gray-700 placeholder-gray-500 text-sm sm:text-base" />
 
-                            <!-- Email Input -->
-                            <div>
-                                <input type="email" placeholder="Your email"
-                                    class="w-full p-4 border-b-2 border-gray-200 bg-transparent focus:border-blue-500 outline-none text-gray-700 placeholder-gray-500" />
-                            </div>
+                            <input type="email" placeholder="Your email"
+                                class="w-full p-3 sm:p-4 border-b-2 border-gray-200 bg-transparent focus:border-blue-500 outline-none text-gray-700 placeholder-gray-500 text-sm sm:text-base" />
 
-                            <!-- Message Input -->
-                            <div>
-                                <input placeholder="Your message"
-                                    class="w-full p-4 border-b-2 border-gray-200 bg-transparent focus:border-blue-500 outline-none text-gray-700 placeholder-gray-500"></input>
-                            </div>
+                            <input placeholder="Your message"
+                                class="w-full p-3 sm:p-4 border-b-2 border-gray-200 bg-transparent focus:border-blue-500 outline-none text-gray-700 placeholder-gray-500 text-sm sm:text-base"></input>
 
-                            <!-- Dropdown -->
                             <div class="relative">
                                 <select
-                                    class="w-full p-4 border-b-2 border-gray-200 bg-transparent focus:border-blue-500 outline-none text-gray-500 appearance-none cursor-pointer">
+                                    class="w-full p-3 sm:p-4 border-b-2 border-gray-200 bg-transparent focus:border-blue-500 outline-none text-gray-500 appearance-none cursor-pointer text-sm sm:text-base">
                                     <option>How many vehicles do you need?</option>
                                     <option>1-5 vehicles</option>
                                     <option>6-10 vehicles</option>
@@ -1149,9 +1144,8 @@
                                 </svg>
                             </div>
 
-                            <!-- Submit Button -->
                             <button type="submit"
-                                class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-4 px-6 rounded-lg flex items-center justify-center gap-2 transition-colors">
+                                class="w-full bg-blue-500 hover:bg-blue-600 text-white font-semibold py-3 sm:py-4 px-6 rounded-lg flex items-center justify-center gap-2 transition-colors text-sm sm:text-base">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
@@ -1160,9 +1154,11 @@
                             </button>
                         </form>
                     </div>
+
                 </div>
             </div>
         </section>
+
 
         <section
             class="container  px-4 sm:px-0 bg-[#E8F3FF] rounded-3xl shadow-xl border border-blue-200 mb-20! p-8 sm:p-12 md:p-16">
