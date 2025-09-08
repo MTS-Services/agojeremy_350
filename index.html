@@ -114,13 +114,23 @@
             </div>
         </div>
     </section>
-    <header
-        class="relative py-5 z-10 bg-[url('../images/landing-page-hero.png')] bg-cover bg-center min-h-[80vh] md:min-h-[90vh] lg:min-h-screen">
+    <header class="relative py-5 z-10 min-h-[80vh] md:min-h-[90vh] lg:min-h-screen">
+
+        <!-- Desktop Background -->
+        <div class="hidden md:block absolute inset-0 bg-[url('../images/landing-page-hero.png')] bg-cover bg-center">
+        </div>
+
+        <!-- Mobile Background -->
+        <div
+            class="block md:hidden absolute inset-0 bg-[url('../images/home_banner_mobile.png')] bg-cover bg-center">
+        </div>
+
+        <!-- Nav -->
         <nav
-            class="container mx-auto px-4 lg:px-0 py-6 sm:py-0 flex flex-col md:flex-row justify-between items-center ">
+            class="relative container mx-auto px-4 lg:px-0 py-6 sm:py-0 flex flex-col md:flex-row justify-between items-center z-20">
             <div class="flex justify-between items-center w-full md:w-auto">
                 <div class="text-center mb-4 md:mb-0">
-                    <a href="/"> <img src="assets/images/logo.png" alt="FORE MOBILITY Logo"
+                    <a href="/"><img src="assets/images/logo.png" alt="FORE MOBILITY Logo"
                             class="sm:w-40 sm:h-14 w-28 h-10 mx-auto"></a>
                     <span class="sm:text-font-22px text-font-16px font-bebas text-white">FORE MOBILITY</span>
                 </div>
@@ -133,8 +143,11 @@
                 </button>
             </div>
 
+            <!-- Menu -->
             <div id="main-menu"
                 class="hidden md:flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-6 sm:space-x-4 space-x-2 items-center w-full md:w-auto">
+
+                <!-- Public Dropdown -->
                 <div class="relative group w-full text-center" x-data="{ open: false }" @click.away="open = false">
                     <button @click="open = !open"
                         class="flex items-center space-x-1 text-base sm:text-lg font-medium text-white focus:outline-none w-full justify-center">
@@ -145,27 +158,17 @@
                             </path>
                         </svg>
                     </button>
-                    <div x-show="open" x-cloak x-transition:enter="transition ease-out duration-200"
-                        x-transition:enter-start="opacity-0 transform scale-95"
-                        x-transition:enter-end="opacity-100 transform scale-100"
-                        x-transition:leave="transition ease-in duration-150"
-                        x-transition:leave-start="opacity-100 transform scale-100"
-                        x-transition:leave-end="opacity-0 transform scale-95"
+                    <div x-show="open" x-cloak x-transition
                         class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 mt-2 w-48 rounded-lg shadow-lg bg-white z-20">
-                        <div class="" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                            <a href="/" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 active_button"
-                                role="menuitem">Home</a>
-                            <a href="/gig_drivers.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                role="menuitem">Gig
-                                Drivers</a>
-                            <a href="/personal_car.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                role="menuitem">Personal
-                                Car</a>
-
-                        </div>
+                        <a href="/" class="block px-4 py-2 text-sm active_button text-gray-700 hover:bg-gray-100">Home</a>
+                        <a href="/gig_drivers.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Gig
+                            Drivers</a>
+                        <a href="/personal_car.html"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Personal Car</a>
                     </div>
                 </div>
 
+                <!-- Private Dropdown -->
                 <div class="relative group w-full text-center" x-data="{ open: false }" @click.away="open = false">
                     <button @click="open = !open"
                         class="flex items-center space-x-1 text-base sm:text-lg font-medium text-white focus:outline-none w-full justify-center">
@@ -176,28 +179,19 @@
                             </path>
                         </svg>
                     </button>
-                    <div x-show="open" x-cloak x-transition:enter="transition ease-out duration-200"
-                        x-transition:enter-start="opacity-0 transform scale-95"
-                        x-transition:enter-end="opacity-100 transform scale-100"
-                        x-transition:leave="transition ease-in duration-150"
-                        x-transition:leave-start="opacity-100 transform scale-100"
-                        x-transition:leave-end="opacity-0 transform scale-95"
-                        class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 mt-2 w-48 rounded-md shadow-lg bg-white   z-20">
-                        <div class="py-1" role="menu" aria-orientation="vertical" aria-labelledby="options-menu">
-                            <a href="/business_fleet.html"
-                                class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100" role="menuitem">Business
-                                Fleet</a>
-                            <a href="/real_estate.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
-                                role="menuitem">Real
-                                Estate</a>
-
-                        </div>
+                    <div x-show="open" x-cloak x-transition
+                        class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 mt-2 w-48 rounded-md shadow-lg bg-white z-20">
+                        <a href="/business_fleet.html"
+                            class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Business Fleet</a>
+                        <a href="/real_estate.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Real
+                            Estate</a>
                     </div>
                 </div>
             </div>
 
+            <!-- CTA -->
             <div class="mt-4 md:mt-0 hidden md:block">
-                <button @click="open = true"
+                <button
                     class="inline-flex items-center sm:px-6 px-3 sm:py-3 py-1 bg-primary sm:text-base text-xs text-white rounded-md font-medium font-inter hover:bg-blue-700 transition duration-300">
                     <span>Find out more</span>
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ml-2" fill="none" viewBox="0 0 24 24"
@@ -208,30 +202,34 @@
                 </button>
             </div>
         </nav>
-        <!-- inner banner -->
-        <section class="container  px-4 md:px-0 md:pt-18">
-            <div class="justify-start items-center max-w-full lg:max-w-[900px] ">
+
+        <!-- Hero -->
+        <section class="container px-4 md:px-0 md:pt-18 relative z-10">
+            <div class="max-w-full lg:max-w-[900px]">
                 <div class="text-start pr-0 md:px-4 lg:px-0 lg:pr-48">
-                    <h1 class="sm:text-4xl text-xl md:text-6xl font-inter! font-medium text-white mb-4 leading-tight">
+                    <h1 class="sm:text-4xl text-xl md:text-6xl font-medium text-white mb-4 leading-tight">
                         Drive Your Way — No <br> Loans, No Hassle
                     </h1>
-                    <p class="sm:text-lg text-base md:text-2xl text-white font-light leading-relaxed font-inter">Cars
-                        for personal
-                        use,
-                        gig work,
-                        small business, and multifamily communities — with insurance & maintenance included.</p>
+                    <p class="sm:text-lg text-base md:text-2xl text-white font-light leading-relaxed">
+                        Cars for personal use, gig work, small business, and multifamily communities — with insurance &
+                        maintenance included.
+                    </p>
                 </div>
+
+                <!-- Search -->
                 <div
-                    class="flex flex-row items-center md:mx-4 lg:mx-0 p-0.5 mt-8 rounded-full shadow-lg bg-white/15 bg-opacity-70 backdrop-blur-lg border border-white border-opacity-20 max-w-full sm:max-w-[500px] min-h-[40]">
+                    class="flex flex-row items-center md:mx-4 lg:mx-0 p-0.5 mt-8 rounded-full shadow-lg bg-white/15 backdrop-blur-lg border border-white border-opacity-20 max-w-full sm:max-w-[500px] min-h-[40px]">
                     <input type="text" placeholder="Check cars near you"
                         class="flex-grow bg-transparent text-white placeholder-white px-4 py-2 rounded-full focus:outline-none text-font-12px sm:text-font-14px w-full sm:w-auto mb-2 sm:mb-0">
                     <button
-                        class="bg-primary text-white  text-font-12px sm:text-font-14px rounded-full px-6 py-2 font-normal font-inter hover:bg-blue-700 transition duration-300 w-auto">
+                        class="bg-primary text-white text-font-12px sm:text-font-14px rounded-full px-6 py-2 font-normal font-inter hover:bg-blue-700 transition duration-300 w-auto">
                         Check
                     </button>
                 </div>
 
+                <!-- Feature Cards -->
                 <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 w-full md:px-4 lg:px-0 mt-14">
+                    <!-- Personal -->
                     <div
                         class="bg-primary bg-opacity-80 text-white p-3 px-6 rounded-xl flex flex-col justify-between items-start text-left">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -243,6 +241,7 @@
                         <p class="text-sm">Everyday errands & weekend trips</p>
                     </div>
 
+                    <!-- Gig -->
                     <div
                         class="bg-primary bg-opacity-80 text-white p-3 px-6 rounded-xl flex flex-col justify-between items-start text-left">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -254,6 +253,7 @@
                         <p class="text-sm">Affordable cars for Uber, Lyft, DoorDash</p>
                     </div>
 
+                    <!-- Small Business -->
                     <div
                         class="bg-primary bg-opacity-80 text-white p-3 px-6 rounded-xl flex flex-col justify-between items-start text-left">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -265,6 +265,7 @@
                         <p class="text-sm">Flexible fleet for your team</p>
                     </div>
 
+                    <!-- Multifamily -->
                     <div
                         class="bg-primary bg-opacity-80 text-white p-3 px-6 rounded-xl flex flex-col justify-between items-start text-left">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -272,13 +273,11 @@
                             <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
                             <polyline points="9 22 9 12 15 12 15 22"></polyline>
                         </svg>
-
                         <h3 class="font-medium text-base mb-2">Multifamily</h3>
                         <p class="text-sm">Shared cars for apartment residents</p>
                     </div>
                 </div>
-
-                <div
+                 <div
                     class="flex flex-col md:flex-row md:px-4 lg:px-0 items-center sm:items-start mt-12 gap-6 md:gap-12">
 
                     <div class="flex items-center space-x-2">
@@ -321,6 +320,7 @@
             </div>
         </section>
     </header>
+
     <main>
         <!-- get the app -->
         <section class="bg-white pt-16 sm:pt-18 lg:pt-20 pb-8 relative z-10 container  px-4 lg:px-0">
