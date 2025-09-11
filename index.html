@@ -121,8 +121,7 @@
         </div>
 
         <!-- Mobile Background -->
-        <div
-            class="block md:hidden absolute inset-0 bg-[url('../images/home_banner_mobile.png')] bg-cover bg-center">
+        <div class="block md:hidden absolute inset-0 bg-[url('../images/home_banner_mobile.png')] bg-cover bg-center">
         </div>
 
         <!-- Nav -->
@@ -160,7 +159,8 @@
                     </button>
                     <div x-show="open" x-cloak x-transition
                         class="absolute left-1/2 -translate-x-1/2 md:left-0 md:translate-x-0 mt-2 w-48 rounded-lg shadow-lg bg-white z-20">
-                        <a href="/" class="block px-4 py-2 text-sm active_button text-gray-700 hover:bg-gray-100">Home</a>
+                        <a href="/"
+                            class="block px-4 py-2 text-sm active_button text-gray-700 hover:bg-gray-100">Home</a>
                         <a href="/gig_drivers.html" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Gig
                             Drivers</a>
                         <a href="/personal_car.html"
@@ -277,7 +277,7 @@
                         <p class="text-sm">Shared cars for apartment residents</p>
                     </div>
                 </div>
-                 <div
+                <div
                     class="flex flex-col md:flex-row md:px-4 lg:px-0 items-center sm:items-start mt-12 gap-6 md:gap-12">
 
                     <div class="flex items-center space-x-2">
@@ -767,7 +767,7 @@
                     </div>
                     <div class="relative flex items-center space-x-4">
                         <div
-                            class="w-12 h-12 flex items-center justify-center text-green-600 bg-green-100 rounded-full flex-shrink-0 transition-transform group-hover:scale-110 duration-300">
+                            class="w-124h-12 flex items-center justify-center text-green-600 bg-green-100 rounded-full flex-shrink-0 transition-transform group-hover:scale-110 duration-300">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
                                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                                 class="w-6 h-6">
@@ -834,7 +834,7 @@
             </div>
         </section>
         <!-- smarter ways to drive -->
-        <section class="bg-secondary py-10 ">
+        <section class="bg-secondary py-5 lg:py-10 ">
             <div class="container ">
                 <div class="text-center">
                     <h2 class="text-2xl md:text-4xl font-inter font-normal mb-4">The Smarter Way to Drive</h2>
@@ -844,7 +844,7 @@
                     </p>
                 </div>
 
-                <div class="font-inter py-10">
+                <div class="font-inter py-5 lg:py-10">
                     <div class="flex justify-center items-center p-4">
 
                         <div
@@ -1028,13 +1028,15 @@
                         </div>
 
                         <div class="block md:hidden w-full px-1">
-                            <div class="overflow-x-auto rounded-lg shadow-md">
-                                <table class="min-w-[350px] w-full border-collapse text-[11px]">
+                            <div class="overflow-x-auto rounded-xl shadow-md">
+                                <table class="min-w-[350px] w-full border-collapse text-[9px]">
                                     <thead>
-                                        <tr class="bg-gradient-to-r from-primary to-indigo-500 text-white text-center">
+                                        <tr
+                                            class="bg-gradient-to-r from-primary to-indigo-500 text-white text-center text-[9px]">
                                             <th
                                                 class="px-2 py-1 text-left sticky left-0 bg-gradient-to-r from-primary to-indigo-500 z-10">
-                                                Feature</th>
+                                                Feature
+                                            </th>
                                             <th class="px-2 py-1">Fore Mobility</th>
                                             <th class="px-2 py-1">Ownership</th>
                                             <th class="px-2 py-1">Lease</th>
@@ -1042,54 +1044,52 @@
                                     </thead>
                                     <tbody>
                                         <tr class="border-b bg-white">
-                                            <td class="px-2 py-1 font-semibold sticky left-0 bg-white">💰 Upfront</td>
-                                            <td class="px-2 py-1 text-green-600 text-center">Low ✅</td>
-                                            <td class="px-2 py-1 text-red-600 text-center">High ❌</td>
-                                            <td class="px-2 py-1 text-yellow-600 text-center">Medium ⚠️</td>
+                                            <td class="px-2 py-1 font-semibold sticky left-0 bg-white">Upfront</td>
+                                            <td class="px-2 py-1 text-green-400 text-center">Low</td>
+                                            <td class="px-2 py-1 text-red-600 text-center">High</td>
+                                            <td class="px-2 py-1 text-yellow-600 text-center">Medium</td>
                                         </tr>
                                         <tr class="border-b bg-gray-50">
-                                            <td class="px-2 py-1 font-semibold sticky left-0 bg-gray-50">📆 Monthly</td>
-                                            <td class="px-2 py-1 text-green-600 text-center">Flexible ✅</td>
-                                            <td class="px-2 py-1 text-red-600 text-center">High ❌</td>
-                                            <td class="px-2 py-1 text-red-600 text-center">Fixed ❌</td>
+                                            <td class="px-2 py-1 font-semibold sticky left-0 bg-gray-50">Monthly</td>
+                                            <td class="px-2 py-1 text-green-400 text-center">Flexible</td>
+                                            <td class="px-2 py-1 text-red-600 text-center">High</td>
+                                            <td class="px-2 py-1 text-red-600 text-center">Fixed</td>
                                         </tr>
                                         <tr class="border-b bg-white">
-                                            <td class="px-2 py-1 font-semibold sticky left-0 bg-white">🔧 Maint.</td>
-                                            <td class="px-2 py-1 text-green-600 text-center">Incl. ✅</td>
-                                            <td class="px-2 py-1 text-red-600 text-center">Yours ❌</td>
-                                            <td class="px-2 py-1 text-red-600 text-center">Yours ❌</td>
+                                            <td class="px-2 py-1 font-semibold sticky left-0 bg-white">Maintenance</td>
+                                            <td class="px-2 py-1 text-green-400 text-center">Included</td>
+                                            <td class="px-2 py-1 text-red-600 text-center">Your Responsibility</td>
+                                            <td class="px-2 py-1 text-red-600 text-center">Your Responsibility</td>
                                         </tr>
                                         <tr class="border-b bg-gray-50">
-                                            <td class="px-2 py-1 font-semibold sticky left-0 bg-gray-50">🛡 Insurance
-                                            </td>
-                                            <td class="px-2 py-1 text-green-600 text-center">Incl. ✅</td>
-                                            <td class="px-2 py-1 text-red-600 text-center">Extra ❌</td>
-                                            <td class="px-2 py-1 text-red-600 text-center">Extra ❌</td>
+                                            <td class="px-2 py-1 font-semibold sticky left-0 bg-gray-50">Insurance</td>
+                                            <td class="px-2 py-1 text-green-400 text-center">Included</td>
+                                            <td class="px-2 py-1 text-red-600 text-center">Additional Cost</td>
+                                            <td class="px-2 py-1 text-red-600 text-center">Additional Cost</td>
                                         </tr>
                                         <tr class="border-b bg-white">
-                                            <td class="px-2 py-1 font-semibold sticky left-0 bg-white">🔄 Flexibility
-                                            </td>
-                                            <td class="px-2 py-1 text-green-600 text-center">Switch ✅</td>
-                                            <td class="px-2 py-1 text-red-600 text-center">Stuck ❌</td>
-                                            <td class="px-2 py-1 text-red-600 text-center">Fees ❌</td>
+                                            <td class="px-2 py-1 font-semibold sticky left-0 bg-white">Flexibility</td>
+                                            <td class="px-2 py-1 text-green-400 text-center">Switch Anytime</td>
+                                            <td class="px-2 py-1 text-red-600 text-center">Stuck with Car</td>
+                                            <td class="px-2 py-1 text-red-600 text-center">Early Termination Fees</td>
                                         </tr>
                                         <tr class="border-b bg-gray-50">
-                                            <td class="px-2 py-1 font-semibold sticky left-0 bg-gray-50">📍 Mileage</td>
-                                            <td class="px-2 py-1 text-green-600 text-center">Flexible ✅</td>
-                                            <td class="px-2 py-1 text-yellow-600 text-center">Unlimited ⚠️</td>
-                                            <td class="px-2 py-1 text-red-600 text-center">Strict ❌</td>
+                                            <td class="px-2 py-1 font-semibold sticky left-0 bg-gray-50">Mileage</td>
+                                            <td class="px-2 py-1 text-green-400 text-center">Flexible Plans</td>
+                                            <td class="px-2 py-1 text-yellow-600 text-center">Unlimited</td>
+                                            <td class="px-2 py-1 text-red-600 text-center">Strict Limits</td>
                                         </tr>
                                         <tr class="border-b bg-white">
-                                            <td class="px-2 py-1 font-semibold sticky left-0 bg-white">⏳ End</td>
-                                            <td class="px-2 py-1 text-green-600 text-center">Return ✅</td>
-                                            <td class="px-2 py-1 text-yellow-600 text-center">Sell ⚠️</td>
-                                            <td class="px-2 py-1 text-red-600 text-center">Return ❌</td>
+                                            <td class="px-2 py-1 font-semibold sticky left-0 bg-white">End</td>
+                                            <td class="px-2 py-1 text-green-400 text-center">Return or Switch</td>
+                                            <td class="px-2 py-1 text-yellow-600 text-center">Sell/Trade</td>
+                                            <td class="px-2 py-1 text-red-600 text-center">Return</td>
                                         </tr>
                                         <tr class="bg-gray-50">
-                                            <td class="px-2 py-1 font-semibold sticky left-0 bg-gray-50">💵 Savings</td>
-                                            <td class="px-2 py-1 text-green-600 text-center">~$220+ ✅</td>
-                                            <td class="px-2 py-1 text-red-600 text-center">Low ❌</td>
-                                            <td class="px-2 py-1 text-red-600 text-center">~$40 ❌</td>
+                                            <td class="px-2 py-1 font-semibold sticky left-0 bg-gray-50">Savings</td>
+                                            <td class="px-2 py-1 text-green-400 text-center">~$220+</td>
+                                            <td class="px-2 py-1 text-red-600 text-center">Low</td>
+                                            <td class="px-2 py-1 text-red-600 text-center">~$40</td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -1101,7 +1101,7 @@
 
                     <div class="mt-8 flex justify-center">
                         <button @click="open = true"
-                            class="bg-primary text-white text-base px-6 py-3 md:px-8 md:py-4 rounded-full font-medium shadow-md hover:bg-blue-600 transition-colors flex items-center gap-2">
+                            class="bg-primary text-white text-xs lg:text-base px-4 lg:px-6 py-3 md:px-8 md:py-4 rounded-full font-medium shadow-md hover:bg-blue-600 transition-colors flex items-center gap-2">
                             Find Out More
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
